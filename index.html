@@ -32,16 +32,56 @@
 
         <!-- Hero Section -->
         <div class="container my-4 py-5 homehero">
+
+            <div class="row horizontalicontab d-flex justify-content-around align-items-center d-block d-sm-none">
+                <div class="lang my-sm-2 text-center fontrale align-items-center ">
+                    <img src="assests/heronav/grid.png" alt="">
+                    <div class="switch">
+                        <div class="current">
+                            <small><span>en</span></small> 
+                        </div>
+                        <div class="options">
+                          <ul class="options-list">
+                            <li data-lang="en">English</li>
+                            <li data-lang="no">Bokmål Norsk</li>
+                            <li data-lang="sv">Svenska</li>
+                            <li data-lang="ru">Русский</li>
+                            <li data-lang="es">Español</li>
+                          </ul>
+                          <div id="trans-circle"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"> <g id="circle" fill="none" fill-rule="evenodd"> <circle id="bg" cx="60" cy="60" r="60" fill="#FFFFFF"/> </g> </svg>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="curr mb-sm-2  text-center">
+                    <img src="assests/heronav/currency.png" alt=""><br>
+                    <div class="current">
+                        <small><span>USD</span></small> 
+                    </div>
+                </div>
+
+                <div class="fb text-center">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </div>
+                <div class="curr  text-center">
+                     <i class="fa fa-instagram" aria-hidden="true"></i>
+                </div>
+                <div class="curr  text-center">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </div>
+
+
+            </div>
             <div class="row justify-content-around align-items-center">
                 <div class="col-sm-5 my-3">
                     <h1 class="font-weight-bold my-4">Lorem ipsum dolor sit amet <span>consectetur</span> .</h1>
                     <a href="#" class="getstartbtn fontpop">Get Started</a>
                 </div>
-                <div class="col-sm-6 rounded text-center ">
+                <div class="col-sm-6 rounded text-center " style="box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;">
                     <img class="w-100" src="assests/Hero Image.jpg" alt="">
                 </div>
             </div>
-            <div class="row  sideactions flex-column ">
+            <div class="row  sideactions flex-column d-none d-sm-block ">
                 <div class="langcurr my-sm-2 ">
                     <div class="lang my-sm-2 text-center fontrale">
                         <img src="assests/heronav/grid.png" alt="">
@@ -58,14 +98,18 @@
                                 <li data-lang="es">Español</li>
                               </ul>
                               <div id="trans-circle"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"> <g id="circle" fill="none" fill-rule="evenodd"> <circle id="bg" cx="60" cy="60" r="60" fill="#FFFFFF"/> </g> </svg>
+                              </div>
                             </div>
-                          </div>
+                        </div>
                     </div>
                     <div class="curr mb-sm-2  text-center">
-                        <img src="assests/heronav/currency.png" alt=""><br><small><span>Aus</span></small> 
+                        <img src="assests/heronav/currency.png" alt="">
+                        <div class="current">
+                             <small><span>USD</span></small> 
+                        </div>
                     </div>
                     
-                </div>
+                
                 </div>
 
                 <div class="socialicons mt-sm-3 ">
@@ -84,7 +128,7 @@
         </div>
         
         <!-- Call To Action Banner -->
-        <div class="container-fluid bg-gradient my-2 py-5 ">
+        <div class="container-fluid bg-gradient my-4 py-5 ">
             <div class="row justify-content-center ">
                 <div class="col-12 text-center">
                     <h1 class="text-white">Find the perfect professional for you</h1>
@@ -104,8 +148,8 @@
             </div>
         </div>
 
-        <div class="container my-2 py-2 homesec3">
-            <div class="row justify-content-between align-items-center">
+        <div class="container my-4 py-5 homesec3">
+            <div class="row justify-content-around align-items-center">
                 <div class="col-sm-6 my-3">
 
                     <img class="w-100" src="assests/webview.png" alt="">
@@ -116,7 +160,7 @@
                     <h1>Lorem <span>ipsum dolor</span>  sit amet consectetur.</h1>
                     <small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, veniam.</small>
 
-                    <div class="row my-4">
+                    <div class="row my-1">
                         <div class="col-6 my-4">
                             <p>Lorem ipsum dolor sit amet.</p>
                             <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rem vel, amet ipsa molestiae saepe illo quos dolores consectetur quis cumque eius excepturi ullam tenetur neque hic suscipit, est quae!</small>
@@ -151,7 +195,7 @@
                 </div>
     
                 <div class="filters">
-                    <div class="row justify-content-around align-items-center">
+                    <div class="row justify-content-center align-items-center">
                         <div class="col-md-9 col-12">
                             <div class="row my-3 filter__head d-flex justify-content-around align-items-center">
                                 <div class="filter__headitem" filter-data='0'><p>All</p> </div>
@@ -160,23 +204,23 @@
                                 <div class="filter__headitem" filter-data='3'><p>Social Media</p> </div>
                             </div>         
                         </div>
-                        <div class="viewmore col-md-2 col-4 mr-3 ml-auto text-center"><small>View More</small></div>
+                        <div class="col-md-2 col-4 mr-3 ml-auto text-center"><p><a href=""><u>View More</u> </a> </p></div>
                     </div>
                 </div>
                 
                 
                 <div class=" row filter__body">
-                  <div class="col-sm-3 col-6 filter__bodyitem" filter-data='[0,1]'><img src="assests/services/seo_shop.jpg" alt=""><p>Search Campaign</p> </div>
-                  <div class="col-sm-3 col-6 filter__bodyitem" filter-data='[0,0]'><img src="assests/services/yt_shop.jpg" alt=""><p>Organic Youtube Marketing</p></div>
-                  <div class="col-sm-3 col-6 filter__bodyitem" filter-data='[0,2]'><img src="assests/services/google_shop.jpg" alt=""><p>Google My Business</p></div>
-                  <div class="col-sm-3 col-6 filter__bodyitem" filter-data='[0,3]'><img src="assests/services/email_shop.jpg" alt=""><p>Email Marketing</p></div>
-                  <div class="col-sm-3 col-6 filter__bodyitem" filter-data='[3]'><img src="assests/services/email_shop.jpg" alt=""><p>Email Marketing2</p></div>
-                  <div class="col-sm-3 col-6 filter__bodyitem" filter-data='[2]'><img src="assests/services/google_shop.jpg" alt=""><p>Google My Business2</p></div>
-                  <div class="col-sm-3 col-6 filter__bodyitem" filter-data='[2]'><img src="assests/services/google_shop.jpg" alt=""><p>Google My Business3</p></div>
-                  <div class="col-sm-3 col-6 filter__bodyitem" filter-data='[2]'><img src="assests/services/google_shop.jpg" alt=""><p>Google My Business4</p></div>
-                  <div class="col-sm-3 col-6 filter__bodyitem" filter-data='[3]'><img src="assests/services/yt_shop.jpg" alt=""><p>Search Campaign2</p></div>
-                  <div class="col-sm-3 col-6 filter__bodyitem" filter-data='[3]'><img src="assests/services/yt_shop.jpg" alt=""><p>Search Campaign3</p></div>
-                  <div class="col-sm-3 col-6 filter__bodyitem" filter-data='[1]'><img src="assests/services/yt_shop.jpg" alt=""><p>Search Campaign4</p></div>
+                  <div class="col-sm-3 col-6 filter__bodyitem" filter-data='[0,1]'><img src="assests/services/seo_shop.jpg" alt=""><p class="my-3">Search Campaign</p> </div>
+                  <div class="col-sm-3 col-6 filter__bodyitem" filter-data='[0,0]'><img src="assests/services/yt_shop.jpg" alt=""><p class="my-3">Organic Youtube Marketing</p></div>
+                  <div class="col-sm-3 col-6 filter__bodyitem" filter-data='[0,2]'><img src="assests/services/google_shop.jpg" alt=""><p class="my-3">Google My Business</p></div>
+                  <div class="col-sm-3 col-6 filter__bodyitem" filter-data='[0,3]'><img src="assests/services/email_shop.jpg" alt=""><p class="my-3">Email Marketing</p></div>
+                  <div class="col-sm-3 col-6 filter__bodyitem" filter-data='[3]'><img src="assests/services/email_shop.jpg" alt=""><p class="my-3">Email Marketing2</p></div>
+                  <div class="col-sm-3 col-6 filter__bodyitem" filter-data='[2]'><img src="assests/services/google_shop.jpg" alt=""><p class="my-3">Google My Business2</p></div>
+                  <div class="col-sm-3 col-6 filter__bodyitem" filter-data='[2]'><img src="assests/services/google_shop.jpg" alt=""><p class="my-3">Google My Business3</p></div>
+                  <div class="col-sm-3 col-6 filter__bodyitem" filter-data='[2]'><img src="assests/services/google_shop.jpg" alt=""><p class="my-3">Google My Business4</p></div>
+                  <div class="col-sm-3 col-6 filter__bodyitem" filter-data='[3]'><img src="assests/services/yt_shop.jpg" alt=""><p class="my-3">Search Campaign2</p></div>
+                  <div class="col-sm-3 col-6 filter__bodyitem" filter-data='[3]'><img src="assests/services/yt_shop.jpg" alt=""><p class="my-3">Search Campaign3</p></div>
+                  <div class="col-sm-3 col-6 filter__bodyitem" filter-data='[1]'><img src="assests/services/yt_shop.jpg" alt=""><p class="my-3">Search Campaign4</p></div>
             
                 </div>
             </div>
@@ -203,16 +247,16 @@
             
             <div class="counters">
                 <div class="row justify-content-left">
-                  <div class="col-md-2 counter1" >
-                    <h1><span class="counter">80+ &nbsp;<span><img src="assests/arrowup.png" alt=""></span></span></h1> 
+                  <div class="col-md-2 col-3 counter1" >
+                    <h1><span class="counter">80+&nbsp;<span><img src="assests/arrowup.png" alt=""></span></span></h1> 
                     <small>Customers</small>                   
                   </div> 
-                  <div class="col-md-2 counter2">
+                  <div class="col-md-2 col-3 counter2">
                     <h1><span class="counter">75+&nbsp;<span><img src="assests/arrowup.png" alt=""></span></span></h1>
                     <small>Total Web Sites</small>
                   </div>
-                  <div class="col-md-2 counter3">
-                    <h1><span class="counter">120+&nbsp;<span><img src="assests/arrowup.png" alt=""></span></span></h1>
+                  <div class="col-md-2 col-3 counter3">
+                    <h1><span class="counter">90+&nbsp;<span><img src="assests/arrowup.png" alt=""></span></span></h1>
                     <small>Total Clients</small>                   
                   </div>
                 </div>
@@ -222,7 +266,7 @@
         
         <!-- Testimonials -->
 
-        <div class="wrapper container-fluid bg-light my-4 py-3">
+        <div class="wrapper container-fluid bg-light my-4 py-5">
             <div class="container">
 
                 <div class="testimonialhead text-right my-3">
@@ -407,7 +451,7 @@
         
         <!-- ClientMovie -->
 
-        <div class="wrapper container-fluid bg-light my-4 py-3">
+        <div class="wrapper container-fluid bg-light my-4 py-5">
             <div class="container">
 
                 <div class="clientmvhead text-right my-3">
