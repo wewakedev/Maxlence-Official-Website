@@ -15,6 +15,8 @@ h1,h2,h3,h4,h5,h5{
 }
 span,p{
 	color: #242323cf;
+	letter-spacing: .12rem !important;
+
 }
 ul{
 	list-style-type: none;
@@ -86,7 +88,7 @@ span{
 .homenav ul li a{
 	color: #3F3F3F !important;
 	font-weight: 600;
-	margin: 0.2rem;
+	margin: 0.35rem;
 }
 .navbar-toggler-icon{
 	color: #3F3F3F;
@@ -226,7 +228,7 @@ ul.webextralinks li{
 	list-style-type: none;
 	text-align: right;
 	font-weight: 600;
-	font-size: 20px;
+	font-size: 16px;
 	font-family: 'Poppins';
 }
 ul.webextralinks li a{
@@ -244,7 +246,7 @@ ul.webextralinks li a:hover{
 
 /* Buttons */
 
-.signupbtn{
+.signupbtn,.ctabtn{
 
 	border: 1px solid #0A76E5;
 	border-radius: 4rem;
@@ -255,8 +257,12 @@ ul.webextralinks li a:hover{
 	font-size: 14px !important;
 	font-family: 'poppins';
 	cursor: pointer;
+	letter-spacing: 0.12rem;
 }
-  .signupbtn:hover {
+.ctabtn{
+	background-color: #fff;
+}
+  .signupbtn:hover,.ctabtn:hover {
 	background-position: 0;
 	color: #fff !important;
 	transition: 1s ease-out;
@@ -268,9 +274,13 @@ ul.webextralinks li a:hover{
 
   .ctasearch{
 	padding: 0.375rem 1.75rem;
+	letter-spacing: 0.12rem;
   }
   .ctasearchbtn{
 	padding: 0.4rem 1.5rem !important;
+	letter-spacing: 0.12rem;
+	
+
   }
 .getstartbtn,.ctasearchbtn,.viewmore{
 	background: #0A76E5;
@@ -283,6 +293,7 @@ ul.webextralinks li a:hover{
 	background-size: 400%;
 	transition: background 300ms ease-in-out;
 	font-size: 14px !important;
+	letter-spacing: 0.12rem;
 
 }
 .getstartbtn:hover{
@@ -449,7 +460,7 @@ button#modal_view_right {
 .bg-gradient{
 	background: linear-gradient(180deg, #00C99C 0%, #035946 100%);
 }
-.ctabtn{
+/* .ctabtn{
 	color: #0A76E5;
 	background-color: #fff;
 	border: 1px solid #0A76E5;
@@ -461,7 +472,7 @@ button#modal_view_right {
 	color: #fff !important;
 	background-color: #0A76E5;
 	transition: .5s ease-in;
-}
+} */
 .counter1,.counter2,.counter3{
 	background: #0A76E5;
 	color: #fff;
