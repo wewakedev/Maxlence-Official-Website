@@ -13,6 +13,9 @@ html,body{
 h1,h2,h3,h4,h5,h5{
 	letter-spacing: .15rem !important;
 }
+span,p{
+	color: #242323cf;
+}
 ul{
 	list-style-type: none;
 }
@@ -83,6 +86,7 @@ span{
 .homenav ul li a{
 	color: #3F3F3F !important;
 	font-weight: 600;
+	margin: 0.2rem;
 }
 .navbar-toggler-icon{
 	color: #3F3F3F;
@@ -217,8 +221,8 @@ span{
 /* Right ModalContent */
 
 ul.webextralinks li{
-	padding: 1rem;
-	margin: 1rem;
+	padding: .5rem;
+	margin: .5rem;
 	list-style-type: none;
 	text-align: right;
 	font-weight: 600;
@@ -533,12 +537,12 @@ button#modal_view_right {
     font-size: 35px;} */
 
 .slick-next {
-    top: -10%;
+    top: -20%;
     left: 15%;
 }
 .slick-prev {
-    left: 5%;
-    top: -10%;
+    left: 0%;
+    top: -20%;
 }
 
 /* Clientmovie */
@@ -941,7 +945,7 @@ ul.ab-form-list{
 		display: none;
 	}
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
 	.pricecardtitle,.question{
 		margin-top:-12rem;
 	}
@@ -957,5 +961,15 @@ ul.ab-form-list{
 	}
 	h3{
 		font-size: 1.2rem;
+	}
+	.options {
+		left: 0;
+		position: absolute;
+    top: 0.6em;
+    z-index: 0;
+    opacity: 0;
+    transition: all 0.36s ease-out;
+    display: none;
+    overflow: hidden;
 	}
   }
