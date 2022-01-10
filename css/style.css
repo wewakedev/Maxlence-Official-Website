@@ -12,10 +12,11 @@ html,body{
 }
 h1,h2,h3,h4,h5,h5{
 	letter-spacing: .15rem !important;
+	font-family: 'Raleway', sans-serif;
 }
 span,p{
 	color: #242323cf;
-	letter-spacing: .12rem !important;
+	letter-spacing: .05rem !important;
 
 }
 ul{
@@ -66,6 +67,7 @@ span{
 	box-shadow: none;
   }
 
+  
 /****************************************************HomeNavbar *****************************************************/
 
 
@@ -449,7 +451,7 @@ ul.webextralinks li a:hover{
 .socialicons{
 	position: absolute;
     right: -2%;
-    bottom: -5%;
+    top: 25%;
 	color: silver;
 }
 
@@ -476,7 +478,7 @@ button#modal_view_right {
 .counter1,.counter2,.counter3{
 	background: #0A76E5;
 	color: #fff;
-	margin: 1rem;
+	margin: .9rem;
 	padding: .5rem;
 	border-radius: 0px 40px 10px 0px;
 }

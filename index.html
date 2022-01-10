@@ -30,48 +30,40 @@
             </script>
         <!--end of Navigation bar-->
 
+    <div class="container-fluid p-2"style="background-color: #E2F0FF;" >
+        <div class="container">
+            <div class="row justify-content-around align-items-center">
+                <div class="breadcrumbs text-center col-5 d-flex">
+                    <small class="breadcrumbhome"><a href="">Home</a> </small>
+                    <small class="breadcrumbsec"><a href="">Creations</a> </small>
+                </div>
+                <div class="icons col-4 d-flex justify-content-end align-items-center">
+                    <div class=" mx-3 ">
+                        <div class="input-group justify-content-around align-items-center">
+                          <!-- <input type="search" placeholder="Search Here" aria-describedby="button-addon1" class="form-control ctasearch rounded-pill  fontrale border-0 bg-light"> -->
+                          <div class="input-form-append">
+                              <button type="submit" style="border: none; background: transparent !important;"><i class="fa fa-search" aria-hidden="true"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="cart">
+                        <a href=""><img src="/assests/navicons/navcarticon.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .breadcrumbsec::before{
+            content: ">>";
+            margin: .4rem;
+        }
+    </style>
+    
+
         <!-- Hero Section -->
         <div class="container my-4 py-5 homehero">
 
-            <div class="row horizontalicontab d-flex justify-content-around align-items-center d-block d-sm-none">
-                <div class="lang my-sm-2 text-center fontrale align-items-center ">
-                    <img src="assests/heronav/grid.png" alt="">
-                    <div class="switch">
-                        <div class="current">
-                            <small><span>en</span></small> 
-                        </div>
-                        <div class="options">
-                          <ul class="options-list">
-                            <li data-lang="en">English</li>
-                            <li data-lang="no">Bokmål Norsk</li>
-                            <li data-lang="sv">Svenska</li>
-                            <li data-lang="ru">Русский</li>
-                            <li data-lang="es">Español</li>
-                          </ul>
-                          <div id="trans-circle"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"> <g id="circle" fill="none" fill-rule="evenodd"> <circle id="bg" cx="60" cy="60" r="60" fill="#FFFFFF"/> </g> </svg>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="curr mb-sm-2  text-center">
-                    <img src="assests/heronav/currency.png" alt=""><br>
-                    <div class="current">
-                        <small><span>USD</span></small> 
-                    </div>
-                </div>
-
-                <div class="fb text-center">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                </div>
-                <div class="curr  text-center">
-                     <i class="fa fa-instagram" aria-hidden="true"></i>
-                </div>
-                <div class="curr  text-center">
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                </div>
-
-
-            </div>
             <div class="row justify-content-around align-items-center">
                 <div class="col-sm-5 my-3">
                     <h1 class="font-weight-bold my-4">Have a business that performs and a <span>website that speaks</span>.</h1>
@@ -82,7 +74,7 @@
                 </div>
             </div>
             <div class="row  sideactions flex-column d-none d-sm-block ">
-                <div class="langcurr my-sm-2 ">
+                <!-- <div class="langcurr my-sm-2 ">
                     <div class="lang my-sm-2 text-center fontrale">
                         <img src="assests/heronav/grid.png" alt="">
                         <div class="switch">
@@ -110,7 +102,7 @@
                     </div>
                     
                 
-                </div>
+                </div> -->
 
                 <div class="socialicons mt-sm-3 ">
                     <div class="fb my-3 text-center">
@@ -202,9 +194,10 @@
                                 <div class="filter__headitem" filter-data='1'><p>SEO</p> </div>
                                 <div class="filter__headitem" filter-data='2'><p>Google Ads</p> </div>
                                 <div class="filter__headitem" filter-data='3'><p>Social Media</p> </div>
+                                <div><p><a href=""><u>View More</u> </a> </p></div>
                             </div>         
                         </div>
-                        <div class="col-md-2 col-4 mr-3 ml-auto text-center"><p><a href=""><u>View More</u> </a> </p></div>
+                        <!-- <div class="col-md-2 col-4 mr-3 ml-auto text-center"><p><a href=""><u>View More</u> </a> </p></div> -->
                     </div>
                 </div>
                 
@@ -248,15 +241,15 @@
             <div class="counters">
                 <div class="row justify-content-left">
                   <div class="col-md-2 col-3 counter1" >
-                    <h1><span class="counter">80+&nbsp;<span><img src="assests/arrowup.png" alt=""></span></span></h1> 
+                    <h2><span class="counter">80+&nbsp;<span><img src="assests/arrowup.png" alt=""></span></span></h2> 
                     <small>Customers</small>                   
                   </div> 
                   <div class="col-md-2 col-3 counter2">
-                    <h1><span class="counter">75+&nbsp;<span><img src="assests/arrowup.png" alt=""></span></span></h1>
+                    <h2><span class="counter">75+&nbsp;<span><img src="assests/arrowup.png" alt=""></span></span></h2>
                     <small>Total Web Sites</small>
                   </div>
                   <div class="col-md-2 col-3 counter3">
-                    <h1><span class="counter">90+&nbsp;<span><img src="assests/arrowup.png" alt=""></span></span></h1>
+                    <h2><span class="counter">90+&nbsp;<span><img src="assests/arrowup.png" alt=""></span></span></h2>
                     <small>Total Clients</small>                   
                   </div>
                 </div>
