@@ -35,28 +35,36 @@
             <div class="row justify-content-around align-items-center">
                 <div class="breadcrumbs text-center col-5 d-flex">
                     <small class="breadcrumbhome"><a href="">Home</a> </small>
-                    <small class="breadcrumbsec"><a href="">Creations</a> </small>
+                    <small class="breadcrumbsec breadactive"><a href="">Home</a> </small>
+                    <!-- <small class="breadcrumbsec "><a href="">Growth</a> </small>
+                    <small class="breadcrumbsec "><a href="">Creation</a> </small> -->
                 </div>
                 <div class="icons col-sm-5 col-12 d-flex justify-content-sm-end justify-content-center align-items-center">
                     <div class=" mx-2">
                         <div class="input-group justify-content-around align-items-center">
                             <input type="search" placeholder="Search Here" aria-describedby="button-addon1" class="form-control navsearch rounded-pill  fontrale border-0 bg-light "><br>
                           <div class="input-form-append">
-                              <button type="submit" style="border: none; background: transparent !important;"><i class="fa fa-search" aria-hidden="true"></i></button>
+                              <button type="submit" style="border: none; background: transparent !important;"><img src="/assests/searchmag.png" alt=""></button>
                           </div>
                         </div>
                       </div>
                     <div class="cart">
-                        <a href=""><i class="fa fa-shopping-basket text-dark" aria-hidden="true"></i></a>
+                        <a href=""><img src="/assests/carticon.png" alt=""></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <style>
+        .breadcrumbsec a{
+           color: rgba(33, 37, 41, 0.8) !important;
+        }
         .breadcrumbsec::before{
-            content: ">>";
+            content: ">";
             margin: .4rem;
+        }
+        .breadactive a{
+            color: rgba(33, 37, 41, 0.5) !important;
         }
     </style>
     
@@ -66,8 +74,8 @@
 
             <div class="row justify-content-around align-items-center">
                 <div class="col-sm-5 my-3">
-                    <h2 class="font-weight-bold my-4">Have a business that performs and a <span>website that speaks</span>.</h2>
-                    <a href="#" class="getstartbtn fontpop">Get Started</a>
+                    <h2 class="my-4">Have a business that performs and a <span>website that speaks</span>.</h2>
+                    <a href="quest.html" class="getstartbtn fontrale">Get Started</a>
                 </div>
                 <div class="col-sm-6 rounded text-center " style="box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;">
                     <img class="w-100" src="assests/Hero Image.jpg" alt="">
@@ -129,10 +137,10 @@
                     
                     <div class="p-1 bg-lightshadow-sm ">
                       <div class="input-group justify-content-around align-items-center">
-                        <input type="search" placeholder="Search Here" aria-describedby="button-addon1" class="form-control ctasearch rounded-pill  fontrale border-0 bg-light m-3"><br>
-                        <div class="input-form-append">
+                        <img style="position: absolute; left: 2.2rem; z-index: 10;" src="/assests/ctasearch.png" alt=""><input type="search" placeholder="Search Here" aria-describedby="button-addon1" class="form-control ctasearch rounded-pill  fontrale border-0 bg-light m-3"><br>
+                        <!-- <div class="input-form-append">
                             <button type="submit" class="ctasearchbtn fontpop">Search</button>
-                        </div>
+                        </div> -->
                       </div>
                     </div>
 
@@ -172,7 +180,9 @@
                         
                     </div>
                     <div class="col-12 text-right">
-                        <a href="#" class="getstartbtn fontpop">Sign Up</a>
+                        <a class="whitebgbtn fontrale" data-toggle="modal" data-target="#signupform" href="#">
+                            Sign Up
+                        </a>
                     </div>
                     
                 </div>
@@ -187,18 +197,26 @@
                 </div>
     
                 <div class="filters">
-                    <div class="row justify-content-center align-items-center">
-                        <div class="col-md-9 col-12">
+                    <div class="row justify-content-around align-items-center">
+                        <div class="col-md-12 col-12">
                             <div class="row my-3 filter__head d-flex justify-content-around align-items-center">
                                 <div class="filter__headitem" filter-data='0'><p>All</p> </div>
                                 <div class="filter__headitem" filter-data='1'><p>SEO</p> </div>
-                                <div class="filter__headitem" filter-data='2'><p>Google Ads</p> </div>
-                                <div class="filter__headitem" filter-data='3'><p>Social Media</p> </div>
+                                <div class="filter__headitem" filter-data='2'><p>GOOGLE ADS</p> </div>
+                                <div class="filter__headitem" filter-data='3'><p>SOCIAL MEDIA MARKETING</p> </div>
+                                <div class="filter__headitem" filter-data='3'><p>EMAIL MARKETING</p> </div>
+                                <div class="filter__headitem" filter-data='3'><p>VALUE PACKS</p> </div>
                                 <div><p><a href=""><u>View More</u> </a> </p></div>
                             </div>         
                         </div>
                         <!-- <div class="col-md-2 col-4 mr-3 ml-auto text-center"><p><a href=""><u>View More</u> </a> </p></div> -->
                     </div>
+                    <style>
+                        .filter__headitem p{
+                            color: rgba(33, 37, 41, 0.5);
+                            font-size: .8rem;
+                        }
+                    </style>
                 </div>
                 
                 
@@ -220,6 +238,7 @@
 
             
         </div>
+        
 
 
 
@@ -239,7 +258,7 @@
             </div>
             
             <div class="counters">
-                <div class="row justify-content-left">
+                <div class="row justify-content-left align-items-center">
                   <div class="col-md-2 col-3 counter1" >
                     <h2><span class="counter">80+&nbsp;<span><img src="assests/arrowup.png" alt=""></span></span></h2> 
                     <small>Customers</small>                   
@@ -252,8 +271,17 @@
                     <h2><span class="counter">90+&nbsp;<span><img src="assests/arrowup.png" alt=""></span></span></h2>
                     <small>Total Clients</small>                   
                   </div>
+
+                  <div class="col-sm-5 text-sm-right text-center">
+                    <div class="my-3">
+                        <a class="whitebgbtn fontrale " href="#">
+                            View Case Study &nbsp; <img src="/assests/rightarrow.png" alt="">
+                        </a>
+                    </div>
+                  </div>
+
                 </div>
-              </div>
+            </div>
         </div>
 
         
@@ -265,7 +293,7 @@
                 <div class="testimonialhead text-right my-3">
                     <h1><b><span>Thanks</span>  for your <span>sweet</span>  words </h1>
                 </div>
-                <div class="carousel my-5">
+                <div class="carousel testi my-5">
                   
         
                     
@@ -437,7 +465,7 @@
                 <div class="getstarted my-3">
                     <a class="ctabtn" href="#">
                         <small>Get In Touch</small>
-                      </a>
+                    </a>
                 </div>     
             </div>
         </div>
@@ -450,7 +478,7 @@
                 <div class="clientmvhead text-right my-3">
                     <h1><b>A <span>Glance</span> at Our <span>Projects</span></h1>
                 </div>
-                <div class="container carousel my-5">
+                <div class="container clientvid carousel my-5">
                   
                     <div class="clientmv py-2 m-2">
                         <div class="clientmv1">
@@ -500,7 +528,7 @@
             </div>
            
             
-            <div class="row align-items-start">
+            <div class="row align-items-start py-4">
                 <div class="col-sm-5 quesfaq my-3">
                     <small>1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, aliquam?</small>
                 </div>
@@ -508,8 +536,8 @@
                     <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit atque culpa ratione porro iure et tempore error commodi, nisi dolorem eos est architecto eaque nobis tenetur totam quibusdam nostrum praesentium quod delectus fugit animi, placeat illo! Quasi facere deserunt modi?</small>
                 </div>
             </div>
-            <hr>
-            <div class="row align-items-start">
+            <hr style="background-color: rgba(0, 0, 0, 0.288);">
+            <div class="row align-items-start py-4">
                 <div class="col-sm-5 quesfaq my-3">
                     <small>2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, aliquam?</small>
                 </div>
@@ -517,8 +545,8 @@
                     <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit atque culpa ratione porro iure et tempore error commodi, nisi dolorem eos est architecto eaque nobis tenetur totam quibusdam nostrum praesentium quod delectus fugit animi, placeat illo! Quasi facere deserunt modi?</small>
                 </div>
             </div>
-            <hr>
-            <div class="row align-items-start">
+            <hr style="background-color: rgba(0, 0, 0, 0.288);">
+            <div class="row align-items-start py-4">
                 <div class="col-sm-5 quesfaq my-3">
                     <small>3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, aliquam?</small>
                 </div>
@@ -526,16 +554,15 @@
                     <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit atque culpa ratione porro iure et tempore error commodi, nisi dolorem eos est architecto eaque nobis tenetur totam quibusdam nostrum praesentium quod delectus fugit animi, placeat illo! Quasi facere deserunt modi?</small>
                 </div>
             </div>
-            <hr>
-            <div class="row align-items-start">
+            <hr style="background-color: rgba(0, 0, 0, 0.288);">
+            <div class="row align-items-start py-4">
                 <div class="col-sm-5 quesfaq my-3">
-                    <small>4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, aliquam?</small>
+                    <small>4. Lorem ipsum dolor sit amet, consectetur adipiscing elit?</small>
                 </div>
                 <div class="col-sm-7 ansfaq">
                     <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit atque culpa ratione porro iure et tempore error commodi, nisi dolorem eos est architecto eaque nobis tenetur totam quibusdam nostrum praesentium quod delectus fugit animi, placeat illo! Quasi facere deserunt modi?</small>
                 </div>
             </div>
-            <hr>
         </div>
 
     <!--Footer Section-->
