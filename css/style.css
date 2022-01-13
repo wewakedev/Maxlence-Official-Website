@@ -257,7 +257,7 @@ ul.webextralinks li a:hover{
 
 	border: 1px solid #0A76E5;
 	border-radius: 4rem;
-	padding: .5rem 1.8rem  !important;background-image: linear-gradient(45deg,#0A76E5 50%, transparent 50%);
+	padding: .5rem 1.5rem  !important;background-image: linear-gradient(45deg,#0A76E5 50%, transparent 50%);
 	background-position: 100%;
 	background-size: 400%;
 	transition: background 300ms ease-in-out;
@@ -502,8 +502,14 @@ button#modal_view_right {
 	color: #fff !important;
 }
 .homepartners img{
-	width: 8rem;
+	width: 9rem;
 	height: auto;
+    filter: grayscale(100%);
+
+}
+.homepartners img:hover{
+	filter: none;
+	transition: .6s ease-in;
 }
 .filter__head p:hover {
 	cursor: pointer;

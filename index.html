@@ -33,7 +33,7 @@
     <div class="container-fluid p-2"style="background-color: #E2F0FF;" >
         <div class="container">
             <div class="row justify-content-around align-items-center">
-                <div class="breadcrumbs text-center col-5 d-flex">
+                <div class="breadcrumbs text-center col-5 d-sm-flex d-none">
                     <small class="breadcrumbhome"><a href="">Home</a> </small>
                     <small class="breadcrumbsec breadactive"><a href="">Home</a> </small>
                     <!-- <small class="breadcrumbsec "><a href="">Growth</a> </small>
@@ -44,18 +44,30 @@
                         <div class="input-group justify-content-around align-items-center">
                             <input type="search" placeholder="Search Here" aria-describedby="button-addon1" class="form-control navsearch rounded-pill  fontrale border-0 bg-light "><br>
                           <div class="input-form-append">
-                              <button type="submit" style="border: none; background: transparent !important;"><img src="assests/searchmag.png" alt=""></button>
+                              <button type="submit" style="border: none; background: transparent !important;"><img class="searchnavicon" src="assests/searchmag.png" alt=""></button>
                           </div>
                         </div>
-                      </div>
-                    <div class="cart">
+                    </div>
+                    <div class="bellicon mx-2">
+                        <a href=""><img src="assests/bellnav.png" alt=""></a>
+                    </div>
+                    <div class="cart mx-2">
                         <a href=""><img src="assests/carticon.png" alt=""></a>
                     </div>
+                    
+                    <!-- <div class="messageicon mx-2">
+                        <a href=""><img src="assests/messgnav.png" alt=""></a>
+                    </div>
+                 -->
                 </div>
             </div>
         </div>
     </div>
     <style>
+        .searchnavicon,.bellicon a img, .messageicon a img{
+            width: 1rem;
+            height: auto;
+        }
         .breadcrumbsec a{
            color: rgba(33, 37, 41, 0.8) !important;
         }
@@ -417,7 +429,7 @@
             </div>
             <div class="row text-center align-items-center">
                 <div class="col-sm-4 col-6 my-3">
-                    <img src="assests/partners/baysidelogo.png" alt="">
+                    <img class="" src="assests/partners/baysidelogo.png" alt="">
                 </div>
                 <div class="col-sm-4 col-6 my-3">
                     <img src="assests/partners/dawkinslogo.png" alt="">
