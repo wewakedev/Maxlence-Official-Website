@@ -495,7 +495,8 @@ button#modal_view_right {
 	color: #fff;
 	margin: .9rem;
 	padding: .5rem;
-	border-radius: 0px 40px 10px 0px;
+	border-radius: 5px;
+	text-align: center;
 }
 .counter{
 	color: #fff !important;
@@ -533,11 +534,15 @@ button#modal_view_right {
 .filter__headitem.active p {
   color: #0A76E5 !important;
 }
-
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #0A76E5;
+}
   
   /* testimonial  */
+
 .testimonial{
-	background-color: #DADADA;
+	background: #E7F3FF;
 	position: relative;
 }
 .blockquote-custom-icon {
@@ -572,11 +577,17 @@ button#modal_view_right {
 
 .slick-next {
     top: -20%;
-    left: 15%;
+    left: 7%;
 }
 .testi .slick-prev, .clientvid .slick-prev {
-    left: 10%;
+    left:0%;
     top: -20%;
+}
+.clientvid{
+	padding: 0px;
+}
+.testi .slick-prev,.testi .slick-next{
+	top: -35%;
 }
 
 /* Clientmovie */
@@ -725,6 +736,10 @@ nav.navbar.navbar-expand-lg.navbar-light.homenav.d-flex.fontrale.fixed-top {
 		
 		.testi .slick-prev, .clientvid .slick-prev{
 			left: 0%;
+		}
+		
+		.slick-next {
+        	left: 15%;
 		}
 		
 	  }
