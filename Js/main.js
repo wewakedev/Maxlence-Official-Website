@@ -11,24 +11,27 @@ $(document).ready(function () {
 
 //HomeShop Filter
 
-$('body').on('click', '.filter__headitem', function() {
-    let ele = $(this)
-    let filterData = ele.attr('filter-data')
+// $('body').on('click', '.filter__headitem', function() {
+//     let ele = $(this)
+//     let filterData = ele.attr('filter-data')
     
-    // Reset head
-    ele.parent().children().removeClass('active')
+//     // Reset head
+//     ele.parent().children().removeClass('active')
    
-    // Active head
-    ele.addClass('active')
+//     // Active head
+//     ele.addClass('active')
     
-    // Reset body
-    $('.filter__bodyitem').removeClass('active')
+//     // Reset body
+//     $('.filter__bodyitem').removeClass('active')
    
-    // Active body
-    $('.filter__bodyitem[filter-data*="[' +filterData+ ',"], .filter__bodyitem[filter-data*=",' +filterData+ ',"], .filter__bodyitem[filter-data*=",' +filterData+ ']"]').addClass('active')
- })
+//     // Active body
+//     $('.filter__bodyitem[filter-data*="[' +filterData+ ',"], .filter__bodyitem[filter-data*=",' +filterData+ ',"], .filter__bodyitem[filter-data*=",' +filterData+ ']"]').addClass('active')
+//  })
  
- $('.filter__headitem').first().click()
+//  $('.filter__headitem').first().click()
+
+
+
 
 //  Testimonial Slider
 

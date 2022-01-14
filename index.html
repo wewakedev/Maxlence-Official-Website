@@ -87,7 +87,7 @@
             <div class="row justify-content-around align-items-center">
                 <div class="col-sm-5 my-3">
                     <h2 class="my-4">Have a business that performs and a <span>website that speaks</span>.</h2>
-                    <a href="quest.html" class="getstartbtn fontrale">Get Started</a>
+                    <a href="quest.html" class="getstartbtn fontrale my-2">Get Started</a>
                 </div>
                 <div class="col-sm-6 rounded text-center ">
                     <img class="w-100" src="assests/Hero Image.jpg" alt="">
@@ -207,45 +207,70 @@
                 <div class="homeshophead text-center my-2">
                     <h2>Shop our services with <br> <span>best offers</span></h2>
                 </div>
-    
-                <div class="filters">
-                    <div class="row justify-content-around align-items-center">
-                        <div class="col-md-12 col-12">
-                            <div class="row my-3 filter__head d-flex justify-content-around align-items-center">
-                                <div class="filter__headitem" filter-data='0'><p>All</p> </div>
-                                <div class="filter__headitem" filter-data='1'><p>SEO</p> </div>
-                                <div class="filter__headitem" filter-data='2'><p>GOOGLE ADS</p> </div>
-                                <div class="filter__headitem" filter-data='3'><p>SOCIAL MEDIA MARKETING</p> </div>
-                                <div class="filter__headitem" filter-data='3'><p>EMAIL MARKETING</p> </div>
-                                <div class="filter__headitem" filter-data='3'><p>VALUE PACKS</p> </div>
-                                <div><p><a href=""><u>View More</u> </a> </p></div>
-                            </div>         
-                        </div>
-                        <!-- <div class="col-md-2 col-4 mr-3 ml-auto text-center"><p><a href=""><u>View More</u> </a> </p></div> -->
+
+                <ul class="row justify-content-around text-center align-items-center nav nav-tabs filter__head my-5" role="tablist">
+                  <li class="active  filter__headitem col-sm-1 col-6 my-2" role="presentation"><a href="#tab1" class="active" role="tab" data-toggle="tab">SEO</a></li>
+                  <li class="filter__headitem col-sm-2 col-6 my-2" role="presentation"><a href="#tab2" role="tab" data-toggle="tab">GOOGLE ADS</a></li>
+                  <li class="filter__headitem col-sm-3 col-6 my-2" role="presentation"><a href="#tab3" role="tab" data-toggle="tab">SOCIAL MEDIA MARKETING</a></li>
+                  <li class="filter__headitem col-sm-2 col-6 my-2" role="presentation"><a href="#tab4" role="tab" data-toggle="tab">EMAIL MARKETING</a></li>
+                  <li class="filter__headitem col-sm-2 col-6 my-2" role="presentation"><a href="#tab5" role="tab" data-toggle="tab">VALUE PACKS</a></li>
+                  <li class="filter__headitem col-sm-2 col-6 my-2"><a href="#/" style="color: #0A76E5;"><u><b>VIEW MORE</b></u> </a></li>
+                </ul>
+
+                <!-- Tab panes-->
+                <div class="tab-content my-5">
+                    <div class="tab-pane active fade show seofeats" id="tab1" role="tabpanel">
+                      <div class="container">
+                          <div class="row">
+                              <div class="seoshop col-sm-3 col-6">
+                                  <img class="w-100" src="assests/pageseo.jpg" alt=""><p class="my-3">Search Campaign</p><p><span><b>$123</b></span></p>
+                              </div>
+                              <div class="seoshop col-sm-3 col-6">
+                                <img class="w-100" src="assests/youtubecamp.jpg" alt=""><p class="my-3">Search Campaign</p><p><span><b>$123</b></span></p>
+                            </div>
+                            <div class="seoshop col-sm-3 col-6">
+                                <img class="w-100" src="assests/socialmediamarketing.jpg" alt=""><p class="my-3">Search Campaign</p><p><span><b>$123</b></span></p>
+                            </div>
+                            <div class="seoshop col-sm-3 col-6">
+                                <img class="w-100" src="assests/emailmarketing.jpg" alt=""><p class="my-3">Search Campaign</p><p><span><b>$123</b></span></p>
+                            </div>
+                          </div>
+                      </div>
                     </div>
-                    <style>
-                        .filter__headitem p{
-                            color: rgba(33, 37, 41, 0.5);
-                            font-size: .8rem;
-                        }
-                    </style>
+                  <div class="tab-pane fade in" id="tab2" role="tabpanel">
+                    <div class="container">
+                        <div class="row">
+                            <div class="googleadshop col-sm-3 col-6">
+                                <img class="w-100" src="assests/youtubecamp.jpg" alt=""><p class="my-3">Video Campaign</p><p><span><b>$123</b></span></p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade in" id="tab3" role="tabpanel">
+                    <div class="container">
+                        <div class="row">
+                            <div class="socialshop col-sm-3 col-6">
+                                <img class="w-100" src="assests/socialmediamarketing.jpg" alt=""><p class="my-3">Video Campaign</p><p><span><b>$123</b></span></p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade in" id="tab4" role="tabpanel">
+                    <div class="container">
+                        <div class="row">
+                            <div class="emailshop col-sm-3 col-6">
+                                <img class="w-100" src="assests/emailmarketing.jpg" alt=""><p class="my-3">Video Campaign</p><p><span><b>$123</b></span></p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="tab5" role="tabpanel">Value Packs here </div>
                 </div>
+    
                 
-                
-                <div class=" row filter__body">
-                  <div class="col-sm-3 col-6 filter__bodyitem" filter-data='[0,1]'><img src="assests/services/seo_shop.jpg" alt=""><p class="my-3">Search Campaign</p> </div>
-                  <div class="col-sm-3 col-6 filter__bodyitem" filter-data='[0,0]'><img src="assests/services/yt_shop.jpg" alt=""><p class="my-3">Organic Youtube Marketing</p></div>
-                  <div class="col-sm-3 col-6 filter__bodyitem" filter-data='[0,2]'><img src="assests/services/google_shop.jpg" alt=""><p class="my-3">Google My Business</p></div>
-                  <div class="col-sm-3 col-6 filter__bodyitem" filter-data='[0,3]'><img src="assests/services/email_shop.jpg" alt=""><p class="my-3">Email Marketing</p></div>
-                  <div class="col-sm-3 col-6 filter__bodyitem" filter-data='[3]'><img src="assests/services/email_shop.jpg" alt=""><p class="my-3">Email Marketing2</p></div>
-                  <div class="col-sm-3 col-6 filter__bodyitem" filter-data='[2]'><img src="assests/services/google_shop.jpg" alt=""><p class="my-3">Google My Business2</p></div>
-                  <div class="col-sm-3 col-6 filter__bodyitem" filter-data='[2]'><img src="assests/services/google_shop.jpg" alt=""><p class="my-3">Google My Business3</p></div>
-                  <div class="col-sm-3 col-6 filter__bodyitem" filter-data='[2]'><img src="assests/services/google_shop.jpg" alt=""><p class="my-3">Google My Business4</p></div>
-                  <div class="col-sm-3 col-6 filter__bodyitem" filter-data='[3]'><img src="assests/services/yt_shop.jpg" alt=""><p class="my-3">Search Campaign2</p></div>
-                  <div class="col-sm-3 col-6 filter__bodyitem" filter-data='[3]'><img src="assests/services/yt_shop.jpg" alt=""><p class="my-3">Search Campaign3</p></div>
-                  <div class="col-sm-3 col-6 filter__bodyitem" filter-data='[1]'><img src="assests/services/yt_shop.jpg" alt=""><p class="my-3">Search Campaign4</p></div>
-            
-                </div>
             </div>
 
             
@@ -269,15 +294,15 @@
                 </div>
             </div>
             
-            <div class="counters">
-                <div class="row justify-content-left align-items-center">
+            <div class="counters my-sm-1 my-4">
+                <div class="row justify-content-around align-items-center">
                   <div class="col-md-2 col-3 counter1" >
                     <h2><span class="counter">80+&nbsp;<span><img src="assests/arrowup.png" alt=""></span></span></h2> 
                     <small>Customers</small>                   
                   </div> 
                   <div class="col-md-2 col-3 counter2">
                     <h2><span class="counter">75+&nbsp;<span><img src="assests/arrowup.png" alt=""></span></span></h2>
-                    <small>Total Web Sites</small>
+                    <small> Websites</small>
                   </div>
                   <div class="col-md-2 col-3 counter3">
                     <h2><span class="counter">90+&nbsp;<span><img src="assests/arrowup.png" alt=""></span></span></h2>
