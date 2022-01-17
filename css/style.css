@@ -536,9 +536,12 @@ button#modal_view_right {
   .filter__headitem a{
 	color: rgba(33, 37, 41, 0.5);
 	font-size: .8rem;
+	font-weight: bolder;
 }
 
-  
+.seoshop p{
+font-size: 80%;
+}
 .filter__headitem .active {
   color: #0A76E5 !important;
 }
@@ -632,6 +635,9 @@ button#modal_view_right {
 	font-weight: 600;
 }
 
+ul.footercol {
+    padding-left: 0px;
+}
 
 
 /* SignIn Page */
@@ -749,7 +755,7 @@ nav.navbar.navbar-expand-lg.navbar-light.homenav.d-flex.fontrale.fixed-top {
 			top: -15%;
 		}
 		.clientvid .slick-prev,.clientvid .slick-next{
-			top: -15%;
+			top: -5%;
 		}
 		
 		.slick-next {
