@@ -314,7 +314,7 @@ ul.webextralinks li a:hover{
 	background-size: 400%;
 	transition: background 300ms ease-in-out;
 	font-size: 14px !important;
-	/* letter-spacing: 0.12rem; */
+	letter-spacing: 0.12rem;
     font-weight: 600;
 
 
