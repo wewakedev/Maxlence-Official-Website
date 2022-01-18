@@ -24,6 +24,9 @@ font-weight: 500;
 color: rgba(33, 37, 41, 0.7);
 
 }
+h2 span{
+	font-weight: bold;
+}
 
 .font500{
 	font-weight: 500;
@@ -271,7 +274,7 @@ ul.webextralinks li a:hover{
     text-transform: capitalize;
 	cursor: pointer;
 	color: #0A76E5;
-	/* letter-spacing: 0.12rem; */
+	letter-spacing: 0.12rem;
 }
 .whitebgbtn{
 	padding: .6rem 2rem !important;
