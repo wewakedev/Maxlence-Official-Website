@@ -39,10 +39,12 @@ $(document).ready(function () {
 $('.carousel').slick({
     dots:true,
     arrows:true,
-    infinite: false,
+    infinite: true,
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
   
     responsive: [
       {
@@ -209,6 +211,7 @@ $('£navbarmain a').on('click', function() {
 
 
 
+///TIMELINE
 
 var Timeline = function(elem) {
   this.elem = document.querySelector(elem);

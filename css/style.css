@@ -274,7 +274,7 @@ ul.webextralinks li a:hover{
     text-transform: capitalize;
 	cursor: pointer;
 	color: #0A76E5;
-	letter-spacing: 0.12rem;
+	/* letter-spacing: 0.12rem; */
 }
 .whitebgbtn{
 	padding: .6rem 2rem !important;
@@ -314,7 +314,7 @@ ul.webextralinks li a:hover{
 	background-size: 400%;
 	transition: background 300ms ease-in-out;
 	font-size: 14px !important;
-	letter-spacing: 0.12rem;
+	/* letter-spacing: 0.12rem; */
     font-weight: 600;
 
 
@@ -1245,6 +1245,12 @@ ul.ab-form-list{
 	  padding: 1.5rem;
   }
 
+
+
+
+
+
+
 /* Media queries */
 
 @media screen and (max-width: 1200px){
@@ -1286,3 +1292,5 @@ ul.ab-form-list{
 		font-size: 70%;
 	}
   }
+
+  /* ANIMATIONS */
