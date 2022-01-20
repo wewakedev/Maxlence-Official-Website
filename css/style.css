@@ -551,6 +551,15 @@ button#modal_view_right {
 	font-size: .8rem;
 	font-weight: bolder;
 }
+.homeshops img:hover{
+	-webkit-transform: scale(1.08);
+  transform: scale(1.08);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.homeshops img{
+	-webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
 
 .homeshops p{
 font-size: 80%;
