@@ -551,7 +551,7 @@ button#modal_view_right {
 	font-size: .8rem;
 	font-weight: bolder;
 }
-.homeshops img:hover{
+/* .homeshops img:hover{
 	-webkit-transform: scale(1.08);
   transform: scale(1.08);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -559,8 +559,20 @@ button#modal_view_right {
 .homeshops img{
 	-webkit-transition: 0.4s ease;
   transition: 0.4s ease;
-}
+} */
 
+.shopfeat{
+        overflow: hidden;
+        margin: 0 auto;
+}
+.shopfeat img{
+	width: 100%;
+	transition: 0.5s all ease-in-out;
+}
+.shopfeat:hover img{
+	transform: scale(1.5);
+	overflow: hidden;
+}
 .homeshops p{
 font-size: 80%;
 }
