@@ -807,7 +807,7 @@ nav.navbar.navbar-expand-lg.navbar-light.homenav.d-flex.fontrale.fixed-top {
 	  .card {
 		position: relative;
 		margin-bottom: 24px;
-		background-color: #fff;
+		border: none;
 		-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
 		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
 	  }
@@ -849,10 +849,10 @@ nav.navbar.navbar-expand-lg.navbar-light.homenav.d-flex.fontrale.fixed-top {
 		border-color: #00BF95;
 	  }
 	  
-	  .step-content {
+	  /* .step-content {
 		padding: 16px 0;
 	  }
-	  
+	   */
 	  .step-content .step-content-foot {
 		text-align: right;
 	  }
@@ -884,7 +884,7 @@ nav.navbar.navbar-expand-lg.navbar-light.homenav.d-flex.fontrale.fixed-top {
 	  }
 	  
 	  .step-content .step-content-body {
-		padding: 16px 0;
+		/* padding: 16px 0; */
 		text-align: center;
 		font-size: 18px;
 	  }
@@ -906,15 +906,16 @@ ul.ab-form-list{
 	font-family: 'Raleway';
 	font-weight: bold;
 }
-.question{
-	margin-top:-8rem;
+ .question,.pricecardtitle{
+	border: 1px solid transparent;
+	background: #035946 ;
 }
-.pricecardtitle{
+/* .pricecardtitle{
 	margin-top:-15rem;
-}
+} */
 .paginationaction{
-	padding-bottom: 10rem;
-}
+	height: 150px;
+} 
 .questback,.questnext,.questfinal{
 	background: none !important;
 	border: transparent !important;
@@ -1044,11 +1045,13 @@ ul.ab-form-list{
   .d4s ul{
 	  padding-left: 0rem !important;
   }
-
+.teamsection small:nth-child(odd){
+	color: #fff;
+}
 
   /* TIMELINE */
 
-  .timeline {
+  /* .timeline {
 	position: relative;
 	display: block;
   }
@@ -1244,7 +1247,7 @@ ul.ab-form-list{
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	/* background-size:100%; */
+	background-size:100%;
 	background-color: #F5F5F5;
    width: 100%;
 	border-radius: 20px;
@@ -1255,8 +1258,11 @@ ul.ab-form-list{
   }
   .hide {
 	display: none;
-  }
+  } */
 
+  .id1icon img {
+    width: 5rem;
+}
 
 
   /* //GROWTH */
@@ -1280,9 +1286,9 @@ ul.ab-form-list{
 	}
 }
 @media (max-width: 550px) {
-	.pricecardtitle,.question{
+	/* .pricecardtitle,.question{
 		margin-top:-12rem;
-	}
+	} */
 	.sideactions{
 		right: 7%;
     top: 0%;
@@ -1295,6 +1301,9 @@ ul.ab-form-list{
 	}
 	h3{
 		font-size: 1.2rem !important;
+	}
+	h4{
+		font-size: 1rem;
 	}
 	p{
 		font-size: 80%;

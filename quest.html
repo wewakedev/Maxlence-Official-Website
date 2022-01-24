@@ -16,9 +16,77 @@
     </head>
 
 
+    
+        <!--Navigation bar-->
+        <div id="nav-placeholder">
+            
+        </div>
+        
+        <script>
+        $(function(){
+          $("#nav-placeholder").load("nav1.html");
+        });
+        </script>
+    <!--end of Navigation bar-->
+
+<div class="container-fluid p-2"style="background-color: #E2F0FF;" >
+    <div class="container">
+        <div class="row justify-content-around align-items-center">
+            <div class="breadcrumbs text-center col-5 d-sm-flex d-none">
+                <small class="breadcrumbroot"><a href="index.html">Home</a> </small>
+                <small class="breadcrumbsec "><a href=""data-toggle="modal" data-target="#signupform">Sign Up</a> </small>
+                <small class="breadcrumbsec breadactive"><a href="">Questionnaire</a> </small>
+
+                <!-- <small class="breadcrumbsec "><a href="">Growth</a> </small>
+                <small class="breadcrumbsec "><a href="">Creation</a> </small> -->
+            </div>
+            <div class="icons col-sm-5 col-12 d-flex justify-content-sm-end justify-content-center align-items-center">
+                <div class="">
+                    <div class="input-group justify-content-around align-items-center">
+                        <input type="search" placeholder="Search Here" aria-describedby="button-addon1" class="form-control navsearch rounded-pill  fontrale border-0 bg-light "><br>
+                      <div class="input-form-append">
+                          <button type="submit" style="border: none; background: transparent !important;"><img class="searchnavicon" src="assests/searchmag.png" alt=""></button>
+                      </div>
+                    </div>
+                </div>
+                <!-- <div class="bellicon mx-2">
+                    <a href=""><img src="assests/bellnav.png" alt=""></a>
+                </div> -->
+                <div class="carticon mx-2">
+                    <a href=""><img src="assests/carticon.png" alt=""></a>
+                </div>
+                
+                <!-- <div class="messageicon mx-2">
+                    <a href=""><img src="assests/messgnav.png" alt=""></a>
+                </div>
+             -->
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .searchnavicon,.bellicon a img, .messageicon a img{
+        width: 1rem;
+        height: auto;
+    }
+    .carticon a img{
+        width: 1.25rem;
+    }
+    .breadcrumbsec a,.breadcrumbroot a{
+       color: rgba(33, 37, 41, 0.8) !important;
+    }
+    .breadcrumbsec::before{
+        content: ">";
+        margin: .4rem;
+    }
+    .breadactive a{
+        color: rgba(33, 37, 41, 0.5) !important;
+    }
+</style>
+
         <div class="paginationaction bg-gradient container-fluid">
             <div class=" step-content">           
-                    <div class="row m-2 step-content-foot justify-content-between">
+                    <div class="row p-2 step-content-foot justify-content-between">
                       <button type="button" class="questback active" name="prev">Back</button>
                       <button type="button" class="questnext active" name="next">Next</button>
                       <button type="button" class="active questfinal out" name="finish">Finish</button>
@@ -46,9 +114,9 @@
             <div class="step-content">
               <div id="step1" class="step-content-body">
 
-                <div class="question text-center text-white bg-position-top py-3 container-fluid">
+                <div class="question text-center text-white py-3 container-fluid">
                     <div class="question1">
-                        <h1>What kind of website should this be ?</h1>
+                        <h2>What kind of website should this be ?</h2>
                     </div>
                 </div>
 
@@ -85,7 +153,7 @@
               <div id="step2" class="step-content-body out">
                 <div class="question text-center text-white bg-position-top py-3 container-fluid">
                     <div class="question1">
-                        <h1>What Kind of Marketing you looking for ?</h1>
+                        <h2>What Kind of Marketing you looking for ?</h2>
                     </div>
                 </div>
 
@@ -122,7 +190,7 @@
               <div id="step3" class="step-content-body out">
                 <div class="question text-center text-white bg-position-top py-3 container-fluid">
                     <div class="question1">
-                        <h1>What kind of Marketing You Want ?</h1>
+                        <h2>What kind of Marketing You Want ?</h2>
                     </div>
                 </div>
 
@@ -160,7 +228,7 @@
               <div id="step4" class="step-content-body out">
                 <div class="question text-center text-white bg-position-top py-3 container-fluid">
                     <div class="question1">
-                        <h1>What Technology Would You Like To Use ?</h1>
+                        <h2>What Technology Would You Like To Use ?</h2>
                     </div>
                 </div>
 
@@ -203,7 +271,7 @@
               <div id="step5" class="step-content-body out">
                 <div class="question text-center text-white bg-position-top py-3 container-fluid">
                     <div class="question1">
-                       <h1>How Early You Want ?</h1>
+                       <h2>How Early You Want ?</h2>
                     </div>
                 </div>
 
@@ -242,7 +310,7 @@
               <div id="step6" class="step-content-body out">
                 <div class="question text-center text-white bg-position-top py-3 container-fluid">
                     <div class="question1">
-                        <h1>Let Us Know</h1>
+                        <h2>Let Us Know</h2>
                     </div>
                 </div>
 
@@ -272,8 +340,8 @@
 
               <div id="stepLast" class="step-content-body out">
                 <div class="pricecardtitle text-left text-light bg-position-top py-3 container-fluid">
-                    <div class=" row d-flex justify-content-center align-items-center">
-                        <div>
+                    <div class=" row d-flex justify-content-center align-items-center text-center">
+                        <div class="d-sm-block d-none">
                             <i class="fa fa-check-circle-o m-3" aria-hidden="true" style="font-size: 10rem; font-weight: 200;"></i>
                         </div> 
                         <div>
@@ -343,6 +411,8 @@
             </div>
           </div>
 
+
+          
           
  <!--Footer Section-->
 
