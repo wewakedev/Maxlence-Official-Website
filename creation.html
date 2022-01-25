@@ -33,38 +33,92 @@
             });
             </script>
         <!--end of Navigation bar-->
+        <div class="container-fluid p-2"style="background-color: #E2F0FF;" >
+            <div class="container">
+                <div class="row justify-content-around align-items-center">
+                    <div class="breadcrumbs text-center col-5 d-sm-flex d-none">
+                        <small class="breadcrumbroot"><a href="index.html">Home</a> </small>
+                        <small class="breadcrumbsec breadactive"><a href="">Creation</a></small>
+        
+                        <!-- <small class="breadcrumbsec "><a href="">Growth</a> </small>
+                        <small class="breadcrumbsec "><a href="">Creation</a> </small> -->
+                    </div>
+                    <div class="icons col-sm-5 col-12 d-flex justify-content-sm-end justify-content-center align-items-center">
+                        <div class="">
+                            <div class="input-group justify-content-around align-items-center">
+                                <input type="search" placeholder="Search Here" aria-describedby="button-addon1" class="form-control navsearch rounded-pill  fontrale border-0 bg-light "><br>
+                              <div class="input-form-append">
+                                  <button type="submit" style="border: none; background: transparent !important;"><img class="searchnavicon" src="assests/searchmag.png" alt=""></button>
+                              </div>
+                            </div>
+                        </div>
+                        <!-- <div class="bellicon mx-2">
+                            <a href=""><img src="assests/bellnav.png" alt=""></a>
+                        </div> -->
+                        <div class="carticon mx-2">
+                            <a href=""><img src="assests/carticon.png" alt=""></a>
+                        </div>
+                        
+                        <!-- <div class="messageicon mx-2">
+                            <a href=""><img src="assests/messgnav.png" alt=""></a>
+                        </div>
+                     -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            .searchnavicon,.bellicon a img, .messageicon a img{
+                width: 1rem;
+                height: auto;
+            }
+            .carticon a img{
+                width: 1.25rem;
+            }
+            .breadcrumbsec a,.breadcrumbroot a{
+               color: rgba(33, 37, 41, 0.8) !important;
+            }
+            .breadcrumbsec::before{
+                content: ">";
+                margin: .4rem;
+            }
+            .breadactive a{
+                color: rgba(33, 37, 41, 0.5) !important;
+            }
+        </style>
+        
 
         <!-- Hero Section -->
-        <div class="container my-4 homehero">
+        <div class="container my-4 my-sm-4 py-sm-5 py-0 my-0 homehero">
             <div class="row justify-content-around align-items-center">
                 
-                <div class="col-sm-5 rounded text-center order-md-2 order-sm-1 order-1 ">
+                <div class="col-sm-5 rounded text-center order-md-2 order-sm-1 order-1 wow animate__animated animate__fadeInUp animate__slow ">
                     <img class="w-100" src="assests/designteam.png" alt="">
                 </div>
 
-                <div class="col-sm-4 my-3">
-                    <h1 class="font-weight-bold my-sm-4"><span>Website</span>  Creation</h1>
-                        <p>The website performance and design are two sides of a coin</p>
-                    <a href="quest.html" class="getstartbtn fontpop">Create Now</a>
+                <div class="col-sm-5 my-2 text-center text-sm-left wow animate__animated animate__fadeInUp animate__slow ">
+                    <h2 class="font-weight-bold my-sm-4 wow animate__animated animate__fadeInUp animate__slow"><span><b>Website</b> </span>  Creation</h2>
+                        <p class="wow animate__animated animate__fadeInUp animate__slow">The website performance and design are two sides of a coin.</p>
+                    <a href="quest.html" class="getstartbtn fontpop ">Create Now</a>
                 </div>
 
             </div>
 
         </div>
         
-        <div class="container-fluid py-3 my-4 latestprojects" style="background-color: #FFD429F2;">
-            <div class="latestprojecttitle text-center">
-                <h1 class="font-weight-bold my-5">Our <span>Latest Projects</span></h1>
+        <div class="container-fluid py-3 mt-4 latestprojects " style="background-color: #FFD429F2;">
+            <div class="latestprojecttitle text-center wow animate__animated animate__fadeInDown">
+                <h2 class="font-weight-bold my-sm-5 my-2">Our <span><b>Latest Projects</b> </span></h2>
             </div>
-            <div class="row justify-content-around align-items-center">
-                <div class="col-sm-4 my-3 text-sm-right text-center">
-                    <h1 class="font-weight-bold my-4" style="color: #775800;" ><b>Crafting trust
-                        and integrity</b></h1>
+            <div class="row justify-content-around align-items-center ">
+                <div class="col-sm-4 mb-3 mt-0 text-sm-right text-center wow animate__animated animate__fadeInUp">
+                    <h3 class="font-weight-bold my-4" style="color: #775800;" ><b>Crafting trust
+                        and integrity</b></h3>
                         <p>Level Headed Carpentry Is A Sydney-Based Company Carrying Out Works Across Sydney And Surrounding Areas. 
                             We provide 100% client satisfaction on every project undertaken, 
                             catering to all aspects of carpentry, ranging from residential to commercial works.</p>
                     <a class="ctabtn viewjectbtn fontpop" href="#">
-                        <small>View Project</small>
+                        <small><b>View Project</b> </small>
                         <style>
                             .viewjectbtn{
                                 background: transparent;
@@ -78,7 +132,7 @@
                     </a>
                 </div>
 
-                <div class="col-sm-5 rounded text-center ">
+                <div class="col-sm-5 rounded text-center wow animate__animated animate__fadeInUp ">
                     <img class="w-100" src="assests/latestprojects.png" alt="">
                 </div>
 
@@ -87,60 +141,72 @@
             </div>
         </div>
 
-        <div class="container my-4 makedesign">
-            <div class="row justify-content-center align-items-center">
+        <div class="container-fluid makedesign mb-sm-4 py-sm-5 py-0 my-0" style="background: #F5F5F5;">
+            <div class="container">
 
-                <div class="col-sm-5 my-3 text-center">
-                    <h1 class="font-weight-bold my-4"><b>Bringing Designs To <span>Life</span></b></h1>
-                        <h4><b>Creation : <br> 
-                            
-                            if
-                            <span>(design==true){ <br>
-                                    develop() ;<br>
-                                    }</span> <br>
-                                    else
-                                    <span>
-                                        { <br>
-                                    fail ; <br>
-                                }
-                                    </span>
-                            </b>
-                                    
-                            
-                        </h4>
+                <div class="row justify-content-center align-items-center">
+
+                    <div class="col-sm-6  text-center wow animate__animated animate__fadeInUp animate__slow">
+                        <h2 class="font-weight-bold mt-4"><b>Bringing Designs To <span>Life</span></b></h2>
+                            <h3 class="mt-4"><b>Creation : <br> 
+                                
+                                if
+                                <span style="color: #1FCEA7;"><b>(design==true){ <br>
+                                        develop() ;<br>
+                                        }</span> <br>
+                                        else</b>
+                                        <span style="color: #1FCEA7;"> 
+                                             <b>{ <br>
+                                        fail ;  <br>
+                                    }
+                                        </b>
+                                           
+                                        </span>
+                                </b>
+                                        
+                                
+                            </h4>
+                    </div>
+    
+                    
+                    <div class="col-sm-5 rounded text-center  wow animate__animated animate__fadeInUp ">
+                        <img class="w-100 w-sm-200" src="assests/appdev.png" alt="">
+                    </div>
+    
+                    
                 </div>
-
-                
-                <div class="col-sm-5 rounded text-center ">
-                    <img class="w-100 w-sm-200" src="assests/appdev.png" alt="">
-                </div>
-
                 
             </div>
+            
 
         </div>
 
-        <div class="container py-3 my-4 domainsection">
+        <div class="container-fluid my-sm-4 py-sm-5 py-0 my-0
+         domainsection">
             
+       
             <div class="row justify-content-center align-items-start">
-                <div class="col-sm-5 my-3 text-sm-right text-center">
-                    <h1 class="font-weight-bold my-4 "><b><span>Domain Name</span> 
-                        For Your <span>Business</span> </b></h1>
+                <div class="col-sm-5 my-3 text-sm-right text-center wow animate__animated animate__fadeInUp animate__slow">
+                    <h2 class="font-weight-bold my-3 "><b><span>Domain Name</span> 
+                        For Your <span>Business</span> </b></h2>
                         <p>A domain name is your online address. More importantly, the right domain name helps visitors find you online, adds credibility to your brand and instantly makes your site look professional.
                            Get started—find the right domain name for your business and build a complete online presence with Maxlence.
                         </p>
                 </div>
 
-                <div class="col-sm-5 rounded text-center ">
+                <div class="col-sm-5 rounded text-center wow animate__animated animate__fadeInUp animate__slow ">
                     <img class="w-100 w-sm-200" src="assests/domainsec.png" alt="">
                 </div>
 
             </div>
+
+    
+            
         </div>
 
         <div class="container">
             <div class="row justify-content-around">
-                <div class="col-sm-3 my-3 text-center">
+                <div class="col-sm-3 my-3 text-center wow animate__animated animate__fadeInUp animate__faster animate__delay-1s">
                     <div class="domainserviceicon">
                         <img src="assests/tslcerti.png" alt="">
                     </div>
@@ -152,7 +218,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-3 my-3 text-center">
+                <div class="col-sm-3 my-3 text-center wow animate__animated animate__fadeInUp animate__faster animate__delay-2s">
                     <div class="domainserviceicon">
                         <img src="assests/sslcerti.png" alt="">
                     </div>
@@ -164,7 +230,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-3 my-3 text-center">
+                <div class="col-sm-3 my-3 text-center wow animate__animated animate__fadeInUp animate__faster animate__delay-3s">
                     <div class="domainserviceicon">
                         <img src="assests/certificateicon.png" alt="">
                     </div>
@@ -179,35 +245,35 @@
             </div>
         </div>
 
-        <div class="container my-4 freehost">
+        <div class="container  my-sm-4 py-sm-5 py-0 my-0 freehost ">
             <div class="row justify-content-around align-items-center">
                 
-                <div class="col-sm-5 rounded text-center ">
+                <div class="col-sm-5 rounded text-center wow animate__animated animate__fadeInUp animate__slow ">
                     <img class="w-100" src="assests/freehosting.png" >
                 </div>
 
-                <div class="col-sm-4 my-3 text-sm-left text-center">
-                    <h1 class="font-weight-bold my-4 ">World Class <span>Free Hosting</span></h1>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                <div class="col-sm-4 my-3 text-sm-left text-center wow animate__animated animate__fadeInUp animate__slow ">
+                    <h2 class="font-weight-bold my-4 "><b>World Class <span>Free Hosting</span></b> </h2>
+                        <p><b>Lorem ipsum dolor sit amet.</b> </p>
+                        <p><b>Lorem ipsum dolor sit amet.</b> </p>
+                        <p><b> Lorem ipsum dolor sit amet.</b></p>
                 </div>
 
             </div>
 
         </div>
 
-        <div class="container py-3 my-4 domainsection">
+        <div class="container  my-sm-4 py-sm-5 py-0 my-0 domainsection">
             
             <div class="row justify-content-around align-items-start">
-                <div class="col-sm-5 my-3 text-sm-right text-center">
-                    <h1 class="font-weight-bold my-4 "><b>Website <span>Maintainance & Support </span> </b></h1>
+                <div class="col-sm-5 my-3 text-sm-right text-center wow animate__animated animate__fadeInUp">
+                    <h2 class="font-weight-bold my-4 "><b>Website <span>Maintainance & Support </span> </b></h2>
                         <p>A domain name is your online address. More importantly, the right domain name helps visitors find you online, adds credibility to your brand and instantly makes your site look professional.
                            Get started—find the right domain name for your business and build a complete online presence with Maxlence.
                         </p>
                 </div>
 
-                <div class="col-sm-5 rounded text-center ">
+                <div class="col-sm-5 rounded text-center d-none d-sm-block wow animate__animated animate__fadeInUp">
                     <img class="w-100" src="assests/support.png" alt="">
                 </div>
 
@@ -218,7 +284,7 @@
 
         <div class="ourexpertise container my-4 py-3">
             <div class="row justify-content-center">
-                <div class="col-sm-5 m-2">
+                <div class="col-sm-5 m-2 wow animate__animated animate__fadeInUp">
 
                     <div class="expertise my-3 shop1 " onclick="location.href='shoppage.html'">
                         <div class="expimg">
@@ -247,7 +313,7 @@
 
 
 
-                <div class="col-sm-5 m-2">
+                <div class="col-sm-5 m-2 wow animate__animated animate__fadeInUp">
 
                     <div class="expertise my-3 shop1 " onclick="location.href='shoppage.html'">
                         <div class="expimg">
@@ -276,7 +342,7 @@
 
 
 
-                <div class="col-sm-5 m-2">
+                <div class="col-sm-5 m-2 wow animate__animated animate__fadeInUp">
 
                     <div class="expertise my-3 shop1 " onclick="location.href='shoppage.html'">
                         <div class="expimg">
@@ -305,7 +371,7 @@
 
 
 
-                <div class="col-sm-5 m-2">
+                <div class="col-sm-5 m-2 wow animate__animated animate__fadeInUp">
 
                     <div class="expertise my-3 shop1 " onclick="location.href='shoppage.html'">
                         <div class="expimg">
@@ -333,7 +399,7 @@
                 </div>
 
 
-                <div class="col-sm-5 m-2">
+                <div class="col-sm-5 m-2 wow animate__animated animate__fadeInUp">
 
                     <div class="expertise my-3 shop1 " onclick="location.href='shoppage.html'">
                         <div class="expimg">
@@ -369,18 +435,18 @@
 
         <div class="container discover">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-5 mb-4 wow animate__animated animate__fadeIn">
                     <img class="w-100" src="assests/discover.png" alt="">
                 </div>
             </div>
         </div>
         
-        <div class="container d4s">
+        <div class="container d4s mt-5 text-center text-sm-left">
             <div class="row justify-content-between">
 
-                <div class="col-sm-3">
-                    <span class="h2 fontrale "><b>Discover</b> </span>
-                    <ul class="my-3" style="list-style-type: none !important;">
+                <div class="col-sm-3 my-2 wow animate__animated animate__fadeInUp">
+                    <span class="h4 fontrale "><b>Discover</b> </span>
+                    <ul class="my-2" style="list-style-type: none !important;">
                         <li><a href="#/">Understanding Problems</a> </li>
                         <li><a href="#/">Customer Needs</a> </li>
                         <li><a href="#/">Unmet Opportunity</a></li>
@@ -390,9 +456,9 @@
                     </ul>
                 </div>
 
-                <div class="col-sm-3 ">
-                    <span class="h2 fontrale "><b>Define</b> </span>
-                    <ul class="my-3" style="list-style-type: none !important;">
+                <div class="col-sm-3 my-2 wow animate__animated animate__fadeInUp">
+                    <span class="h4 fontrale "><b>Define</b> </span>
+                    <ul class="my-2" style="list-style-type: none !important;">
                         <li><a href="#/">Defining Problem and Needs</a></li>
                         <li><a href="#/">Stakeholder’s Goals</a></li>
                         <li><a href="#/">Usability Goals</a></li>
@@ -401,9 +467,9 @@
                     </ul>
                 </div>
 
-                <div class="col-sm-3">
-                    <span class="h2 fontrale "><b>Design</b> </span>
-                    <ul class="my-3" style="list-style-type: none !important;">
+                <div class="col-sm-3 my-2 wow animate__animated animate__fadeInUp">
+                    <span class="h4 fontrale "><b>Design</b> </span>
+                    <ul class="my-2" style="list-style-type: none !important;">
                         <li><a href="#/">Product & Digital Innovation</a></li>
                         <li><a href="#/">UX UI Design</a></li>
                         <li><a href="#/">Validating Solutions</a></li>
@@ -412,9 +478,9 @@
                     </ul>
                 </div>
 
-                <div class="col-sm-3">
-                    <span class="h2 fontrale "><b>Development</b> </span>
-                    <ul class="my-3" style="list-style-type: none !important;">
+                <div class="col-sm-3 my-2 wow animate__animated animate__fadeInUp">
+                    <span class="h4 fontrale "><b>Development</b> </span>
+                    <ul class="my-2" style="list-style-type: none !important;">
                         <li><a href="#/">Front End Development</a> </li>
                         <li><a href="#/">Web Application</a></li>
                         <li><a href="#/">SAAS Implementation</a></li>
