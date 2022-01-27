@@ -276,6 +276,9 @@ ul.webextralinks li a:hover{
 	color: #0A76E5;
 	/* letter-spacing: 0.12rem; */
 }
+.signupbtn:hover{
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 .whitebgbtn{
 	padding: .6rem 2rem !important;
 }
@@ -623,13 +626,17 @@ font-size: 80%;
     font-family: 'slick';
     font-size: 35px;} */
 
-.slick-next {
+/* .slick-next {
     top: -20%;
     left: 7%;
-}
+} */
 .testi .slick-prev, .clientvid .slick-prev {
     left:0%;
     top: -20%;
+}
+.testi .slick-next, .clientvid .slick-next{
+	top: -20%;
+    left: 7%;
 }
 .clientvid{
 	padding: 0px;
@@ -1272,6 +1279,9 @@ ul.ab-form-list{
 	  padding: 1.5rem;
   }
 
+  .secoservices img{
+	  width: 5rem;
+  }
 
 
 
