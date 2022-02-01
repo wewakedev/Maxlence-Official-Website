@@ -24,9 +24,10 @@ font-weight: 500;
 color: rgba(33, 37, 41, 0.7);
 
 }
-h2 span{
+h1 span, h2 span{
 	font-weight: bold;
 }
+
 
 .font500{
 	font-weight: 500;
@@ -1056,6 +1057,7 @@ ul.ab-form-list{
   .expertise{
 	box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
 	border-radius: 8px;
+	background: #fff;
   }
   .d4s ul li a{
 	font-family: Raleway;
@@ -1296,28 +1298,31 @@ ul.ab-form-list{
 	  padding: 1.5rem;
   }
 
+  .seoservices h6{
+	  font-size: .8rem;
+  }
   .seofeatures img{
 	  width: 5rem;
   }
-
+/* 
   .grsocialmedia{
 	  background: url('../assests/maxlenceintobg.png');
 	  
-  }
+  } */
   .growthhero{
 	background: url('../assests/seotools.png');
   }
-  .grlead{
+  /* .grlead{
 	background-image: url(../assests/leads.png);
-  }
+  } */
 
   .bgproperty{
 	background-position: center;
 	background-repeat: no-repeat;
-	/* background-size: cover;
+	background-size: cover;
 	background-size:100%;
 	background-color: #F5F5F5;
-   width: 100%; */
+   width: 100%;
   }
 
 
