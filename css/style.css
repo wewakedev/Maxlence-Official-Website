@@ -1312,17 +1312,16 @@ ul.ab-form-list{
   .growthhero{
 	background: url('../assests/seotools.png');
   }
-  /* .grlead{
+  .grleads{
 	background-image: url(../assests/leads.png);
-  } */
+  }
 
   .bgproperty{
 	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-size:100%;
-	background-color: #F5F5F5;
-   width: 100%;
+	 background-repeat: no-repeat;
+	/*background-size: cover;
+	background-size:100% 100%;*/
+	background-color: #F5F5F5; 
   }
 
 
@@ -1334,6 +1333,13 @@ ul.ab-form-list{
 	.navactions ul li{
 		display: none;
 	}
+	
+}
+
+@media screen and (max-width: 768px){
+	.grleads{
+		background-image:none;
+	  }
 }
 @media (max-width: 550px) {
 	/* .pricecardtitle,.question{
