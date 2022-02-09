@@ -68,7 +68,7 @@ $('.carousel').slick({
   });
 
 
-  $('.designcarousel').slick({
+  $('.designlogocarousel').slick({
     dots:true,
     arrows:true,
     infinite: true,
@@ -101,6 +101,112 @@ $('.carousel').slick({
   });
 
 
+  $('.designtabcarousel').slick({
+    dots:true,
+    arrows:false,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 3000,
+  
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: false,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: false,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      }
+    ]
+  });
+
+
+  // $('.designsocialcarousel').slick({
+  //   dots:true,
+  //   arrows:true,
+  //   infinite: false,
+  //   speed: 300,
+  //   slidesToShow: 5,
+  //   slidesToScroll: 1,
+  //   autoplay: false,
+  //   autoplaySpeed: 3000,
+  
+  //   responsive: [
+  //     {
+  //       breakpoint: 768,
+  //       settings: {
+  //         arrows: false,
+  //         centerMode: false,
+  //         centerPadding: '40px',
+  //         slidesToShow: 3
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 480,
+  //       settings: {
+  //         arrows: false,
+  //         centerMode: false,
+  //         centerPadding: '40px',
+  //         slidesToShow: 3
+  //       }
+  //     }
+  //   ]
+  // });
+
+
+  $(document).ready(function(){
+    $('.designcommonslider').slick({
+      dots:true,
+        arrows:true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 3000,
+      
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: true,
+              centerMode: false,
+              centerPadding: '40px',
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: true,
+              centerMode: false,
+              centerPadding: '40px',
+              slidesToShow: 1
+            }
+          }
+        ]
+    });
+  });
+  
+  $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+    $('.designcommonslider').slick('setPosition');
+  })
+  
+  
+  
   let el = $('.switch');
 let cur = el.find('.current');
 let options = el.find('.options li');

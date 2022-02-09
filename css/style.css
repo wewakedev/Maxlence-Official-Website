@@ -583,8 +583,7 @@ border-radius: 1rem;
 	background-color: #CFFFF4;
 } */
 .designtabitems img{
-	width: 2.5rem;
-	margin: 1rem;
+	width:4rem;
 }
 .designtabitems::selection img{
 	border: 1px solid black;
@@ -593,6 +592,10 @@ border-radius: 1rem;
 	color: #fff;
 }
 
+.logosubcard ul li {
+	font-size: .85rem;
+	margin: .5rem 0rem;
+}
 
 .shopfeat{
         overflow: hidden;
@@ -660,10 +663,9 @@ font-size: 80%;
     font-family: 'slick';
     font-size: 35px;} */
 
-/* .slick-next {
-    top: -20%;
-    left: 7%;
-} */
+.designcommonslider .slick-next {
+    right: -11px;
+}
 .testi .slick-prev, .clientvid .slick-prev {
     left:0%;
     top: -20%;
@@ -1365,7 +1367,7 @@ border-radius: 4px;
 .filterdropdown.dropdown-menu{
 	padding: .5rem;
 	background: #002D23;
-	width: 20vw;
+	width: 30vw;
 }
 .filterdropdown.dropdown-menu ul{
 	padding-inline-start: 0rem !important;
@@ -1707,5 +1709,36 @@ margin-bottom: 2rem;
 	.filterdropdown.dropdown-menu{
 	width: 80vw;
   }
+}
 
-  /* ANIMATIONS */
+  /* Design */
+
+
+                                .dropdown-toggle::after{
+                                    display: none;
+                                }
+                                .filter input[type=checkbox] {
+                                    display:none;
+                                    margin:10px;
+                                }
+                                 
+                                /*
+                                  Change the look'n'feel of labels (which are adjacent to radiobuttons).
+                                  Add some margin, padding to label
+                                */
+                                .filter input[type=checkbox] + label {
+                                  font-size: .8rem;
+                                  padding: .4rem .8rem;
+                                  background: #DADADA;
+                                  border-radius: 35px;
+                                  font-weight: 900;
+                                }
+                                /*
+                                 Change background color for label next to checked radio button
+                                 to make it look like highlighted button
+                                */
+                                .filter input[type=checkbox]:checked + label {
+                                   background-image: none;
+                                    background-color:#0A76E5;
+                                    color: #fff;
+                                }
