@@ -1,0 +1,91 @@
+<div class="container-fluid py-3"  style="background: #E7F3FF;">
+    <div class="row py-3">
+        <div class="col-md-8 col-md-offset-2 m-auto">
+            <div class="contact-form" id="contactusform">
+                <div class=" text-center my-4">
+                    <h1 class="queryhead"><span>Get In Touch</span></h1>
+                </div>
+                
+                <form action="contactconfirmation.php" method="post" class="my-5">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <!-- <label for="inputName">Name</label> -->
+                                <input type="text" class="form-control" id="inputName" placeholder="Name" required="">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <!-- <label for="inputPhone">Phone</label> -->
+                                <input type="phone" class="form-control" id="inputPhone" placeholder="Phone" pattern="^\d{10}$" required="">
+                            </div>
+                        </div>
+                    </div>            
+                    <div class="form-group">
+                        <!-- <label for="inputEmail">Email</label> -->
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Email" required="">
+                    </div>
+                    <!-- <div class="form-group">
+                        <label for="inputMessage">Message</label>
+                        <textarea class="form-control" id="inputMessage" rows="5" placeholder="Message" required=""></textarea>
+                    </div> -->
+                    <div id="uploadArea" class="upload-area">
+                        <!-- Header -->
+                        <div class="upload-area__header p-3 mb-3">
+                          <small>Kindly share detailed information regarding standards of this Logo. Attach files in pDF/PNG/JPEG/ZIP format.</small>
+                          <p class="upload-area__paragraph">
+                            
+                            <strong class="upload-area__tooltip">
+                              <span class="upload-area__tooltip-data"></span> <!-- Data Will be Comes From Js -->
+                            </strong>
+                          </p>
+                        </div>
+                        <!-- End Header -->
+                      
+                        <!-- Drop Zoon -->
+                        <div id="dropZoon" class="upload-area__drop-zoon drop-zoon">
+                          <span class="drop-zoon__icon">
+                            <i class='bx bxs-file-image'></i>
+                          </span>
+                          <small class="drop-zoon__paragraph">Drop your file here or Click to browse</small>
+                          <small id="loadingText " class="drop-zoon__loading-text">Please Wait</small>
+                          <img src="" alt="Preview Image" id="previewImage" class="drop-zoon__preview-image" draggable="false">
+                          <input type="file" id="fileInput" class="drop-zoon__file-input" accept="image/*">
+                        </div>
+                        <!-- End Drop Zoon -->
+                      
+                        <!-- File Details -->
+                        <div id="fileDetails p-3" class="upload-area__file-details file-details">
+                          <p class="file-details__title">Uploaded File</p>
+                      
+                          <div id="uploadedFile" class="uploaded-file">
+                            <div class="uploaded-file__icon-container">
+                              <i class='bx bxs-file-blank uploaded-file__icon'></i>
+                              <span class="uploaded-file__icon-text"></span> <!-- Data Will be Comes From Js -->
+                            </div>
+                      
+                            <div id="uploadedFileInfo" class="uploaded-file__info">
+                              <span class="uploaded-file__name">Proejct 1</span>
+                              <span class="uploaded-file__counter">0%</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="p-3">
+                            <small>
+                              <input type="checkbox" id="checkbox" name="checkbox" checked>&nbsp; &nbsp; <b>Yes, I would like to receive communications by call / email about Company's services.</b> 
+                            </small>
+                        </div>
+                        <!-- End File Details -->
+                      </div>
+                      
+                      <!-- End Upload Area -->
+                    <div class="text-center">
+                        <button type="submit" onclick="checkValidations()" class="whitebgbtn fontrale wow animate__animated animate__delay-1s animate__slow animate__bounceIn " href="#">
+                            Get In Touch
+                        </button>
+                    </div>            
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
