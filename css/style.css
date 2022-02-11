@@ -584,8 +584,8 @@ button#modal_view_right {
 background: url('../assests/designtabbg.jpg');
 border-radius: 1rem;
 }
-/* .designtabitems::selection{
-	background-color: #CFFFF4;
+/* .designtabitems:selected{
+	background: red;
 } */
 .designtabitems img{
 	width:4rem;
@@ -669,7 +669,10 @@ font-size: 80%;
     font-size: 35px;} */
 
 .designcommonslider .slick-next {
-    right: -11px;
+    right: 22px;
+}
+.designcommonslider .slick-prev {
+    left: 4px;
 }
 .testi .slick-prev, .clientvid .slick-prev {
     left:0%;
@@ -684,6 +687,9 @@ font-size: 80%;
 }
 .testi .slick-prev,.testi .slick-next{
 	top: -35%;
+}
+.slick-next , .slick-prev{
+	z-index: 10;
 }
 
 /* Clientmovie */
@@ -1354,6 +1360,10 @@ ul.ab-form-list{
 	margin: 1rem .5rem;
 	padding: .3rem;
 	font-weight: 900;
+}
+
+.designcommonslider img{
+	width: 100%;
 }
 
 
