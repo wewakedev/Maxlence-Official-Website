@@ -251,7 +251,7 @@ ul.webextralinks li{
 	list-style-type: none;
 	text-align: left;
 	font-weight: 600;
-	font-size: 1rem;
+	font-size: 1.8rem;
 	font-family: 'Poppins';
 }
 ul.webextralinks{
@@ -267,7 +267,7 @@ ul.webextralinks li a:hover{
 	color: #0A76E5 !important;
 }
 ul.shortlink li a{
-	font-size: .9rem;
+	font-size: 1.2rem;
 	font-weight: 500;
 }
 
@@ -575,6 +575,7 @@ button#modal_view_right {
 	font-weight: bolder;
 }
 
+
 .designtabitems{
 	padding: 1rem;
 	border-radius: 50%;
@@ -656,10 +657,11 @@ font-size: 80%;
 	font-size: 1rem;
 	margin: .5rem 0rem;
 }
-  .slick-prev:before, .slick-next:before,.slick-prev:before, .slick-next:before  {
+  .slick-prev:before, .slick-next:before {
     color: #0A76E5 !important;
 	font-size: 35px;
 }
+
 /* .designcarousel .slick-prev{
 	left: -1.5%;
 	z-index: 1;
@@ -669,10 +671,10 @@ font-size: 80%;
     font-size: 35px;} */
 
 .designcommonslider .slick-next {
-    right: 22px;
+    right: 2px;
 }
 .designcommonslider .slick-prev {
-    left: 4px;
+    left: -14px;
 }
 .testi .slick-prev, .clientvid .slick-prev {
     left:0%;
@@ -698,6 +700,15 @@ font-size: 80%;
     width: 100%;
 
 }
+
+
+
+
+
+
+
+
+
 /* FAQs */
 .quesfaq small{
 	color: #000 !important;
@@ -1683,6 +1694,9 @@ margin-bottom: 2rem;
 @media screen and (max-width: 768px){
 	.grleads{
 		background-image:none;
+	  }
+	  ul.webextralinks li{
+		  font-size: 1.2rem;
 	  }
 }
 @media (max-width: 550px) {
