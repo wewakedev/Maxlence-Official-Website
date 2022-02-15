@@ -174,9 +174,19 @@ $('.carousel').slick({
   
   $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
     $('.designcommonslider').slick('setPosition');
-  })
+  });
   
   
+  function myFunction(id) {
+    var checkBox = document.getElementById(id);
+    var text = document.getElementById(id+"_content");
+    if (checkBox.checked == true) {
+      text.style.display = "block";
+    } else {
+      text.style.display = "none";
+    }
+  }
+
   
   let el = $('.switch');
 let cur = el.find('.current');
