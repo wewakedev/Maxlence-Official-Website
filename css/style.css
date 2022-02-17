@@ -246,8 +246,8 @@ div#information_modal {
 /* Right ModalContent */
 
 ul.webextralinks li{
-	padding: .3rem;
-	margin: .3rem;
+	/* padding: .3rem;
+	margin: .3rem; */
 	list-style-type: none;
 	text-align: left;
 	font-weight: 600;
@@ -589,7 +589,7 @@ border-radius: 1rem;
 	background: red;
 } */
 .designtabitems img{
-	width:4rem;
+	width:6rem;
 }
 .designtabitems::selection img{
 	border: 1px solid black;
