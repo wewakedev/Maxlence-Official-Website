@@ -1358,7 +1358,9 @@ ul.ab-form-list{
   .grleads{
 	background-image: url(../assests/leads.png);
   }
-
+.shophero{
+	background: url('../assests/shopherobg.jpg')
+}
   .bgproperty{
 	background-position: center;
 	 background-repeat: no-repeat;
