@@ -630,6 +630,7 @@ font-size: 80%;
     color: #0A76E5;
 }
 
+
 .slick-dots li{
 	margin: 0px;
 }
@@ -1421,7 +1422,9 @@ ul.ab-form-list{
 .designcommonslider img{
 	width: 100%;
 }
-
+.campworktitle{
+	color: #0A76E5;
+}
 
 /* CONTACT FORM */
 
@@ -1819,3 +1822,16 @@ margin-bottom: 2rem;
                                     background-color:#0A76E5;
                                     color: #fff;
                                 }
+
+
+
+								/* SHOP */
+
+								.viewjectbtn{
+									background: transparent;
+									font-weight: 900;
+									letter-spacing: 0.12rem;
+								}
+								.viewjectbtn:hover{
+									background: #0A76E5;
+								}
