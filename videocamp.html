@@ -183,9 +183,9 @@
 
     <!-- Questions -->
 
-    <div class="container-fluid questioform" style="background: #E7F3FF;">
+    <div class="container-fluid py-4 questionform" style="background: #E7F3FF;">
     <form action="/action_page.php">
-        <div class="container py-5">
+        <div class="container py-4">
             <div class="row justify-content-around">
                 <div class="col-2">
                     <div class="numbullets">
@@ -196,28 +196,28 @@
                     <div class="questtitle">
                         <h3>INDUSTRY</h3>
                     </div>
-                    <div class="row my-4 justify-content-around align-items-center">
-                        <div class="col-6 my-2">
+                    <div class="row my-4 flex-sm-row flex-column justify-content-around align-items-center ">
+                        <div class="col-sm-6 col-12 my-2">
                             <input type="checkbox" name="foodindus" id="">
                             <label for="foodindus">Food</label>
                         </div>
-                        <div class="col-6 my-2">
+                        <div class="col-sm-6 col-12  my-2">
                             <input type="checkbox" name="entindus" id="">
                             <label for="entindus">Entertainment</label>
                         </div>
-                        <div class="col-6 my-2">
+                        <div class="col-sm-6 col-12  my-2">
                             <input type="checkbox" name="realsindus" id="">
                             <label for="realsindus">Real Estate</label>
                         </div>
-                        <div class="col-6 my-2">
+                        <div class="col-sm-6 col-12  my-2">
                             <input type="checkbox" name="eventindus" id="">
                             <label for="eventindus">Events</label>
                         </div>
-                        <div class="col-6 my-2">
+                        <div class="col-sm-6 col-12  my-2">
                             <input type="checkbox" name="fitindus" id="">
                             <label for="fitindus">Fitness & Health</label>
                         </div>
-                        <div class="col-6 my-2">
+                        <div class="col-sm-6 col-12  my-2">
                             <input type="checkbox" name="elecindus" id="">
                             <label for="elecindus">Electronics</label>
                         </div>
@@ -239,22 +239,46 @@
                         <h3>LOCATION</h3>
                     </div>
                     <div class="row my-4 justify-content-around align-items-center">
-                        <div class="col-6 my-2">
+                        <div class="col-sm-6 col-12 my-2">
 
-                           
-                                <label for="cars">Choose a car:</label>
-                                <select id="cars" name="cars">
-                                  <option value="volvo">Volvo</option>
-                                  <option value="saab">Saab</option>
-                                  <option value="fiat">Fiat</option>
-                                  <option value="audi">Audi</option>
-                                </select>
-                                <input type="submit">
+                            <div class="form-group">
+                                <div class="t-dropdown-block">
+                                    <div class="t-dropdown-select">
+                                      <input type="text"  class="t-dropdown-input" placeholder="City" />
+                                      <span class="t-select-btn">
+                                    </span>
+                                    </div>
+                                    <ul class="t-dropdown-list">
+                                      <li class="t-dropdown-item">Delhi/NCR</li>
+                                      <li class="t-dropdown-item">Gurugram</li>
+                                      <li class="t-dropdown-item">Faridabad</li>
+                                      <li class="t-dropdown-item">Hyderabad</li>
+                                   
+                                    </ul>
+                                  </div>
+      
+                            </div>
+                            
                              
                         </div>
-                        <div class="col-6 my-2">
-                            <input type="checkbox" name="entindus" id="">
-                            <label for="entindus">Entertainment</label>
+                        <div class="col-sm-6 col-12 my-2">
+                            <div class="form-group">
+                                <div class="t-dropdown-block">
+                                    <div class="t-dropdown-select">
+                                      <input type="text"  class="t-dropdown-input" placeholder="Area" />
+                                      <span class="t-select-btn">
+                                    </span>
+                                    </div>
+                                    <ul class="t-dropdown-list">
+                                      <li class="t-dropdown-item">Delhi/NCR</li>
+                                      <li class="t-dropdown-item">Gurugram</li>
+                                      <li class="t-dropdown-item">Faridabad</li>
+                                      <li class="t-dropdown-item">Hyderabad</li>
+                                   
+                                    </ul>
+                                  </div>
+      
+                            </div>
                         </div>
 
                     </div>
@@ -263,8 +287,170 @@
             </div>
 
 
+            <div class="row justify-content-around">
+                <div class="col-2">
+                    <div class="numbullets">
+                        <small>3</small>
+                    </div>                   
+                </div>
+                <div class="col-9 px-0">
+                    <div class="questtitle">
+                        <h3>Target Audience</h3>
+                    </div>
+                    <div class="row my-4 justify-content-around align-items-center">
+                        <div class="col-sm-6 col-12 my-2">
+
+                            <div class="form-group">
+                                <div class="t-dropdown-block">
+                                    <div class="t-dropdown-select">
+                                      <input type="text"  class="t-dropdown-input" placeholder="Age" />
+                                      <span class="t-select-btn">
+                                    </span>
+                                    </div>
+                                    <ul class="t-dropdown-list">
+                                      <li class="t-dropdown-item">18-24</li>
+                                      <li class="t-dropdown-item">25-35</li>
+                                      <li class="t-dropdown-item">35 + </li> 
+                                    </ul>
+                                  </div>
+      
+                            </div>
+                            
+                             
+                        </div>
+                        <div class="col-sm-6 col-12 my-2">
+                            <div class="form-group">
+                                <div class="t-dropdown-block">
+                                    <div class="t-dropdown-select">
+                                      <input type="text"  class="t-dropdown-input" placeholder="Occupation" />
+                                      <span class="t-select-btn">
+                                    </span>
+                                    </div>
+                                    <ul class="t-dropdown-list">
+                                      <li class="t-dropdown-item">Designer</li>
+                                      <li class="t-dropdown-item">Designer</li>
+                                      <li class="t-dropdown-item">Designer</li>
+                                      <li class="t-dropdown-item">Designer</li>
+                                   
+                                    </ul>
+                                  </div>
+      
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-12 my-2">
+                            <div class="form-group">
+                                <div class="t-dropdown-block">
+                                    <div class="t-dropdown-select">
+                                      <input type="text"  class="t-dropdown-input" placeholder="Income" />
+                                      <span class="t-select-btn">
+                                    </span>
+                                    </div>
+                                    <ul class="t-dropdown-list">
+                                      <li class="t-dropdown-item">1Lakh</li>
+                                      <li class="t-dropdown-item">2Lakh</li>
+                                      <li class="t-dropdown-item">3Lakh</li>
+                                      <li class="t-dropdown-item">4Lakh</li>
+                                   
+                                    </ul>
+                                  </div>
+      
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-12 my-2">
+                            <div class="form-group">
+                                <div class="t-dropdown-block">
+                                    <div class="t-dropdown-select">
+                                      <input type="text"  class="t-dropdown-input" placeholder="Others" />
+                                      <span class="t-select-btn">
+                                    </span>
+                                    </div>
+                                    <ul class="t-dropdown-list">
+                                      <li class="t-dropdown-item">Delhi/NCR</li>
+                                      <li class="t-dropdown-item">Gurugram</li>
+                                      <li class="t-dropdown-item">Faridabad</li>
+                                      <li class="t-dropdown-item">Hyderabad</li>
+                                   
+                                    </ul>
+                                  </div>
+      
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+            </div>
+
+
+            <div class="row justify-content-around">
+                <div class="col-2">
+                    <div class="numbullets">
+                        <small>4</small>
+                    </div>                   
+                </div>
+                <div class="col-9 px-0">
+                    <div class="questtitle">
+                        <h3>PROJECT DETAILS</h3>
+                    </div>
+                    <div class="row my-4 justify-content-around align-items-center">
+                        <div class="col-sm-12 col-12 my-2">
+
+                            <div class="form-group">
+                                <div class="t-dropdown-block">
+                                    <div class="t-dropdown-select">
+                                      <input type="text"  class="t-dropdown-input" placeholder="Project Name (This name will be referenced in your invoice.)" />
+                                    </div>
+                                  </div>
+      
+                            </div>
+                            
+                             
+                        </div>
+
+                    </div>
+
+
+                    <div class="questtitle">
+                        <h3>PROJECT BRIEF</h3>
+                    </div>
+                    <div class="row my-4 justify-content-around align-items-center">
+                        <div class="col-sm-12 col-12 my-2">
+
+                            <div class="form-group">
+                                <input type="text" style="height: 10rem;" class="t-dropdown-input" placeholder="Kindly share detailed information regarding standards of this Logo attach files in pDF/PNG/JPEG/ZIP format." />
+      
+                                <input type="checkbox" class="my-4" name="nosubmit" id="">
+                                <label for="nosubmit">I don’t want to submit any file.</label>
+                            </div>
+                            
+                             
+                        </div>
+
+                    </div>
+
+
+                    
+                </div>
+
+            </div>
+
+
+
         </div>
     </form>
+    <div class="row justify-content-center">
+        <div class="col-12 ">
+            <div class="getstarteds text-center wow animate__animated animate__fadeInUp">
+                <a class="whitebgbtn fontrale " href="#">
+                   Submit
+                </a>
+            </div> 
+        </div>
+    </div>
+
+    
     </div>
 
     <!-- Recent Purchase -->
