@@ -681,6 +681,14 @@ font-size: 80%;
 .designcommonslider .slick-prev {
     left: -14px;
 }
+.packslider .slick-prev {
+    left: -.5%;
+    top: 40%;
+}
+.packslider .slick-next {
+    right: .5%;
+    top: 40%;
+}
 .testi .slick-prev, .clientvid .slick-prev {
     left:0%;
     top: -20%;
@@ -1770,6 +1778,17 @@ margin-bottom: 2rem;
 	p{
 		font-size: 80%;
 	}
+	@media (max-width: 575.98px) {
+		.border-xs-left-none {
+		  border-left: none !important; }
+		.border-xs-right-none {
+		  border-right: none !important; }
+		.border-xs-top-none {
+		  border-top: none !important; }
+		.border-xs-bottom-none {
+		  border-bottom: none !important; } 
+
+		}
 	.options {
 		left: 0;
 		position: absolute;
@@ -1789,6 +1808,7 @@ margin-bottom: 2rem;
   .modal.right_modal .modal-content {
 	  background:#00C99C;
   }
+  
 }
 .numbullets small {
     text-align: center;
