@@ -93,7 +93,7 @@
                 <img class="w-100" src="assests/youtubecamp.jpg" alt="">
             </div>
             <div class="col-sm-6 my-3">
-                <h2>Lorem, ipsum dolor.</h2>
+                <h2>Video Campaign</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quam modi repudiandae neque, quo rem? Suscipit beatae eius dolore quae commodi dicta nam dolorem nulla aliquam. Nam soluta, ullam quasi obcaecati facilis tempore accusantium repellat?</p>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit in consequatur possimus ratione necessitatibus consequuntur, voluptas nisi vitae sequi ipsum!</p>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima reiciendis quas obcaecati pariatur neque consequuntur qui non omnis molestias? Vero soluta architecto obcaecati nisi! Quibusdam error in maiores dolor, explicabo illum illo ad aliquam. Ducimus mollitia dolores corrupti expedita nesciunt nostrum totam doloribus eius ipsum, tempora, recusandae suscipit quis. Sed.</p>
@@ -419,10 +419,28 @@
                         <div class="col-sm-12 col-12 my-2">
 
                             <div class="form-group">
-                                <input type="text" style="height: 10rem;" class="t-dropdown-input" placeholder="Kindly share detailed information regarding standards of this Logo attach files in pDF/PNG/JPEG/ZIP format." />
+                                <textarea name="comment" id="text-area" style="padding: 2rem;" class="t-dropdown-input" placeholder="Kindly share detailed information regarding standards of this Logo attach files in pDF/PNG/JPEG/ZIP format." rows="10" cols="100" form="usrform"></textarea>
       
-                                <input type="checkbox" class="my-4" name="nosubmit" id="">
-                                <label for="nosubmit">I don’t want to submit any file.</label>
+                                <div class="my-3">
+                                    <input type="checkbox" id="cbox">
+                     	            <label for="cbox">I don’t want to submit any file.</label>
+                                </div>
+                                
+                                <script>
+                                    var textArea = document.querySelector('#text-area');
+                                    var checkbox = document.querySelector('#cbox');
+                                    
+                                    function toggleTextArea() {
+                                      var disabled = textArea.getAttribute('disabled');
+                                      if (disabled) {
+                                        textArea.removeAttribute('disabled');
+                                      } else {
+                                        textArea.setAttribute('disabled', 'disabled');
+                                      }
+                                    }
+                                    
+                                    checkbox.addEventListener('click', toggleTextArea);
+                                </script>
                             </div>
                             
                              
@@ -653,7 +671,7 @@
             <div class="row justify-content-around align-items-center">
             
                 <div class="col-sm-5 rounded text-center order-md-2 order-sm-1 order-1 wow animate__animated animate__fadeInUp animate__slow ">
-                    <div class="p-3 bg-white">
+                    <div class="p-3 my-3 bg-white">
                         <p>Banners <b>Starts at $50</b></p>
                         <p>Landing Pages <b>Starts at $50</b> </p>
                     </div>
@@ -662,7 +680,7 @@
                 <div class="col-sm-5 my-2 text-center text-sm-left wow animate__animated animate__fadeInUp animate__slow ">
                     <h1 class="font-weight-bold my-sm-4 wow animate__animated animate__fadeInUp animate__slow">Marketing <span>Catalysts</span> </h1>
                         <p class="my-sm-4  wow animate__animated animate__fadeInUp animate__slow">To add further value to our digital marketing clients, our email marketing agency also offers production services for landing pages and banners. An email campaign is incomplete without these digital assets. Our expert team can build high-converting banners as well as landing pages according to your preferences and in line with the trends.</p>
-                        <a class="ctabtn viewjectbtn fontpop" href="#">
+                        <a class="ctabtn viewjectbtn fontpop my-2" href="#">
                             <small><b>Learn More</b> </small>
                         </a>
                 </div>
