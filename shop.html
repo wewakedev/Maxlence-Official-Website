@@ -94,7 +94,7 @@
         
 
         <!-- Hero Section -->
-        <div class="container-fluid  py-3 bgproperty shophero">
+        <div class="container-fluid m-0 py-3 bgproperty shophero">
             <div class="container my-sm-4 py-0 my-0">
                 <div class="row my-4 justify-content-center align-items-center text-sm-left text-center">
                     <div class="col-sm-6 col-12 my-3  wow animate__animated animate__fadeInUp">
@@ -102,7 +102,7 @@
                             <p class="text-white">A place to help a brand to grow up in global environment</p>
                         <a href="/#" class="getstartbtn fontpop">Shop Now</a>
                     </div>
-                    <div class="col-sm-6 wow animate__animated animate__fadeInUp">
+                    <div class="col-sm-6 pr-0 wow animate__animated animate__fadeInUp">
                         <img class="w-100" src="assests/shopherotag.png" alt="">
                     </div>                  
      
@@ -111,7 +111,7 @@
         </div>
 
         <style>
-            .shoptoptitle p a{
+            .shoptoptitle small a{
              
                     color: #fff !important;
 
@@ -123,7 +123,7 @@
                     <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
                         <img class="w-100" src="assests/shoppageseotop.jpg" alt="">
                         <div class="shoptoptitle" style="position: absolute; bottom:0%; left: 50%; transform: translate(-50% ,-50%);">
-                            <p><a href="/#" class=" font-weight-900">Seo</a></p>
+                            <small><a href="/#" class=" font-weight-900">Seo</a></small>
                         </div>
                     </div>
                   </div>
@@ -133,7 +133,7 @@
                       <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
                           <img class="w-100" src="assests/shoppageadtop.jpg" alt="">
                           <div class="shoptoptitle" style="position: absolute; bottom:0%; left: 50%; transform: translate(-50% ,-50%);">
-                            <p><a href="/#" class="text-white font-weight-900">Display Campaign</a></p>
+                            <small><a href="/#" class="text-white font-weight-900">Display Campaign</a></small>
                         </div>
                       </div>
                   </div>
@@ -143,7 +143,7 @@
                     <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
                         <img class="w-100" src="assests/shoppagemarkettop.jpg" alt="">
                         <div class="shoptoptitle" style="position: absolute; bottom:0%; left: 50%; transform: translate(-50% ,-50%);">
-                            <p><a href="/#" class="text-white font-weight-900">Social Marketing</a></p>
+                            <small><a href="/#" class="text-white font-weight-900">Social Marketing</a></small>
                         </div>
                     </div>
                   </div> 
@@ -161,173 +161,263 @@
             </div>
           </div>  
 
-          <div class="container ">
-
-            <ul class="row d-sm-flex py-sm-3 shopcategories  justify-content-around text-center align-items-center wow animate__animated animate__fadeIn nav nav-tabs my-sm-5 my-0 " role="tablist">
-              <li class="filter__headitem active my-1" role="presentation"><a href="#allproducts" class="active" role="tab" data-toggle="tab">ALL</a></li>
-              <li class=" filter__headitem my-1" role="presentation"><a href="#seoproducts" role="tab" data-toggle="tab">SEO</a></li>
-              <li class=" filter__headitem my-1" role="presentation"><a href="#googleadsproducts" role="tab" data-toggle="tab">GOOGLE ADS</a></li>
-              <li class=" filter__headitem  my-1" role="presentation"><a href="#socialmediaproducts" role="tab" data-toggle="tab">SOCIAL MEDIA MARKETING</a></li>
-              <li class=" filter__headitem  my-1" role="presentation"><a href="#emailproducts" role="tab" data-toggle="tab">EMAIL MARKETING</a></li>
-              <li class=" filter__headitem  my-1" role="presentation"><a href="#gnbproducts" role="tab" data-toggle="tab">GOOGLE MY BUSINESS (GNB)</a></li>
-              <li class="  filter__headitem my-1" role="presentation"><a href="#webmaintenance" role="tab" data-toggle="tab">WEB MAINTENANCE</a></li>
-              <li class=" filter__headitem  my-1" role="presentation"><a href="#valuepackproducts" role="tab" data-toggle="tab">VALUE PACKS</a></li>
-            </ul>
-
-            <!-- <div class="form-group">
-                <div class="t-dropdown-block">
-                    <div class="t-dropdown-select">
-                      <input type="text"  class="t-dropdown-input" placeholder="All" />
-                      <span class="t-select-btn">
-                    </span>
-                    </div>
-                    <ul class="t-dropdown-list">
-                      <li class="t-dropdown-item"><a href="#allproducts" class="active" role="tab" data-toggle="tab">ALL</a></li>
-                      <li class="t-dropdown-item"><a href="#seoproducts" role="tab" data-toggle="tab">SEO</a></li>
-                      <li class="t-dropdown-item"><a href="#googleadsproducts" role="tab" data-toggle="tab">GOOGLE ADS</a></li>
-                      <li class="t-dropdown-item"><a href="#socialmediaproducts" role="tab" data-toggle="tab">SOCIAL MEDIA MARKETING</a></li>
-                   
-                    </ul>
-                  </div>
-
-            </div> -->
-
-            <div class="tab-content shopproductcontent my-5">
-
+          <div class="container">
+            <ul class="nav  nav-tabs responsive-tabs py-sm-3  wow animate__animated animate__fadeIn my-sm-5 my-0" id="myTab"  role="tablist">
+                <li class="nav-item filter__headitem active">
+                  <a class="nav-link active" id="allpacks" data-toggle="tab" href="#allpackages" role="tab" aria-controls="allpackages" aria-selected="true">ALL</a>
+                </li>
+                <li class="nav-item filter__headitem">
+                  <a class="nav-link" id="seopacks" data-toggle="tab" href="#seopackages" role="tab" aria-controls="seopackages" aria-selected="false">SEO</a>
+                </li>
                 
-                <!------------------------------------- Logo Design Content ----------------------------------->
+                <li class="nav-item filter__headitem">
+                  <a class="nav-link" id="googleadpacks" data-toggle="tab" href="#googleadpackages" role="tab" aria-controls="googleadpackages" aria-selected="false">GOOGLE ADS</a>
+                </li>
+                <li class="nav-item filter__headitem">
+                    <a class="nav-link" id="socialmediapacks" data-toggle="tab" href="#socialmediapackages" role="tab" aria-controls="socialmediapackages" aria-selected="false">SOCIAL MEDIA MARKETING</a>
+                </li>
+                <li class="nav-item filter__headitem">
+                    <a class="nav-link" id="emailmarketpacks" data-toggle="tab" href="#emailmarketpackages" role="tab" aria-controls="emailmarketpackages" aria-selected="false">EMAIL MARKETING</a>
+                </li>
+                <li class="nav-item filter__headitem">
+                  <a class="nav-link" id="googlebuspacks" data-toggle="tab" href="#googlebuspackages" role="tab" aria-controls="googlebuspackages" aria-selected="false">GOOGLE BUSINESS (GNB)</a>
+                </li>
+                <li class="nav-item filter__headitem">
+                  <a class="nav-link" id="wenmainpacks" data-toggle="tab" href="#webmainpackages" role="tab" aria-controls="webmainpackages" aria-selected="false">WEB MAINTENANCE </a>
+                </li>
+                <li class="nav-item filter__headitem">
+                    <a class="nav-link" id="valuepacks" data-toggle="tab" href="#valuepackages" role="tab" aria-controls="valuepackages" aria-selected="false">VALUE PACKS</a>
+                </li>
+    
+    
+                <i class="fa fa-caret-up"></i>
+                <i class="fa fa-caret-down"></i>
+              </ul>
+          </div>
+          
+          <div class="tab-content container my-5" id="myTabContent">
 
-
-                <div class="tab-pane active fade show " id="allproducts" role="tabpanel">
+            <div class="tab-pane fade show active" id="allpackages" role="tabpanel" aria-labelledby="allpacks">
                     <div class="container">
-                        <div class="row list">
-                            <div class="div featcamp col-sm-3 my-2 col-6">
-                                <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
-                                    <img class="w-100" src="assests/pageseo.jpg" alt="">
-                                </div>
-                                <small class="mt-2 mt-sm-3 mb-1"><b>On Page SEO</b> </small><p><span><b>$123</b></span></p>
-                              </div>
-                            
-                            
-                              <div class="div featcamp col-sm-3 my-2 col-6">
-                                <a href="videocamp.html">
+                            <div class="row list">
+                                <div class="div featcamp col-sm-3 my-2 col-6">
                                     <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
-                                        <img class="w-100" src="assests/youtubecamp.jpg" alt="">
+                                        <img class="w-100" src="assests/pageseo.jpg" alt="">
                                     </div>
-                                    <small class="mt-2 mt-sm-3 mb-1"><b>Video Campaign</b> </small><p><span><b>$123</b></span></p>
-                                </a>
-                                  
-                              </div>
-
-                          
-                              <div class="div featcamp col-sm-3 my-2 col-6">
-                                  <a href="orginstacamp.html">
-                                    <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
-                                        <img class="w-100" src="assests/socialmediamarketing.jpg" alt="">
-                                    </div>
-                                    <small class="mt-2 mt-sm-3 mb-1"><b>Organic Instagram Marketing</b> </small><p><span><b>$123</b></span></p>
-                                  </a>
-                                  
-                              </div>
-
-                          
-                              <div class="div featcamp col-sm-3 my-2 col-6">
-                                  <a href="emailcamp.html">
-                                      <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
-                                      <img class="w-100" src="assests/emailmarketing.jpg" alt="">
+                                    <small class="mt-2 mt-sm-3 mb-1"><b>On Page SEO</b> </small><p><span><b>$123</b></span></p>
                                   </div>
-                                  <small class="mt-2 mt-sm-3 mb-1"><b>Email Marketing</b> </small><p><span><b>$123</b></span></p>
-                                  </a>
+                                
+                                
+                                  <div class="div featcamp col-sm-3 my-2 col-6">
+                                    <a href="videocamp.html">
+                                        <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
+                                            <img class="w-100" src="assests/youtubecamp.jpg" alt="">
+                                        </div>
+                                        <small class="mt-2 mt-sm-3 mb-1"><b>Video Campaign</b> </small><p><span><b>$123</b></span></p>
+                                    </a>
+                                      
+                                  </div>
+        
+                              
+                                  <div class="div featcamp col-sm-3 my-2 col-6">
+                                      <a href="orginstacamp.html">
+                                        <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
+                                            <img class="w-100" src="assests/socialmediamarketing.jpg" alt="">
+                                        </div>
+                                        <small class="mt-2 mt-sm-3 mb-1"><b>Organic Instagram Marketing</b> </small><p><span><b>$123</b></span></p>
+                                      </a>
+                                      
+                                  </div>
+        
+                              
+                                  <div class="div featcamp col-sm-3 my-2 col-6">
+                                      <a href="emailcamp.html">
+                                          <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
+                                          <img class="w-100" src="assests/emailmarketing.jpg" alt="">
+                                      </div>
+                                      <small class="mt-2 mt-sm-3 mb-1"><b>Email Marketing</b> </small><p><span><b>$123</b></span></p>
+                                      </a>
+                
+                                  </div>
+        
+                                  <div class="div featcamp col-sm-3 my-2 col-6">
+                                    <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
+                                        <img class="w-100" src="assests/emailmarketing.jpg" alt="">
+                                    </div>
+                                    <small class="mt-2 mt-sm-3 mb-1"><b>Email Marketing</b> </small><p><span><b>$123</b></span></p>
+                                </div>
+        
+                                <div class="div featcamp col-sm-3 my-2 col-6">
+                                    <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
+                                        <img class="w-100" src="assests/emailmarketing.jpg" alt="">
+                                    </div>
+                                    <small class="mt-2 mt-sm-3 mb-1"><b>Email Marketing</b> </small><p><span><b>$123</b></span></p>
+                                </div>
+        
+                                <div class="div featcamp col-sm-3 my-2 col-6">
+                                    <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
+                                        <img class="w-100" src="assests/emailmarketing.jpg" alt="">
+                                    </div>
+                                    <small class="mt-2 mt-sm-3 mb-1"><b>Email Marketing</b> </small><p><span><b>$123</b></span></p>
+                                </div>
+        
+                                <div class="div featcamp col-sm-3 my-2 col-6">
+                                    <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
+                                        <img class="w-100" src="assests/emailmarketing.jpg" alt="">
+                                    </div>
+                                    <small class="mt-2 mt-sm-3 mb-1"><b>Email Marketing</b> </small><p><span><b>$123</b></span></p>
+                                </div>
+        
+                               
+                            </div>
+                            <div class="text-center mt-5 mb-2">
+                                <a  id="next" class="getstartbtn wow animate__ animate__delay-1s animate__fadeInUp animate__slow  fontrale my-2  animated" style="visibility: visible;">View More</a>
+                            </div>
+                            <!-- <button >Show More</button> -->
+
+                    </div>
+            </div>
             
-                              </div>
-
-                              <div class="div featcamp col-sm-3 my-2 col-6">
-                                <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
-                                    <img class="w-100" src="assests/emailmarketing.jpg" alt="">
-                                </div>
-                                <small class="mt-2 mt-sm-3 mb-1"><b>Email Marketing</b> </small><p><span><b>$123</b></span></p>
-                            </div>
-
-                            <div class="div featcamp col-sm-3 my-2 col-6">
-                                <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
-                                    <img class="w-100" src="assests/emailmarketing.jpg" alt="">
-                                </div>
-                                <small class="mt-2 mt-sm-3 mb-1"><b>Email Marketing</b> </small><p><span><b>$123</b></span></p>
-                            </div>
-
-                            <div class="div featcamp col-sm-3 my-2 col-6">
-                                <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
-                                    <img class="w-100" src="assests/emailmarketing.jpg" alt="">
-                                </div>
-                                <small class="mt-2 mt-sm-3 mb-1"><b>Email Marketing</b> </small><p><span><b>$123</b></span></p>
-                            </div>
-
-                            <div class="div featcamp col-sm-3 my-2 col-6">
-                                <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
-                                    <img class="w-100" src="assests/emailmarketing.jpg" alt="">
-                                </div>
-                                <small class="mt-2 mt-sm-3 mb-1"><b>Email Marketing</b> </small><p><span><b>$123</b></span></p>
-                            </div>
-
-                           
-                        </div>
-                        <div class="text-center mt-5 mb-2">
-                            <a  id="next" class="getstartbtn wow animate__ animate__delay-1s animate__fadeInUp animate__slow  fontrale my-2  animated" style="visibility: visible;">View More</a>
-                        </div>
-                        <!-- <button >Show More</button> -->
-                    </div>
-                </div>
+            <div class="tab-pane fade" id="seopackages" role="tabpanel" aria-labelledby="seopacks">
+                SEO Packs
+            </div>
 
 
-
-                <div class="tab-pane  fade  " id="seoproducts" role="tabpanel">
-                    <div class="container">
-                        <p>SeoPacks</p>
-                    </div>
-                </div>
+            <div class="tab-pane fade" id="googleadpackages" role="tabpanel" aria-labelledby="googleadpacks">
+                GOOGLE ADS
+            </div>
 
 
-                <div class="tab-pane  fade  " id="googleadsproducts" role="tabpanel">
-                    <div class="container">
-                        <p>GoogleaAdsPacks</p>
-                    </div>
-                </div>
-                <div class="tab-pane  fade " id="socialmediaproducts" role="tabpanel">
-                    <div class="container">
-                        <p>SocialMediaPacks</p>
-                    </div>
-                </div>
+            <div class="tab-pane fade" id="socialmediapackages" role="tabpanel" aria-labelledby="socialmediapacks">
+                Social Media Packs
+            </div>
 
 
-                <div class="tab-pane  fade " id="emailproducts" role="tabpanel">
-                    <div class="container">
-                        <p>EmailPacks</p>
-                    </div>
-                </div>
+            <div class="tab-pane fade" id="emailmarketpackages" role="tabpanel" aria-labelledby="emailmarketpacks">
+                Email Marketing Packs
+            </div>
 
 
-                <div class="tab-pane  fade " id="gnbproducts" role="tabpanel">
-                    <div class="container">
-                        <p>GNB Packs</p>
-                    </div>
-                </div>
+            <div class="tab-pane fade" id="googlebuspackages" role="tabpanel" aria-labelledby="googlebuspacks">
+                Google Business Packs
+            </div>
+
+            <div class="tab-pane fade" id="webmainpackages" role="tabpanel" aria-labelledby="wenmainpacks">
+                Web Maintenance
+            </div>
+
+            <div class="tab-pane fade" id="valuepackages" role="tabpanel" aria-labelledby="valuepacks">
+                Value Packs
+            </div>
 
 
-                <div class="tab-pane  fade " id="webmaintenance" role="tabpanel">
-                    <div class="container">
-                        <p>Web Maintenance Packs</p>
-                    </div>
-                </div>
+          </div>
 
+          <style>
+              .responsive-tabs.nav-tabs {
+  position: relative;
+  z-index: 10;
+  height: 42px;
+  overflow: visible;
+  border-bottom: none;
+}
+@media (min-width: 768px) {
+  .responsive-tabs.nav-tabs {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .responsive-tabs.nav-tabs {
+    display: block;
+    flex-wrap: none;
+  }
+}
+.responsive-tabs.nav-tabs i.fa {
+  position: absolute;
+  top: 10px;
+  right: 22px;
+}
+.responsive-tabs.nav-tabs i.fa.fa-caret-up {
+  display: none;
+}
+@media (min-width: 768px) {
+  .responsive-tabs.nav-tabs i.fa {
+    display: none;
+  }
+}
+.responsive-tabs.nav-tabs > li {
+  display: none;
+  float: none;
+  text-align: center;
+}
+.responsive-tabs.nav-tabs > li:last-of-type > a {
+  margin-right: 0;
+}
+.responsive-tabs.nav-tabs > li > a {
+  margin-right: 0;
+  background: #fff;
+  /* border: 1px solid #DDDDDD; */
+}
+@media (min-width: 768px) {
+  .responsive-tabs.nav-tabs > li > a {
+    margin-right: 4px;
+  }
+}
+.responsive-tabs.nav-tabs > li.active {
+  display: block;
+}
+.responsive-tabs.nav-tabs > li.active a {
+  border: 1px solid #DDDDDD;
+  border-radius: 2px;
+}
+/* @media (min-width: 768px) {
+  .responsive-tabs.nav-tabs > li.active a {
+    border-bottom-color: transparent;
+  }
+} */
+@media (min-width: 768px) {
+  .responsive-tabs.nav-tabs > li {
+    display: block;
+    float: left;
+  }
+}
+.responsive-tabs.nav-tabs.open i.fa.fa-caret-up {
+  display: block;
+}
+@media (min-width: 768px) {
+  .responsive-tabs.nav-tabs.open i.fa.fa-caret-up {
+    display: none;
+  }
+}
+.responsive-tabs.nav-tabs.open i.fa.fa-caret-down {
+  display: none;
+}
+.responsive-tabs.nav-tabs.open > li {
+  display: block;
+}
+.responsive-tabs.nav-tabs.open > li a {
+  border-radius: 0;
+}
+.responsive-tabs.nav-tabs.open > li:first-of-type a {
+  border-radius: 2px 2px 0 0;
+}
+.responsive-tabs.nav-tabs.open > li:last-of-type a {
+  border-radius: 0 0 2px 2px;
+}
 
-                <div class="tab-pane  fade " id="valuepackproducts" role="tabpanel">
-                    <div class="container">
-                        <p>valuePacks</p>
-                    </div>
-                </div>
+          </style>
 
+<script>
+    $('.responsive-tabs i.fa').click(function() {
+  $(this).parent().toggleClass('open');
+});
 
-        </div>
+$('.responsive-tabs > li a').click(function() {
+  $('.responsive-tabs > li').removeClass('active');
+  $(this).parent().addClass('active');
+  $('.responsive-tabs').toggleClass('open');
+});
+</script>
 
         <div class="container">
             <div class="row mt-5 mb-2 justify-content-around align-items-center  ">
@@ -349,13 +439,13 @@
                   <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, voluptatum.</small>
                 </div>
       
-                <div class="col-md-3 text-center my-2 vendorbenifits border-right border-xs-right-none  wow animate__animated animate__fadeInDown animate__slow">
+                <div class="col-md-3 text-center my-2 vendorbenifits border-right border-xs-right-none  wow animate__animated animate__fadeInLeft animate__slow">
                   <img class="my-2" src="assests/secureshopicon.png" alt="">
                   <h6>Secure Payment</h6>
                   <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, voluptatum.</small>
                 </div>
       
-                <div class="col-md-3 text-center my-2 vendorbenifits   wow animate__animated animate__fadeInRight animate__slow">
+                <div class="col-md-3 text-center my-2 vendorbenifits   wow animate__animated animate__fadeInLeft animate__slow">
                   <img class="my-2" src="assests/shop24icon.png" alt="">
                   <h6>24/7 Service</h6>
                   <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, voluptatum.</small>

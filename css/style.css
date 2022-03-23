@@ -1406,12 +1406,17 @@ ul.ab-form-list{
   } */
   .growthhero{
 	background: url('../assests/seotools.png');
+	background-size: cover;
   }
   .grleads{
 	background-image: url(../assests/leads.png);
   }
+  .dropdown-item {
+    width: auto !important;
+    }
 .shophero{
-	background: url('../assests/shopherobg.jpg')
+	background: url('../assests/shopherobg.jpg');
+	background-size: cover;
 }
   .bgproperty{
 	background-position: center;
