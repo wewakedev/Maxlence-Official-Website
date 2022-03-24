@@ -109,6 +109,37 @@ $('.carousel').slick({
     ]
   });
 
+  $('.singleslide').slick({
+    dots:true,
+    arrows:false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: true,
+          centerMode: false,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: true,
+          // centerMode: true,
+          // centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
 
   $('.designlogocarousel').slick({
     dots:true,
@@ -228,6 +259,31 @@ $('.carousel').slick({
       content.style.display = "none";
     }
   }
+
+
+  //FAQ
+
+  let faqquestion = document.querySelectorAll(".faqquestion");
+
+              faqquestion.forEach(faqquestion => {
+                faqquestion.addEventListener("click", event => {
+    const active = document.querySelector(".faqquestion.active");
+    if(active && active !== faqquestion ) {
+      active.classList.toggle("active");
+      active.nextElementSibling.style.maxHeight = 0;
+    }
+    faqquestion.classList.toggle("active");
+    const answer = faqquestion.nextElementSibling;
+    if(faqquestion.classList.contains("active")){
+      answer.style.maxHeight = answer.scrollHeight + "px";
+    } else {
+      answer.style.maxHeight = 0;
+    }
+  })
+})
+
+
+
 
 // View all
 

@@ -767,11 +767,49 @@ font-size: 80%;
 
 
 /* FAQs */
-.quesfaq small{
+/* .quesfaq small{
 	color: #000 !important;
 	font-weight: 600;
 	letter-spacing: 0.05em;
-}
+} */
+
+.faqquestion {
+	font-size: 1rem;
+	font-weight: 900;
+	padding: 0.5rem 2rem 0.5rem 1rem;
+	position: relative;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	margin: 1rem 0rem;
+	background: #F5F5F5;
+  }
+  
+  .faqquestion::after {
+	content: "\002B";
+	font-size: 2.2rem;
+	position: absolute;
+	right: 20px;
+	transition: 0.2s;
+  }
+  
+  .faqquestion.active::after {
+	transform: rotate(45deg);
+  }
+  
+  .answercont {
+	max-height: 0;
+	overflow: hidden;
+	transition: 0.3s;
+  }
+  
+  .answer {
+	padding: 0 20px 20px;
+	line-height: 1.5rem;
+  }
+  
+  .faqquestion.active + .answercont {
+  }
 
 /* Footer Section */
 
@@ -1945,4 +1983,14 @@ margin-bottom: 2rem;
   
   .t-select-btn:active {
 	background-color: #F1F1F1;
+  }
+  .seoservice{
+	  height: 250px;
+	  padding: 3rem 1rem;
+	  margin: 1rem;
+	  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  .seoservice h5{
+margin: 1rem;
+color: #00C99C;
   }
