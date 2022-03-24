@@ -116,6 +116,11 @@ span{
 div#information_modal {
     padding-right: 0rem !important;
 }
+input {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	}
 /* ToggleMenu */
 /* 
 .line-toggle {
