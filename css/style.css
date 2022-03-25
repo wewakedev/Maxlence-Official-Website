@@ -1994,3 +1994,11 @@ margin-bottom: 2rem;
 margin: 1rem;
 color: #00C99C;
   }
+
+  .shoptoptitle{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50% ,-50%);
+	text-align: center;
+  }
