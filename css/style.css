@@ -2011,13 +2011,21 @@ ul.ab-form-list {
 .graygrad::after {
   content: "";
   position: absolute;
-  right: 14px;
+  right: 16px;
   top: 0;
-  width: 80%;
+  width: 92%;
   height: 100%;
   background: linear-gradient(
     251.26deg,
     rgba(0, 0, 0, 0.49) 0%,
     rgba(0, 0, 0, 0) 100%
   );
+}
+
+.shareicon {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  z-index: 99;
+  width: 1rem;
 }
