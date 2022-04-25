@@ -967,6 +967,16 @@ nav.navbar.navbar-expand-lg.navbar-light.homenav.d-flex.fontrale.fixed-top {
   .modal-dialog {
     margin: 0px;
   }
+  .brochurecontent {
+    font-size: 0.8rem;
+  }
+  .brochuredownload a img {
+    width: 2rem;
+  }
+  .rowshadow {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  }
 }
 
 /* QUESTIONS PAGE */
@@ -2028,4 +2038,7 @@ ul.ab-form-list {
   right: 10%;
   z-index: 99;
   width: 1rem;
+}
+.brochuredownload img {
+  width: 3rem;
 }
