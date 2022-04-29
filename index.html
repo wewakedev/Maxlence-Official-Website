@@ -1,50 +1,57 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Welcome to Maxlence</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="css/style.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countto/1.2.0/jquery.countTo.min.js"></script>
-        
-    </head>
-    <body>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Welcome to Maxlence</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countto/1.2.0/jquery.countTo.min.js"></script>
+
+</head>
+
+<body>
 
 
-        <!--Navigation bar-->
-            <div id="nav-placeholder">
-            
-            </div>
-            
-            <script>
-            $(function(){
-              $("#nav-placeholder").load("nav1.html");
-            });
-            </script>
-        <!--end of Navigation bar-->
+    <!--Navigation bar-->
+    <div id="nav-placeholder">
 
-    <div class="container-fluid p-2"style="background-color: #E2F0FF;" >
+    </div>
+
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("header.html");
+        });
+    </script>
+    <!--end of Navigation bar-->
+
+    <div class="container-fluid p-2" style="background-color: #E2F0FF;">
         <div class="container">
             <div class="row justify-content-around align-items-center">
                 <div class="breadcrumbs text-center col-5 d-sm-flex d-none">
                     <small class="breadcrumbhome"><a href="">Home</a> </small>
                     <small class="breadcrumbsec breadactive"><a href="">Home</a> </small>
                 </div>
-                <div class="icons col-sm-5 col-12 d-flex justify-content-sm-end justify-content-center align-items-center">
+                <div
+                    class="icons col-sm-5 col-12 d-flex justify-content-sm-end justify-content-center align-items-center">
                     <div class="">
                         <div class="input-group justify-content-around align-items-center">
-                            <input type="search" placeholder="Search Here" aria-describedby="button-addon1" class="form-control navsearch rounded-pill  fontrale border-0 bg-light "><br>
-                          <div class="input-form-append">
-                              <button type="submit" style="border: none; background: transparent !important;"><img class="searchnavicon" src="assests/searchmag.png" alt=""></button>
-                          </div>
+                            <input type="search" placeholder="Search Here" aria-describedby="button-addon1"
+                                class="form-control navsearch rounded-pill  fontrale border-0 bg-light "><br>
+                            <div class="input-form-append">
+                                <button type="submit" style="border: none; background: transparent !important;"><img
+                                        class="searchnavicon" src="assests/searchmag.png" alt=""></button>
+                            </div>
                         </div>
                     </div>
                     <!-- <div class="bellicon mx-2">
@@ -53,7 +60,7 @@
                     <div class="carticon mx-2">
                         <a href=""><img src="assests/carticon.png" alt=""></a>
                     </div>
-                    
+
                     <!-- <div class="messageicon mx-2">
                         <a href=""><img src="assests/messgnav.png" alt=""></a>
                     </div>
@@ -63,40 +70,50 @@
         </div>
     </div>
     <style>
-        .searchnavicon,.bellicon a img, .messageicon a img{
+        .searchnavicon,
+        .bellicon a img,
+        .messageicon a img {
             width: 1rem;
             height: auto;
         }
-        .carticon a img{
+
+        .carticon a img {
             width: 1.25rem;
         }
-        .breadcrumbsec a{
-           color: rgba(33, 37, 41, 0.8) !important;
+
+        .breadcrumbsec a {
+            color: rgba(33, 37, 41, 0.8) !important;
         }
-        .breadcrumbsec::before{
+
+        .breadcrumbsec::before {
             content: ">";
             margin: .4rem;
         }
-        .breadactive a{
+
+        .breadactive a {
             color: rgba(33, 37, 41, 0.5) !important;
         }
     </style>
-    
 
-        <!-- Hero Section -->
-        <div class="container my-sm-4 py-sm-5 py-0 my-0 homehero">
 
-            <div class="row justify-content-around align-items-center">
-                <div class="col-sm-5 my-3 text-center text-sm-left ">
-                    <h2 class="my-4 wow animate__animated animate__fadeInUp animate__slow">Have a business that performs and a <span><b>website that speaks</b> </span>.</h2>
-                    <a href="quest.html" class="getstartbtn wow animate__animated animate__delay-1s animate__fadeInUp animate__slow  fontrale my-2 ">Get Started</a>
-                </div>
-                <div class="col-sm-6 my-2 my-sm-0 my-3 rounded text-center wow animate__animated animate__fadeIn animate__slow ">
-                    <img class="w-100" src="assests/Hero Image.jpg" alt="">
-                </div>
+    <!-- Hero Section -->
+    <div class="container my-sm-4 py-sm-5 py-0 my-0 homehero">
+
+        <div class="row justify-content-around align-items-center">
+            <div class="col-sm-5 my-3 text-center text-sm-left ">
+                <h2 class="my-4 wow animate__animated animate__fadeInUp animate__slow">Have a business that performs and
+                    a <span><b>website that speaks</b> </span>.</h2>
+                <a href="quest.html"
+                    class="getstartbtn wow animate__animated animate__delay-1s animate__fadeInUp animate__slow  fontrale my-2 ">Get
+                    Started</a>
             </div>
-            <div class="row  sideactions flex-column d-none d-sm-block ">
-                <!-- <div class="langcurr my-sm-2 ">
+            <div
+                class="col-sm-6 my-2 my-sm-0 my-3 rounded text-center wow animate__animated animate__fadeIn animate__slow ">
+                <img class="w-100" src="assests/Hero Image.jpg" alt="">
+            </div>
+        </div>
+        <div class="row  sideactions flex-column d-none d-sm-block ">
+            <!-- <div class="langcurr my-sm-2 ">
                     <div class="lang my-sm-2 text-center fontrale">
                         <img src="assests/heronav/grid.png" alt="">
                         <div class="switch">
@@ -126,44 +143,46 @@
                 
                 </div> -->
 
-                <div class="socialicons mt-sm-3 ">
-                    <div class="fb my-3 text-center">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                    </div>
-                    <div class="curr my-3 text-center">
-                         <i class="fa fa-instagram" aria-hidden="true"></i>
-                    </div>
-                    <div class="curr my-3 text-center">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                    </div>
+            <div class="socialicons mt-sm-3 ">
+                <div class="fb my-3 text-center">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
                 </div>
-                
+                <div class="curr my-3 text-center">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </div>
+                <div class="curr my-3 text-center">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </div>
             </div>
+
         </div>
-        
-        <!-- Call To Action Banner -->
-        <div class="container-fluid bg-gradient py-5 ">
-            <div class="row justify-content-center ">
-                <div class="col-12 text-center mt-3 wow animate__animated animate__fadeInDown">
-                    <h2 class="text-white">Tell us what you’re looking for</h2>
-                </div>
-                <div class="col-md-6">
-                    
-                    <div class="p-1 bg-lightshadow-sm wow animate__animated animate__fadeInUp ">
-                      <div class="input-group justify-content-around align-items-center">
-                        <img style="position: absolute; left: 2.2rem; z-index: 10;" src="assests/ctasearch.png" alt=""><input type="search" placeholder="Search Here" aria-describedby="button-addon1" class="form-control ctasearch rounded-pill  fontrale border-0 bg-light m-3"><br>
+    </div>
+
+    <!-- Call To Action Banner -->
+    <div class="container-fluid bg-gradient py-5 ">
+        <div class="row justify-content-center ">
+            <div class="col-12 text-center mt-3 wow animate__animated animate__fadeInDown">
+                <h2 class="text-white">Tell us what you’re looking for</h2>
+            </div>
+            <div class="col-md-6">
+
+                <div class="p-1 bg-lightshadow-sm wow animate__animated animate__fadeInUp ">
+                    <div class="input-group justify-content-around align-items-center">
+                        <img style="position: absolute; left: 2.2rem; z-index: 10;" src="assests/ctasearch.png"
+                            alt=""><input type="search" placeholder="Search Here" aria-describedby="button-addon1"
+                            class="form-control ctasearch rounded-pill  fontrale border-0 bg-light m-3"><br>
                         <!-- <div class="input-form-append">
                             <button type="submit" class="ctasearchbtn fontpop">Search</button>
                         </div> -->
-                      </div>
                     </div>
+                </div>
 
-                </div>     
             </div>
         </div>
+    </div>
 
-        <div class="container-fluid  bg-light mb-sm-4 py-sm-5 py-0 my-0 homesec3">
-            <div class="container">
+    <div class="container-fluid  bg-light mb-sm-4 py-sm-5 py-0 my-0 homesec3">
+        <div class="container">
             <div class="row justify-content-around align-items-center">
                 <div class="col-sm-7 mt-4 wow animate__animated animate__fadeInDown ">
 
@@ -173,563 +192,619 @@
                 </div>
                 <div class="homesec3info col-sm-5 my-3 py-3 text-center text-sm-left">
                     <div class="m-0 p-0 wow animate__animated animate__fadeInUp">
-                        <h2>We make it <span><b>easier</b> </span> for you to <span><b>understand</b> </span>  the digital landscape</h2> <br>
+                        <h2>We make it <span><b>easier</b> </span> for you to <span><b>understand</b> </span> the
+                            digital landscape</h2> <br>
                         <small>Get your business online, Maximize your exposure.</small>
                     </div>
-                    
+
 
                     <div class="row my-1 ">
                         <div class="col-sm-6 mt-4 mb-2 wow animate__animated animate__fadeInUp animate__slow">
                             <p>SEO</p>
-                            <p>We optimize your site and increase your visibility to gain more traffic and better results. SEO team of experienced individuals utilize top-quality tools to derive engagement.</p>
+                            <p>We optimize your site and increase your visibility to gain more traffic and better
+                                results. SEO team of experienced individuals utilize top-quality tools to derive
+                                engagement.</p>
                         </div>
                         <div class="col-sm-6 mt-4 mb-2  wow animate__animated animate__fadeInUp animate__slow ">
                             <p>Google Ads</p>
-                            <p>With us by your side, you’ll have good quality web pages for your website visitors to see, combined with relevant keywords in your adverts, meaning you get noticed by more people who are looking for what you have to offer.</p>
+                            <p>With us by your side, you’ll have good quality web pages for your website visitors to
+                                see, combined with relevant keywords in your adverts, meaning you get noticed by more
+                                people who are looking for what you have to offer.</p>
                         </div>
                         <div class="col-sm-6 mt-4 mb-2  wow animate__animated animate__fadeInUp animate__slow ">
                             <p>Website</p>
-                            <p>Our team of skilled web developers is dedicated to creating an effective web design that is not just appealing but also user-friendly. We work on all kinds of websites and use the latest technology and tools to create a website that is effective and compatible.</p>
+                            <p>Our team of skilled web developers is dedicated to creating an effective web design that
+                                is not just appealing but also user-friendly. We work on all kinds of websites and use
+                                the latest technology and tools to create a website that is effective and compatible.
+                            </p>
                         </div>
                         <div class="col-sm-6 mt-4 mb-2  wow animate__animated animate__fadeInUp animate__slow">
                             <p>Social Media</p>
-                            <p>The most effective way to push your company's message is through relevant and engaging content. Through social media marketing, we bring your business information and services to the attention of potential clients and customers.</p>
+                            <p>The most effective way to push your company's message is through relevant and engaging
+                                content. Through social media marketing, we bring your business information and services
+                                to the attention of potential clients and customers.</p>
                         </div>
-                        
+
                     </div>
-                    <div class="col-12 text-sm-right text-center wow animate__animated animate__delay-1s animate__slow animate__bounceIn">
+                    <div
+                        class="col-12 text-sm-right text-center wow animate__animated animate__delay-1s animate__slow animate__bounceIn">
                         <a class="whitebgbtn fontrale" data-toggle="modal" data-target="#signupform" href="#">
                             Sign Up
                         </a>
                     </div>
-                    
+
                 </div>
             </div>
-            </div>
-            
         </div>
 
-        <!-- Home Shop Section -->
-        <div class=" container-fluid shop  filter__wrap  my-sm-4 py-sm-5 py-0 my-3">
-            <div class="container">
-                <div class="homeshophead text-center py-sm-0 pt-5 pb-3 wow animate__animated animate__fadeIn animate__slow">
-                    <h2>Shop our services with <br> <span>best offers</span></h2>
-                </div>
+    </div>
 
-                <ul class="row  justify-content-around text-center align-items-center wow animate__animated animate__fadeIn nav nav-tabs filter__head my-sm-5 my-0" role="tablist">
-                  <li class="active  filter__headitem col-sm-1 col-6 my-2" role="presentation"><a href="#tab1" class="active" role="tab" data-toggle="tab">SEO</a></li>
-                  <li class="filter__headitem col-sm-2 col-6 my-2" role="presentation"><a href="#tab2" role="tab" data-toggle="tab">GOOGLE ADS</a></li>
-                  <li class="filter__headitem col-sm-3 col-6 my-2" role="presentation"><a href="#tab3" role="tab" data-toggle="tab">SOCIAL MEDIA MARKETING</a></li>
-                  <li class="filter__headitem col-sm-2 col-6 my-2" role="presentation"><a href="#tab4" role="tab" data-toggle="tab">EMAIL MARKETING</a></li>
-                  <li class="filter__headitem col-sm-2 col-6 my-2" role="presentation"><a href="#tab5" role="tab" data-toggle="tab">VALUE PACKS</a></li>
-                  <li class="filter__headitem col-sm-2 col-6 my-2"><a href="shop.html" style="color: #0A76E5;"><u><b>VIEW MORE</b></u> </a></li>
-                </ul>
+    <!-- Home Shop Section -->
+    <div class=" container-fluid shop  filter__wrap  my-sm-4 py-sm-5 py-0 my-3">
+        <div class="container">
+            <div class="homeshophead text-center py-sm-0 pt-5 pb-3 wow animate__animated animate__fadeIn animate__slow">
+                <h2>Shop our services with <br> <span>best offers</span></h2>
+            </div>
 
-                <!-- Tab panes-->
-                <div class="tab-content homeshops my-3">
-                    <div class="tab-pane active fade show seofeats" id="tab1" role="tabpanel">
-                      <div class="container">
-                          <div class="row">
-                                <div class="div featcamp col-sm-3 col-6">
-                                  <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
-                                      <img class="w-100" src="assests/pageseo.jpg" alt="">
-                                  </div>
-                                  <p class="mt-2 mt-sm-3 mb-1"><b>Search Campaign</b> </p><p><span><b>$123</b></span></p>
+            <ul class="row  justify-content-around text-center align-items-center wow animate__animated animate__fadeIn nav nav-tabs filter__head my-sm-5 my-0"
+                role="tablist">
+                <li class="active  filter__headitem col-sm-1 col-6 my-2" role="presentation"><a href="#tab1"
+                        class="active" role="tab" data-toggle="tab">SEO</a></li>
+                <li class="filter__headitem col-sm-2 col-6 my-2" role="presentation"><a href="#tab2" role="tab"
+                        data-toggle="tab">GOOGLE ADS</a></li>
+                <li class="filter__headitem col-sm-3 col-6 my-2" role="presentation"><a href="#tab3" role="tab"
+                        data-toggle="tab">SOCIAL MEDIA MARKETING</a></li>
+                <li class="filter__headitem col-sm-2 col-6 my-2" role="presentation"><a href="#tab4" role="tab"
+                        data-toggle="tab">EMAIL MARKETING</a></li>
+                <li class="filter__headitem col-sm-2 col-6 my-2" role="presentation"><a href="#tab5" role="tab"
+                        data-toggle="tab">VALUE PACKS</a></li>
+                <li class="filter__headitem col-sm-2 col-6 my-2"><a href="shop.html" style="color: #0A76E5;"><u><b>VIEW
+                                MORE</b></u> </a></li>
+            </ul>
+
+            <!-- Tab panes-->
+            <div class="tab-content homeshops my-3">
+                <div class="tab-pane active fade show seofeats" id="tab1" role="tabpanel">
+                    <div class="container">
+                        <div class="row">
+                            <div class="div featcamp col-sm-3 col-6">
+                                <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
+                                    <img class="w-100" src="assests/pageseo.jpg" alt="">
                                 </div>
-                              
-                              
-                                <div class="div featcamp col-sm-3 col-6">
-                                    <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
-                                        <img class="w-100" src="assests/youtubecamp.jpg" alt="">
-                                    </div>
-                                    <p class="mt-2 mt-sm-3 mb-1"><b>Search Campaign</b> </p><p><span><b>$123</b></span></p>
-                                </div>
+                                <p class="mt-2 mt-sm-3 mb-1"><b>Search Campaign</b> </p>
+                                <p><span><b>$123</b></span></p>
+                            </div>
 
-                            
-                                <div class="div featcamp col-sm-3 col-6">
-                                    <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
-                                        <img class="w-100" src="assests/socialmediamarketing.jpg" alt="">
-                                    </div>
-                                    <p class="mt-2 mt-sm-3 mb-1"><b>Search Campaign</b> </p><p><span><b>$123</b></span></p>
-                                </div>
 
-                            
-                                <div class="div featcamp col-sm-3 col-6">
-                                    <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
-                                        <img class="w-100" src="assests/emailmarketing.jpg" alt="">
-                                    </div>
-                                    <p class="mt-2 mt-sm-3 mb-1"><b>Search Campaign</b> </p><p><span><b>$123</b></span></p>
+                            <div class="div featcamp col-sm-3 col-6">
+                                <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
+                                    <img class="w-100" src="assests/youtubecamp.jpg" alt="">
                                 </div>
+                                <p class="mt-2 mt-sm-3 mb-1"><b>Search Campaign</b> </p>
+                                <p><span><b>$123</b></span></p>
+                            </div>
 
-                          </div>
-                      </div>
+
+                            <div class="div featcamp col-sm-3 col-6">
+                                <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
+                                    <img class="w-100" src="assests/socialmediamarketing.jpg" alt="">
+                                </div>
+                                <p class="mt-2 mt-sm-3 mb-1"><b>Search Campaign</b> </p>
+                                <p><span><b>$123</b></span></p>
+                            </div>
+
+
+                            <div class="div featcamp col-sm-3 col-6">
+                                <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
+                                    <img class="w-100" src="assests/emailmarketing.jpg" alt="">
+                                </div>
+                                <p class="mt-2 mt-sm-3 mb-1"><b>Search Campaign</b> </p>
+                                <p><span><b>$123</b></span></p>
+                            </div>
+
+                        </div>
                     </div>
-                  <div class="tab-pane fade in" id="tab2" role="tabpanel">
+                </div>
+                <div class="tab-pane fade in" id="tab2" role="tabpanel">
                     <div class="container">
                         <div class="row">
                             <div class="div featcamp col-sm-3 col-6">
                                 <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
                                     <img class="w-100" src="assests/youtubecamp.jpg" alt="">
                                 </div>
-                                <p class="mt-2 mt-sm-3 mb-1"><b>Search Campaign</b> </p><p><span><b>$123</b></span></p>
+                                <p class="mt-2 mt-sm-3 mb-1"><b>Search Campaign</b> </p>
+                                <p><span><b>$123</b></span></p>
                             </div>
 
-                            
+
                         </div>
                     </div>
-                  </div>
-                  <div class="tab-pane fade in" id="tab3" role="tabpanel">
+                </div>
+                <div class="tab-pane fade in" id="tab3" role="tabpanel">
                     <div class="container">
                         <div class="row">
                             <div class="div featcamp col-sm-3 col-6">
                                 <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
                                     <img class="w-100" src="assests/socialmediamarketing.jpg" alt="">
                                 </div>
-                                <p class="mt-2 mt-sm-3 mb-1"><b>Search Campaign</b> </p><p><span><b>$123</b></span></p>
+                                <p class="mt-2 mt-sm-3 mb-1"><b>Search Campaign</b> </p>
+                                <p><span><b>$123</b></span></p>
                             </div>
 
-                            
+
                         </div>
                     </div>
-                  </div>
-                  <div class="tab-pane fade in" id="tab4" role="tabpanel">
+                </div>
+                <div class="tab-pane fade in" id="tab4" role="tabpanel">
                     <div class="container">
                         <div class="row">
                             <div class="div featcamp col-sm-3 col-6">
                                 <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
                                     <img class="w-100" src="assests/emailmarketing.jpg" alt="">
                                 </div>
-                                <p class="mt-2 mt-sm-3 mb-1"><b>Search Campaign</b> </p><p><span><b>$123</b></span></p>
+                                <p class="mt-2 mt-sm-3 mb-1"><b>Search Campaign</b> </p>
+                                <p><span><b>$123</b></span></p>
                             </div>
 
-                            
+
                         </div>
                     </div>
-                  </div>
-                  <div class="tab-pane fade " id="tab5" role="tabpanel">Value Packs here </div>
                 </div>
-    
-                
+                <div class="tab-pane fade " id="tab5" role="tabpanel">Value Packs here </div>
             </div>
 
-            
+
         </div>
-        
+
+
+    </div>
 
 
 
-        <!-- VideoSection -->
 
-        <div class="container mb-4 homevideo1">
-            <div class="row justify-content-between align-items-center">
-                <div class="col-sm-6 my-3 text-sm-left text-center">
-                    <h2 class="font-weight-bold my-3 wow animate__animated animate__fadeInDown">Lorem ipsum dolor sit amet <span>consectetur</span> .</h2>
-                    <p class="wow animate__animated animate__fadeInUp animate__slow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dolores quisquam consequatur eos fugit. Ratione itaque vitae optio temporibus accusamus at deleniti consectetur dolor culpa, corporis excepturi cumque maiores nobis.</p>
-                    <p class="wow animate__animated animate__fadeInUp animate__slow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque excepturi voluptas magnam eum consectetur tempore.</p>
-                    <hr>
-                </div>
-                <div class="col-sm-5 rounded wow animate__animated animate__fadeIn animate__slow ">
-                    <img class="w-100" src="assests/homevieo1.jpg" alt="">
-                </div>
+    <!-- VideoSection -->
+
+    <div class="container mb-4 homevideo1">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-sm-6 my-3 text-sm-left text-center">
+                <h2 class="font-weight-bold my-3 wow animate__animated animate__fadeInDown">Lorem ipsum dolor sit amet
+                    <span>consectetur</span> .</h2>
+                <p class="wow animate__animated animate__fadeInUp animate__slow">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Voluptates dolores quisquam consequatur eos fugit. Ratione itaque vitae optio
+                    temporibus accusamus at deleniti consectetur dolor culpa, corporis excepturi cumque maiores nobis.
+                </p>
+                <p class="wow animate__animated animate__fadeInUp animate__slow">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Doloremque excepturi voluptas magnam eum consectetur tempore.</p>
+                <hr>
             </div>
-            
-            <div class="counters my-sm-1 my-4">
-                <div class="row justify-content-around align-items-center" id="counter">
-                  <div class="col-md-2 col-3 counter1" >
-                     <h2 class="counter-value" data-count="98">0</h2>
+            <div class="col-sm-5 rounded wow animate__animated animate__fadeIn animate__slow ">
+                <img class="w-100" src="assests/homevieo1.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="counters my-sm-1 my-4">
+            <div class="row justify-content-around align-items-center" id="counter">
+                <div class="col-md-2 col-3 counter1">
+                    <h2 class="counter-value" data-count="98">0</h2>
                     <!-- <h2 class="counter counter-timer" data-from="0" data-to="89">80+&nbsp;<span><img src="assests/arrowup.png" alt=""></span></h2>  -->
-                    <small>Customers</small>                   
-                  </div> 
-                  <div class="col-md-2 col-3 counter2">
+                    <small>Customers</small>
+                </div>
+                <div class="col-md-2 col-3 counter2">
                     <h2 class="counter-value" data-count="104">0</h2>
                     <!-- <h2><span class="counter">75+&nbsp;<span><img src="assests/arrowup.png" alt=""></span></span></h2> -->
                     <small> Websites</small>
-                  </div>
-                  <div class="col-md-2 col-3 counter3">
+                </div>
+                <div class="col-md-2 col-3 counter3">
                     <!-- <h2><span class="counter">90+&nbsp;<span><img src="assests/arrowup.png" alt=""></span></span></h2> -->
                     <h2 class="counter-value" data-count="150">0</h2>
-                    <small>Total Clients</small>                   
-                  </div>
+                    <small>Total Clients</small>
+                </div>
 
-                  <div class="col-sm-5  text-center">
+                <div class="col-sm-5  text-center">
                     <div class="mt-5 mb-3 m-sm-0">
-                        <a class="whitebgbtn fontrale wow animate__animated animate__delay-1s animate__slow animate__bounceIn " href="#">
+                        <a class="whitebgbtn fontrale wow animate__animated animate__delay-1s animate__slow animate__bounceIn "
+                            href="#">
                             View Case Study &nbsp; <img src="assests/rightarrow.png" alt="">
                         </a>
                     </div>
-                  </div>
-
                 </div>
+
             </div>
-            
         </div>
 
-        
-        <script>
-            var a = 0;
-$(window).scroll(function() {
+    </div>
 
-  var oTop = $('#counter').offset().top - window.innerHeight;
-  if (a == 0 && $(window).scrollTop() > oTop) {
-    $('.counter-value').each(function() {
-      var $this = $(this),
-        countTo = $this.attr('data-count');
-      $({
-        countNum: $this.text()
-      }).animate({
-          countNum: countTo
-        },
 
-        {
+    <script>
+        var a = 0;
+        $(window).scroll(function () {
 
-          duration: 2000,
-          easing: 'swing',
-          step: function() {
-            $this.text(Math.floor(this.countNum));
-          },
-          complete: function() {
-            $this.text(this.countNum);
-            //alert('finished');
-          }
+            var oTop = $('#counter').offset().top - window.innerHeight;
+            if (a == 0 && $(window).scrollTop() > oTop) {
+                $('.counter-value').each(function () {
+                    var $this = $(this),
+                        countTo = $this.attr('data-count');
+                    $({
+                        countNum: $this.text()
+                    }).animate({
+                        countNum: countTo
+                    },
+
+                        {
+
+                            duration: 2000,
+                            easing: 'swing',
+                            step: function () {
+                                $this.text(Math.floor(this.countNum));
+                            },
+                            complete: function () {
+                                $this.text(this.countNum);
+                                //alert('finished');
+                            }
+
+                        });
+                });
+                a = 1;
+            }
 
         });
-    });
-    a = 1;
-  }
+    </script>
 
-});
-        </script>
-        
-        <!-- Testimonials -->
+    <!-- Testimonials -->
 
-        <div class="wrapper container-fluid bg-light  my-sm-4 py-sm-3 py-3 my-3">
-            <div class="container p-0">
+    <div class="wrapper container-fluid bg-light  my-sm-4 py-sm-3 py-3 my-3">
+        <div class="container p-0">
 
-                <div class="testimonialhead text-sm-right text-center pb-sm-0 pb-3 mt-3 pt-2 wow animate__animated animate__fadeInDown">
-                    <h2><b><span>Thanks</span>  for your <span>sweet</span>  words </h2>
+            <div
+                class="testimonialhead text-sm-right text-center pb-sm-0 pb-3 mt-3 pt-2 wow animate__animated animate__fadeInDown">
+                <h2><b><span>Thanks</span> for your <span>sweet</span> words </h2>
+            </div>
+            <div class="carousel testi my-5 wow animate__animated animate__fadeInUp">
+
+
+
+                <div class="testimonial px-5 py-2 m-2 ">
+                    <div class="blockquote-custom-icon bg-info shadow-1-strong">
+                        <i class="fa fa-quote-right"></i>
+                    </div>
+                    <div class="row d-flex align-items-center">
+                        <img src="assests/navicons/navprofleicon.png" alt="">
+                        <p class="testiname m-3">Viivek Rawat</p>
+
+                        <div class="testimonialcontent">
+                            <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, cum itaque
+                                ipsa magni dolor vero.</small>
+                        </div>
+                        <div class="ratings">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel testi my-5 wow animate__animated animate__fadeInUp">
-                  
-        
-                    
-                    <div class="testimonial px-5 py-2 m-2 ">
-                        <div class="blockquote-custom-icon bg-info shadow-1-strong">
-                            <i class="fa fa-quote-right"></i>
-                        </div>
-                        <div class="row d-flex align-items-center">
-                           <img src="assests/navicons/navprofleicon.png" alt="">
-                           <p class="testiname m-3">Viivek Rawat</p>
-                           
-                           <div class="testimonialcontent">
-                                <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, cum itaque ipsa magni dolor vero.</small>
-                           </div>
-                            <div class="ratings">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-half" aria-hidden="true"></i>
-                            </div>
-                        </div> 
+                <div class="testimonial px-5 py-2 m-2">
+                    <div class="blockquote-custom-icon bg-info shadow-1-strong">
+                        <i class="fa fa-quote-right"></i>
                     </div>
-                    <div class="testimonial px-5 py-2 m-2">
-                        <div class="blockquote-custom-icon bg-info shadow-1-strong">
-                            <i class="fa fa-quote-right"></i>
+                    <div class="row d-flex align-items-center">
+                        <img src="assests/navicons/navprofleicon.png" alt="">
+                        <p class="testiname m-3">Viivek Rawat</p>
+
+                        <div class="testimonialcontent">
+                            <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, cum itaque
+                                ipsa magni dolor vero.</small>
                         </div>
-                        <div class="row d-flex align-items-center">
-                           <img src="assests/navicons/navprofleicon.png" alt="">
-                           <p class="testiname m-3">Viivek Rawat</p>
-                           
-                           <div class="testimonialcontent">
-                                <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, cum itaque ipsa magni dolor vero.</small>
-                           </div>
-                            <div class="ratings">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-half" aria-hidden="true"></i>
-                            </div>
-                        </div> 
-                    </div>
-                    <div class="testimonial px-5 py-2 m-2">
-                        <div class="blockquote-custom-icon bg-info shadow-1-strong">
-                            <i class="fa fa-quote-right"></i>
+                        <div class="ratings">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half" aria-hidden="true"></i>
                         </div>
-                        <div class="row d-flex align-items-center">
-                           <img src="assests/navicons/navprofleicon.png" alt="">
-                           <p class="testiname m-3">Viivek Rawat</p>
-                           
-                           <div class="testimonialcontent">
-                                <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, cum itaque ipsa magni dolor vero.</small>
-                           </div>
-                            <div class="ratings">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-half" aria-hidden="true"></i>
-                            </div>
-                        </div> 
                     </div>
-                    <div class="testimonial px-5 py-2 m-2">
-                        <div class="blockquote-custom-icon bg-info shadow-1-strong">
-                            <i class="fa fa-quote-right"></i>
-                        </div>
-                        <div class="row d-flex align-items-center">
-                           <img src="assests/navicons/navprofleicon.png" alt="">
-                           <p class="testiname m-3">Viivek Rawat</p>
-                           
-                           <div class="testimonialcontent">
-                                <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, cum itaque ipsa magni dolor vero.</small>
-                           </div>
-                            <div class="ratings">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-half" aria-hidden="true"></i>
-                            </div>
-                        </div> 
-                    </div>
-                    <div class="testimonial px-5 py-2 m-2">
-                        <div class="blockquote-custom-icon bg-info shadow-1-strong">
-                            <i class="fa fa-quote-right"></i>
-                        </div>
-                        <div class="row d-flex align-items-center">
-                           <img src="assests/navicons/navprofleicon.png" alt="">
-                           <p class="testiname m-3">Viivek Rawat</p>
-                           
-                           <div class="testimonialcontent">
-                                <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, cum itaque ipsa magni dolor vero.</small>
-                           </div>
-                            <div class="ratings">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-half" aria-hidden="true"></i>
-                            </div>
-                        </div> 
-                    </div>
-                    
-                    
-    
-                    
-                  
                 </div>
+                <div class="testimonial px-5 py-2 m-2">
+                    <div class="blockquote-custom-icon bg-info shadow-1-strong">
+                        <i class="fa fa-quote-right"></i>
+                    </div>
+                    <div class="row d-flex align-items-center">
+                        <img src="assests/navicons/navprofleicon.png" alt="">
+                        <p class="testiname m-3">Viivek Rawat</p>
+
+                        <div class="testimonialcontent">
+                            <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, cum itaque
+                                ipsa magni dolor vero.</small>
+                        </div>
+                        <div class="ratings">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial px-5 py-2 m-2">
+                    <div class="blockquote-custom-icon bg-info shadow-1-strong">
+                        <i class="fa fa-quote-right"></i>
+                    </div>
+                    <div class="row d-flex align-items-center">
+                        <img src="assests/navicons/navprofleicon.png" alt="">
+                        <p class="testiname m-3">Viivek Rawat</p>
+
+                        <div class="testimonialcontent">
+                            <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, cum itaque
+                                ipsa magni dolor vero.</small>
+                        </div>
+                        <div class="ratings">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial px-5 py-2 m-2">
+                    <div class="blockquote-custom-icon bg-info shadow-1-strong">
+                        <i class="fa fa-quote-right"></i>
+                    </div>
+                    <div class="row d-flex align-items-center">
+                        <img src="assests/navicons/navprofleicon.png" alt="">
+                        <p class="testiname m-3">Viivek Rawat</p>
+
+                        <div class="testimonialcontent">
+                            <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, cum itaque
+                                ipsa magni dolor vero.</small>
+                        </div>
+                        <div class="ratings">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+
 
 
             </div>
-            
+
+
         </div>
 
-        
+    </div>
 
-        <!-- Our Partners -->
 
-        <div class="container my-5 homepartners">
-            <div class="partnershead text-center wow animate__animated animate__fadeInDown ">
-                <h2>Our <span>Partners</span></h2>
+
+    <!-- Our Partners -->
+
+    <div class="container my-5 homepartners">
+        <div class="partnershead text-center wow animate__animated animate__fadeInDown ">
+            <h2>Our <span>Partners</span></h2>
+        </div>
+        <div class="row text-center align-items-center ">
+            <div class="col-sm-4 col-6 my-sm-3 wow animate__animated animate__fadeInUp ">
+                <img class="" src="assests/partners/baysidelogo.png" alt="">
             </div>
-            <div class="row text-center align-items-center ">
-                <div class="col-sm-4 col-6 my-sm-3 wow animate__animated animate__fadeInUp ">
-                    <img class="" src="assests/partners/baysidelogo.png" alt="">
-                </div>
-                <div class="col-sm-4 col-6 my-sm-3 wow animate__animated animate__fadeInUp ">
-                    <img src="assests/partners/dawkinslogo.png" alt="">
-                </div>
-                <div class="col-sm-4 col-6 my-sm-3 wow animate__animated animate__fadeInUp s">
-                    <img src="assests/partners/eurotechlogo.png" alt="">
-                </div>
-                <div class="col-sm-4 col-6 my-sm-3 wow animate__animated animate__fadeInUp ">
-                    <img src="assests/partners/gasonelogo.png" alt="">
-                </div>
-                <div class="col-sm-4 col-6 my-sm-3 wow animate__animated animate__fadeInUp">
-                    <img src="assests/partners/Levelheadlogo.png" alt="">
-                </div>
-                <div class="col-sm-4 col-6 my-sm-3 wow animate__animated animate__fadeInUp ">
-                    <img src="assests/partners/melblagerslogo.png" alt="">
-                </div>
-                <div class="col-sm-4 col-6 my-sm-3 wow animate__animated animate__fadeInUp">
-                    <img src="assests/partners/melblogo.png" alt="">
-                </div>
-                <div class="col-sm-4 col-6 my-sm-3 wow animate__animated animate__fadeInUp">
-                    <img src="assests/partners/pstylinglogo.png" alt="">
-                </div>
-                <div class="col-sm-4 col-6 my-sm-3 wow animate__animated animate__fadeInUp ">
-                    <img src="assests/partners/tylerlogo.png" alt="">
-                </div>
-                <div class="col-sm-4 col-6 my-sm-3 wow animate__animated animate__fadeInUp ">
-                    <img src="assests/partners/velaqualogo.png" alt="">
-                </div>
-                <div class="col-sm-4 col-6 my-sm-3 wow animate__animated animate__fadeInUp">
-                    <img src="assests/partners/logo 1.png" alt="">
-                </div>
-                <div class="col-sm-4 col-6 my-sm-3 wow animate__animated animate__fadeInUp ">
-                    <img src="assests/partners/logo_gekko-1 1.png" alt="">
-                </div>
+            <div class="col-sm-4 col-6 my-sm-3 wow animate__animated animate__fadeInUp ">
+                <img src="assests/partners/dawkinslogo.png" alt="">
+            </div>
+            <div class="col-sm-4 col-6 my-sm-3 wow animate__animated animate__fadeInUp s">
+                <img src="assests/partners/eurotechlogo.png" alt="">
+            </div>
+            <div class="col-sm-4 col-6 my-sm-3 wow animate__animated animate__fadeInUp ">
+                <img src="assests/partners/gasonelogo.png" alt="">
+            </div>
+            <div class="col-sm-4 col-6 my-sm-3 wow animate__animated animate__fadeInUp">
+                <img src="assests/partners/Levelheadlogo.png" alt="">
+            </div>
+            <div class="col-sm-4 col-6 my-sm-3 wow animate__animated animate__fadeInUp ">
+                <img src="assests/partners/melblagerslogo.png" alt="">
+            </div>
+            <div class="col-sm-4 col-6 my-sm-3 wow animate__animated animate__fadeInUp">
+                <img src="assests/partners/melblogo.png" alt="">
+            </div>
+            <div class="col-sm-4 col-6 my-sm-3 wow animate__animated animate__fadeInUp">
+                <img src="assests/partners/pstylinglogo.png" alt="">
+            </div>
+            <div class="col-sm-4 col-6 my-sm-3 wow animate__animated animate__fadeInUp ">
+                <img src="assests/partners/tylerlogo.png" alt="">
+            </div>
+            <div class="col-sm-4 col-6 my-sm-3 wow animate__animated animate__fadeInUp ">
+                <img src="assests/partners/velaqualogo.png" alt="">
+            </div>
+            <div class="col-sm-4 col-6 my-sm-3 wow animate__animated animate__fadeInUp">
+                <img src="assests/partners/logo 1.png" alt="">
+            </div>
+            <div class="col-sm-4 col-6 my-sm-3 wow animate__animated animate__fadeInUp ">
+                <img src="assests/partners/logo_gekko-1 1.png" alt="">
             </div>
         </div>
+    </div>
 
-        <!-- Call To Action Banner -->
-        <div class="container-fluid mt-5"  style="background: #F5F5F5;">
-            <div class="row justify-content-center py-5">
-                <div class="col-12 text-center wow animate__animated animate__fadeInDown">
-                    <p class="text-dark">With Our Digital Solutions</p>
-                    <h2 class="text-dark">We'll Bring You to The Top!</h2>
-                </div>
-                <div class="getstarted my-3 wow animate__animated animate__fadeInUp">
-                    <a class="whitebgbtn fontrale wow animate__animated animate__delay-1s animate__slow animate__bounceIn " href="#">
-                       Get In Touch
-                    </a>
-                </div>     
+    <!-- Call To Action Banner -->
+    <div class="container-fluid mt-5" style="background: #F5F5F5;">
+        <div class="row justify-content-center py-5">
+            <div class="col-12 text-center wow animate__animated animate__fadeInDown">
+                <p class="text-dark">With Our Digital Solutions</p>
+                <h2 class="text-dark">We'll Bring You to The Top!</h2>
+            </div>
+            <div class="getstarted my-3 wow animate__animated animate__fadeInUp">
+                <a class="whitebgbtn fontrale wow animate__animated animate__delay-1s animate__slow animate__bounceIn "
+                    href="#">
+                    Get In Touch
+                </a>
             </div>
         </div>
-        
-        <!-- ClientMovie -->
+    </div>
 
-        <div class="wrapper container-fluid bg-light mb-sm-4 py-sm-5 py-3 mb-3">
-            <div class="container">
+    <!-- ClientMovie -->
 
-                <div class="clientmvhead text-sm-right text-center pb-sm-0 pb-1 mt-3 pt-2 wow animate__animated animate__fadeInDown">
-                    <h2><b>A <span>Glance</span> at Our <span>Projects</span></h2>
-                </div>
-                <div class="container clientvid carousel my-5 wow animate__animated animate__fadeInUp">
-                  
-                    <div class="clientmv py-2 m-2">
-                        <div class="clientmv1 zoom">
-                            <img src="assests/clientmv/clientmv1.jpg" alt="">
-                        </div>
+    <div class="wrapper container-fluid bg-light mb-sm-4 py-sm-5 py-3 mb-3">
+        <div class="container">
+
+            <div
+                class="clientmvhead text-sm-right text-center pb-sm-0 pb-1 mt-3 pt-2 wow animate__animated animate__fadeInDown">
+                <h2><b>A <span>Glance</span> at Our <span>Projects</span></h2>
+            </div>
+            <div class="container clientvid carousel my-5 wow animate__animated animate__fadeInUp">
+
+                <div class="clientmv py-2 m-2">
+                    <div class="clientmv1 zoom">
+                        <img src="assests/clientmv/clientmv1.jpg" alt="">
                     </div>
-    
-                    <div class="clientmv  py-2 m-2">
-                        <div class="clientmv1">
-                            <img src="assests/clientmv/clientmv2.jpg" alt="">
-                        </div>
-                    </div>
-    
-                    <div class="clientmv  py-2 m-2">
-                        <div class="clientmv1">
-                            <img src="assests/clientmv/clientmv3.jpg" alt="">
-                        </div>
-                    </div>
-    
-                    <div class="clientmv  py-2 m-2">
-                        <div class="clientmv1">
-                            <img src="assests/clientmv/clientmv1.jpg" alt="">
-                        </div>
-                    </div>
-                  
                 </div>
 
+                <div class="clientmv  py-2 m-2">
+                    <div class="clientmv1">
+                        <img src="assests/clientmv/clientmv2.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="clientmv  py-2 m-2">
+                    <div class="clientmv1">
+                        <img src="assests/clientmv/clientmv3.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="clientmv  py-2 m-2">
+                    <div class="clientmv1">
+                        <img src="assests/clientmv/clientmv1.jpg" alt="">
+                    </div>
+                </div>
 
             </div>
-            
+
+
         </div>
-          
 
-        <!-- FAQs -->
-        <div class="container py-3 my-3">
-  
-            <div class="">
+    </div>
 
-                <div class="d-flex align-items-center wow animate__animated animate__fadeInUp">
-                    <div class="faqhomevhead text-left my-3">
-                        <h2>FAQ</h2>
-                    </div>
-                    <div class="input-group justify-content-around align-items-center">
-                        <input type="search" placeholder="Search Here" aria-describedby="button-addon1" class="form-control px-3 rounded-pill  fontrale border-0 bg-light m-3"><br>
-                        <div class="input-form-append">
-                            <button type="submit" class="ctasearchbtn fontpop">Search</button>
-                        </div>
+
+    <!-- FAQs -->
+    <div class="container py-3 my-3">
+
+        <div class="">
+
+            <div class="d-flex align-items-center wow animate__animated animate__fadeInUp">
+                <div class="faqhomevhead text-left my-3">
+                    <h2>FAQ</h2>
+                </div>
+                <div class="input-group justify-content-around align-items-center">
+                    <input type="search" placeholder="Search Here" aria-describedby="button-addon1"
+                        class="form-control px-3 rounded-pill  fontrale border-0 bg-light m-3"><br>
+                    <div class="input-form-append">
+                        <button type="submit" class="ctasearchbtn fontpop">Search</button>
                     </div>
                 </div>
+            </div>
 
-                
-              <div class="faqquestion wow animate__animated animate__fadeInDown animate__delay-1s">
+
+            <div class="faqquestion wow animate__animated animate__fadeInDown animate__delay-1s">
                 Lorem ipsum dolor sit amet ?
-              </div>
-              <div class="answercont">
+            </div>
+            <div class="answercont">
                 <div class="answer">
-                  <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quaerat velit temporibus exercitationem architecto magnam laudantium amet nisi officiis. Delectus, labore cumque non id, quia architecto blanditiis incidunt temporibus quae, amet itaque iusto mollitia nulla.</small>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quaerat velit temporibus
+                        exercitationem architecto magnam laudantium amet nisi officiis. Delectus, labore cumque non id,
+                        quia architecto blanditiis incidunt temporibus quae, amet itaque iusto mollitia nulla.</small>
                 </div>
-              </div>
-            
+            </div>
 
-              <div class="faqquestion wow animate__animated animate__fadeInDown animate__delay-1s">
+
+            <div class="faqquestion wow animate__animated animate__fadeInDown animate__delay-1s">
                 Lorem ipsum dolor sit amet consectetur adipisicing ?
-              </div>
-              <div class="answercont">
-                <div class="answer">
-                    <small> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere velit consequuntur facilis aspernatur sequi hic at optio, maiores veritatis, obcaecati modi dicta aliquam dolor ducimus pariatur assumenda cum mollitia? Deserunt delectus excepturi ea velit sunt iste ipsum sequi, distinctio aut dicta tempora voluptatibus ipsa iusto, explicabo rerum ullam labore .</small>
-                </div>
-              </div>
-
-            
-
-              <div class="faqquestion wow animate__animated animate__fadeInDown animate__delay-1s">
-                Lorem ipsum dolor sit amet consectetur ?
-              </div>
-              <div class="answercont">
-                <div class="answer">
-                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident nobis sunt delectus quasi sapiente id quod temporibus, voluptatum praesentium animi incidunt esse eveniet eum aliquid, dolor dignissimos aliquam culpa iste. Aliquid voluptatibus minus recusandae nobis placeat, accusamus assumenda fugit ullam.</small>
-                </div>
-              </div>
-
-           
-
-              <div class="faqquestion wow animate__animated animate__fadeInDown animate__delay-1s">
-                Lorem ipsum dolor sit amet ?
-              </div>
-              <div class="answercont">
-                <div class="answer">
-                  <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident nobis sunt delectus quasi sapiente id quod temporibus, voluptatum praesentium animi incidunt esse eveniet eum aliquid, dolor dignissimos aliquam culpa iste. Aliquid voluptatibus minus recusandae nobis placeat, accusamus assumenda fugit ullam.</small>
-             
-                </div>
-              </div>
-
-            
-
-              <div class="faqquestion wow animate__animated animate__fadeInDown animate__delay-1s">
-               Lorem ipsum dolor, sit amet consectetur adipisicing elit ?
-              </div>
-              <div class="answercont">
-                <div class="answer">
-                  <small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore officiis et laborum facere voluptatum atque, nobis dignissimos fuga corrupti similique, ut repellendus autem commodi earum pariatur tenetur sint quibusdam esse! Fugit ab voluptas ratione consequuntur.</small>
-                </div>
-              </div>
             </div>
-            
+            <div class="answercont">
+                <div class="answer">
+                    <small> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere velit consequuntur facilis
+                        aspernatur sequi hic at optio, maiores veritatis, obcaecati modi dicta aliquam dolor ducimus
+                        pariatur assumenda cum mollitia? Deserunt delectus excepturi ea velit sunt iste ipsum sequi,
+                        distinctio aut dicta tempora voluptatibus ipsa iusto, explicabo rerum ullam labore .</small>
+                </div>
+            </div>
+
+
+
+            <div class="faqquestion wow animate__animated animate__fadeInDown animate__delay-1s">
+                Lorem ipsum dolor sit amet consectetur ?
+            </div>
+            <div class="answercont">
+                <div class="answer">
+                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident nobis sunt delectus quasi
+                        sapiente id quod temporibus, voluptatum praesentium animi incidunt esse eveniet eum aliquid,
+                        dolor dignissimos aliquam culpa iste. Aliquid voluptatibus minus recusandae nobis placeat,
+                        accusamus assumenda fugit ullam.</small>
+                </div>
+            </div>
+
+
+
+            <div class="faqquestion wow animate__animated animate__fadeInDown animate__delay-1s">
+                Lorem ipsum dolor sit amet ?
+            </div>
+            <div class="answercont">
+                <div class="answer">
+                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident nobis sunt delectus quasi
+                        sapiente id quod temporibus, voluptatum praesentium animi incidunt esse eveniet eum aliquid,
+                        dolor dignissimos aliquam culpa iste. Aliquid voluptatibus minus recusandae nobis placeat,
+                        accusamus assumenda fugit ullam.</small>
+
+                </div>
+            </div>
+
+
+
+            <div class="faqquestion wow animate__animated animate__fadeInDown animate__delay-1s">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit ?
+            </div>
+            <div class="answercont">
+                <div class="answer">
+                    <small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore officiis et laborum facere
+                        voluptatum atque, nobis dignissimos fuga corrupti similique, ut repellendus autem commodi earum
+                        pariatur tenetur sint quibusdam esse! Fugit ab voluptas ratione consequuntur.</small>
+                </div>
+            </div>
         </div>
-        
+
+    </div>
+
 
     <!--Footer Section-->
 
-         <div id="footer">
-            
-        </div>
-        
-        <script>
-        $(function(){
-          $("#footer").load("footer.html");
+    <div id="footer">
+
+    </div>
+
+    <script>
+        $(function () {
+            $("#footer").load("footer.html");
         });
-        </script>
+    </script>
 
     <!--Footer Section-->
-        
 
 
 
 
-        
-        
-        
-        <script src="Js/main.js" async defer></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    </body>
+
+
+
+    <script src="Js/main.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+
 </html>

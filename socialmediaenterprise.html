@@ -1,603 +1,690 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Social Media - Enterprice | Maxlence</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/style.css">
-        
-    </head>
-    <body>
 
-        <style>
-            #naventerprise, #enterprisesocialmedia,.base {
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Social Media - Enterprice | Maxlence</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <style>
+        #naventerprise,
+        #enterprisesocialmedia,
+        .base {
             color: #00C99C !important;
         }
-        </style>
+    </style>
 
-        <!--Navigation bar-->
-            <div id="nav-placeholder">
-            
-            </div>
-            
-            <script>
-            $(function(){
-              $("#nav-placeholder").load("nav1.html");
-            });
-            </script>
-        <!--end of Navigation bar-->
-        <div class="container-fluid p-2"style="background-color: #E2F0FF;" >
-            <div class="container">
-                <div class="row justify-content-around align-items-center">
-                    <div class="breadcrumbs text-center col-5 d-sm-flex d-none">
-                        <small class="breadcrumbroot"><a href="index.html">Home</a> </small>
-                        <small class="breadcrumbsec breadactive"><a href="socialmediaenterprise.html">Social Media Enterprise</a></small>
-                       
-        
-                        <!-- <small class="breadcrumbsec "><a href="">Growth</a> </small>
+    <!--Navigation bar-->
+    <div id="nav-placeholder">
+
+    </div>
+
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("header.html");
+        });
+    </script>
+    <!--end of Navigation bar-->
+    <div class="container-fluid p-2" style="background-color: #E2F0FF;">
+        <div class="container">
+            <div class="row justify-content-around align-items-center">
+                <div class="breadcrumbs text-center col-5 d-sm-flex d-none">
+                    <small class="breadcrumbroot"><a href="index.html">Home</a> </small>
+                    <small class="breadcrumbsec breadactive"><a href="socialmediaenterprise.html">Social Media
+                            Enterprise</a></small>
+
+
+                    <!-- <small class="breadcrumbsec "><a href="">Growth</a> </small>
                         <small class="breadcrumbsec "><a href="">Creation</a> </small> -->
-                    </div>
-                    <div class="icons col-sm-5 col-12 d-flex justify-content-sm-end justify-content-center align-items-center">
-                        <div class="">
-                            <div class="input-group justify-content-around align-items-center">
-                                <input type="search" placeholder="Search Here" aria-describedby="button-addon1" class="form-control navsearch rounded-pill  fontrale border-0 bg-light "><br>
-                              <div class="input-form-append">
-                                  <button type="submit" style="border: none; background: transparent !important;"><img class="searchnavicon" src="assests/searchmag.png" alt=""></button>
-                              </div>
+                </div>
+                <div
+                    class="icons col-sm-5 col-12 d-flex justify-content-sm-end justify-content-center align-items-center">
+                    <div class="">
+                        <div class="input-group justify-content-around align-items-center">
+                            <input type="search" placeholder="Search Here" aria-describedby="button-addon1"
+                                class="form-control navsearch rounded-pill  fontrale border-0 bg-light "><br>
+                            <div class="input-form-append">
+                                <button type="submit" style="border: none; background: transparent !important;"><img
+                                        class="searchnavicon" src="assests/searchmag.png" alt=""></button>
                             </div>
                         </div>
-                        <!-- <div class="bellicon mx-2">
+                    </div>
+                    <!-- <div class="bellicon mx-2">
                             <a href=""><img src="assests/bellnav.png" alt=""></a>
                         </div> -->
-                        <div class="carticon mx-2">
-                            <a href=""><img src="assests/carticon.png" alt=""></a>
-                        </div>
-                        
-                        <!-- <div class="messageicon mx-2">
+                    <div class="carticon mx-2">
+                        <a href=""><img src="assests/carticon.png" alt=""></a>
+                    </div>
+
+                    <!-- <div class="messageicon mx-2">
                             <a href=""><img src="assests/messgnav.png" alt=""></a>
                         </div>
                      -->
-                    </div>
                 </div>
             </div>
         </div>
-        <style>
-            .searchnavicon,.bellicon a img, .messageicon a img{
-                width: 1rem;
-                height: auto;
-            }
-            .carticon a img{
-                width: 1.25rem;
-            }
-            .breadcrumbsec a,.breadcrumbroot a{
-               color: rgba(33, 37, 41, 0.8) !important;
-            }
-            .breadcrumbsec::before{
-                content: ">";
-                margin: .4rem;
-            }
-            .breadactive a{
-                color: rgba(33, 37, 41, 0.5) !important;
-            }
-            .featcamp a{
-                color: #212529 !important;
-            }
-        </style>
-        
+    </div>
+    <style>
+        .searchnavicon,
+        .bellicon a img,
+        .messageicon a img {
+            width: 1rem;
+            height: auto;
+        }
 
-        <!-- Hero Section -->
-        <div class="container-fluid  py-3 " style="background-color: #fafafa;">
-            <div class="container my-sm-4 py-0 my-0">
-                <div class="row my-4 justify-content-center align-items-center text-sm-left text-center">
-                    <div class="col-sm-6 col-12 my-3  wow animate__animated animate__fadeInUp">
-                        <h1 class="font-weight-bold my-sm-4 ">Enterprise <span> Social Media </span> Service</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem architecto, inventore placeat est porro atque tempore nobis harum minima. Eum?</p>
-                        <div class="d-sm-flex row justify-content-sm-start justify-content-center">
+        .carticon a img {
+            width: 1.25rem;
+        }
+
+        .breadcrumbsec a,
+        .breadcrumbroot a {
+            color: rgba(33, 37, 41, 0.8) !important;
+        }
+
+        .breadcrumbsec::before {
+            content: ">";
+            margin: .4rem;
+        }
+
+        .breadactive a {
+            color: rgba(33, 37, 41, 0.5) !important;
+        }
+
+        .featcamp a {
+            color: #212529 !important;
+        }
+    </style>
+
+
+    <!-- Hero Section -->
+    <div class="container-fluid  py-3 " style="background-color: #fafafa;">
+        <div class="container my-sm-4 py-0 my-0">
+            <div class="row my-4 justify-content-center align-items-center text-sm-left text-center">
+                <div class="col-sm-6 col-12 my-3  wow animate__animated animate__fadeInUp">
+                    <h1 class="font-weight-bold my-sm-4 ">Enterprise <span> Social Media </span> Service</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem architecto, inventore placeat est
+                        porro atque tempore nobis harum minima. Eum?</p>
+                    <div class="d-sm-flex row justify-content-sm-start justify-content-center">
 
                         <a href="quest.html" class="getstartbtn fontpop mx-2 my-2">Request A Demo</a>
                         <a class="ctabtn viewjectbtn fontpop mx-2 my-2 " href="#">View Case Studies</a>
-                        </div>
-                        
                     </div>
-                    <div class="col-sm-6 wow animate__animated animate__fadeInUp">
-                        <img class="w-100" src="assests/enterprisesocialhero.png" alt="">
-                    </div>
-    
-                    
-     
+
                 </div>
+                <div class="col-sm-6 wow animate__animated animate__fadeInUp">
+                    <img class="w-100" src="assests/enterprisesocialhero.png" alt="">
+                </div>
+
+
+
             </div>
         </div>
+    </div>
 
-        <div class="container-fluid  py-3 ">
-            <div class="container my-sm-4 py-0 my-0">
-                <div class="row my-4 justify-content-center align-items-center text-sm-left text-center">
-                    <div class="col-sm-6 wow animate__animated animate__fadeInUp  order-md-1 order-sm-2 order-2">
-                        <img class="w-100" src="assests/enterprisesocial2.png" alt="">
-                    </div>
+    <div class="container-fluid  py-3 ">
+        <div class="container my-sm-4 py-0 my-0">
+            <div class="row my-4 justify-content-center align-items-center text-sm-left text-center">
+                <div class="col-sm-6 wow animate__animated animate__fadeInUp  order-md-1 order-sm-2 order-2">
+                    <img class="w-100" src="assests/enterprisesocial2.png" alt="">
+                </div>
 
-                    <div class="col-sm-6 col-12 my-3 order-md-2 order-sm-1 order-1  wow animate__animated animate__fadeInUp">
-                        <h1 class="font-weight-bold my-sm-4 "><span> Expand </span> your business with our <span>Enterprise 
+                <div
+                    class="col-sm-6 col-12 my-3 order-md-2 order-sm-1 order-1  wow animate__animated animate__fadeInUp">
+                    <h1 class="font-weight-bold my-sm-4 "><span> Expand </span> your business with our <span>Enterprise
                             Social Media </span> Service</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem architecto, inventore placeat est porro atque tempore nobis harum minima. Eum?</p>
-                        <div class="d-sm-flex row justify-content-sm-start justify-content-center">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem architecto, inventore placeat est
+                        porro atque tempore nobis harum minima. Eum?</p>
+                    <div class="d-sm-flex row justify-content-sm-start justify-content-center">
 
                         <a href="quest.html" class="getstartbtn fontpop mx-2 my-2">Send Me A Proposal</a>
                         <a class="ctabtn viewjectbtn fontpop mx-2 my-2 " href="tel:+496170961709">123-456-7890</a>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Our Partners -->
+
+    <div class="container  my-5 homepartners">
+        <div class="partnershead text-center wow animate__animated animate__fadeInDown ">
+            <h1>Our <span>Partners</span></h1>
+        </div>
+        <div class="row designcommonslider text-center align-items-center ">
+            <div class="col-sm-4 col-6 my-sm-3 wow animate__animated animate__fadeInUp ">
+                <img class="w-100" src="assests/partners/baysidelogo.png" alt="">
+            </div>
+            <div class="col-sm-4 col-6 my-sm-3 wow animate__animated animate__fadeInUp ">
+                <img src="assests/partners/dawkinslogo.png" alt="">
+            </div>
+            <div class="col-sm-4 col-6 my-sm-3 wow animate__animated animate__fadeInUp s">
+                <img src="assests/partners/eurotechlogo.png" alt="">
+            </div>
+            <div class="col-sm-4 col-6 my-sm-3 wow animate__animated animate__fadeInUp ">
+                <img src="assests/partners/gasonelogo.png" alt="">
+            </div>
+            <div class="col-sm-4 col-6 my-sm-3 wow animate__animated animate__fadeInUp">
+                <img src="assests/partners/Levelheadlogo.png" alt="">
+            </div>
+            <div class="col-sm-4 col-6 my-sm-3 wow animate__animated animate__fadeInUp ">
+                <img src="assests/partners/velaqualogo.png" alt="">
+            </div>
+            <div class="col-sm-4 col-6 my-sm-3 wow animate__animated animate__fadeInUp">
+                <img src="assests/partners/logo 1.png" alt="">
+            </div>
+            <div class="col-sm-4 col-6 my-sm-3 wow animate__animated animate__fadeInUp ">
+                <img src="assests/partners/logo_gekko-1 1.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- testi Section -->
+    <div class="container-fluid  py-3 " style="background-color: #fafafa;">
+        <div class="container my-sm-4 py-0 my-0">
+            <div class="row my-4 justify-content-center align-items-center text-sm-left text-center">
+                <div class="col-sm-6 col-12 my-3  wow animate__animated animate__fadeInUp">
+                    <h1 class="font-weight-bold my-sm-4 ">Lorem ipsum <span>dolor</span> sit.</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem architecto, inventore placeat est
+                        porro atque tempore nobis harum minima. Eum?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, sit!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam iusto id, repellat accusamus
+                        iste omnis nesciunt minus, dignissimos nobis dicta quos pariatur accusantium! Ipsa aliquam
+                        delectus neque eveniet, doloribus quia?</p>
+                </div>
+                <div class="col-sm-6 wow animate__animated animate__fadeInUp">
+                    <div class="singleslide text-left testi my-5 wow animate__animated animate__fadeInUp">
+
+
+
+                        <div class="testimonial px-5 py-2 m-2 ">
+                            <div class="blockquote-custom-icon bg-info shadow-1-strong">
+                                <i class="fa fa-quote-right"></i>
+                            </div>
+                            <div class="row d-flex align-items-center">
+                                <img src="assests/navicons/navprofleicon.png" alt="">
+                                <p class="testiname m-3">Viivek Rawat</p>
+
+                                <div class="testimonialcontent">
+                                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, cum
+                                        itaque ipsa magni dolor vero.</small>
+                                </div>
+                                <div class="ratings">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half" aria-hidden="true"></i>
+                                </div>
+                            </div>
                         </div>
-                        
-                    </div>
-                    
-     
-                </div>
-            </div>
-        </div>
 
-
-        <!-- Our Partners -->
-
-        <div class="container  my-5 homepartners">
-            <div class="partnershead text-center wow animate__animated animate__fadeInDown ">
-                <h1>Our <span>Partners</span></h1>
-            </div>
-            <div class="row designcommonslider text-center align-items-center ">
-                <div class="col-sm-4 col-6 my-sm-3 wow animate__animated animate__fadeInUp ">
-                    <img class="w-100" src="assests/partners/baysidelogo.png" alt="">
-                </div>
-                <div class="col-sm-4 col-6 my-sm-3 wow animate__animated animate__fadeInUp ">
-                    <img src="assests/partners/dawkinslogo.png" alt="">
-                </div>
-                <div class="col-sm-4 col-6 my-sm-3 wow animate__animated animate__fadeInUp s">
-                    <img src="assests/partners/eurotechlogo.png" alt="">
-                </div>
-                <div class="col-sm-4 col-6 my-sm-3 wow animate__animated animate__fadeInUp ">
-                    <img src="assests/partners/gasonelogo.png" alt="">
-                </div>
-                <div class="col-sm-4 col-6 my-sm-3 wow animate__animated animate__fadeInUp">
-                    <img src="assests/partners/Levelheadlogo.png" alt="">
-                </div>
-                <div class="col-sm-4 col-6 my-sm-3 wow animate__animated animate__fadeInUp ">
-                    <img src="assests/partners/velaqualogo.png" alt="">
-                </div>
-                <div class="col-sm-4 col-6 my-sm-3 wow animate__animated animate__fadeInUp">
-                    <img src="assests/partners/logo 1.png" alt="">
-                </div>
-                <div class="col-sm-4 col-6 my-sm-3 wow animate__animated animate__fadeInUp ">
-                    <img src="assests/partners/logo_gekko-1 1.png" alt="">
-                </div>
-            </div>
-        </div>
-
-
-         <!-- testi Section -->
-         <div class="container-fluid  py-3 " style="background-color: #fafafa;">
-            <div class="container my-sm-4 py-0 my-0">
-                <div class="row my-4 justify-content-center align-items-center text-sm-left text-center">
-                    <div class="col-sm-6 col-12 my-3  wow animate__animated animate__fadeInUp">
-                        <h1 class="font-weight-bold my-sm-4 ">Lorem ipsum <span>dolor</span>  sit.</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem architecto, inventore placeat est porro atque tempore nobis harum minima. Eum?</p>   
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, sit!</p> 
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam iusto id, repellat accusamus iste omnis nesciunt minus, dignissimos nobis dicta quos pariatur accusantium! Ipsa aliquam delectus neque eveniet, doloribus quia?</p>
-                    </div>
-                    <div class="col-sm-6 wow animate__animated animate__fadeInUp">
-                        <div class="singleslide text-left testi my-5 wow animate__animated animate__fadeInUp">
-                  
-        
-                    
-                            <div class="testimonial px-5 py-2 m-2 ">
-                                <div class="blockquote-custom-icon bg-info shadow-1-strong">
-                                    <i class="fa fa-quote-right"></i>
-                                </div>
-                                <div class="row d-flex align-items-center">
-                                   <img src="assests/navicons/navprofleicon.png" alt="">
-                                   <p class="testiname m-3">Viivek Rawat</p>
-                                   
-                                   <div class="testimonialcontent">
-                                        <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, cum itaque ipsa magni dolor vero.</small>
-                                   </div>
-                                    <div class="ratings">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star-half" aria-hidden="true"></i>
-                                    </div>
-                                </div> 
+                        <div class="testimonial px-5 py-2 m-2">
+                            <div class="blockquote-custom-icon bg-info shadow-1-strong">
+                                <i class="fa fa-quote-right"></i>
                             </div>
+                            <div class="row d-flex align-items-center">
+                                <img src="assests/navicons/navprofleicon.png" alt="">
+                                <p class="testiname m-3">Viivek Rawat</p>
 
-                            <div class="testimonial px-5 py-2 m-2">
-                                <div class="blockquote-custom-icon bg-info shadow-1-strong">
-                                    <i class="fa fa-quote-right"></i>
+                                <div class="testimonialcontent">
+                                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, cum
+                                        itaque ipsa magni dolor vero.</small>
                                 </div>
-                                <div class="row d-flex align-items-center">
-                                   <img src="assests/navicons/navprofleicon.png" alt="">
-                                   <p class="testiname m-3">Viivek Rawat</p>
-                                   
-                                   <div class="testimonialcontent">
-                                        <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, cum itaque ipsa magni dolor vero.</small>
-                                   </div>
-                                    <div class="ratings">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star-half" aria-hidden="true"></i>
-                                    </div>
-                                </div> 
-                            </div>
-                            <div class="testimonial px-5 py-2 m-2">
-                                <div class="blockquote-custom-icon bg-info shadow-1-strong">
-                                    <i class="fa fa-quote-right"></i>
+                                <div class="ratings">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half" aria-hidden="true"></i>
                                 </div>
-                                <div class="row d-flex align-items-center">
-                                   <img src="assests/navicons/navprofleicon.png" alt="">
-                                   <p class="testiname m-3">Viivek Rawat</p>
-                                   
-                                   <div class="testimonialcontent">
-                                        <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, cum itaque ipsa magni dolor vero.</small>
-                                   </div>
-                                    <div class="ratings">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star-half" aria-hidden="true"></i>
-                                    </div>
-                                </div> 
                             </div>
-                            
-                            
-            
-                            
-                          
                         </div>
-                    </div>
+                        <div class="testimonial px-5 py-2 m-2">
+                            <div class="blockquote-custom-icon bg-info shadow-1-strong">
+                                <i class="fa fa-quote-right"></i>
+                            </div>
+                            <div class="row d-flex align-items-center">
+                                <img src="assests/navicons/navprofleicon.png" alt="">
+                                <p class="testiname m-3">Viivek Rawat</p>
 
-     
+                                <div class="testimonialcontent">
+                                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, cum
+                                        itaque ipsa magni dolor vero.</small>
+                                </div>
+                                <div class="ratings">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
                 </div>
+
+
             </div>
         </div>
+    </div>
 
 
-        <style>
-            .socialmediaservice{
-                /* background: url(assests/socialinstabg.png);
+    <style>
+        .socialmediaservice {
+            /* background: url(assests/socialinstabg.png);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-size: 100% 100%; */
-                
-            }
-        </style>
 
-        <!-- Social MEdia Services -->
-        <div class="container-fluid  py-5" style="background: #fff">
-            <div class="container seoservices">
-              <div class=" text-center my-3 wow animate__ animate__fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
-                <h1 class="font-weight-bold my-sm-4 ">What services are covered in <span> Enterprise Social Media </span></h1>
+        }
+    </style>
 
-              </div>
-      
-              <div class="row justify-content-around align-items-centerwow animate__ animate__fadeInDown animate__slow animated" style="visibility: visible; animation-name: fadeInDown;">
-                <div class="col-md-3 text-center seoservice socialmediaservice shadow-lg wow animate__ animate__fadeInLeft animate__fast animate__delay-1s" style="visibility: visible; animation-name: fadeInLeft;">
-                  <img src="assests/socialfbxs.png" alt="">
-                  <h5>Facebook</h5>
-                  <small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, quibusdam?</small>
-                </div>
-      
-                <div class="col-md-3 text-center seoservice socialmediaservice shadow-lg wow animate__ animate__fadeInDown animate__fast animate__delay-1s" style="visibility: visible; animation-name: fadeInDown;">
-                  <img src="assests/socialinstaxs.png" alt="">
-                  <h5>Instagram</h5>
-                  <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem itaque maiores delectus.</small>
-                </div>
-      
-                <div class="col-md-3 text-center seoservice socialmediaservice shadow-lg wow animate__ animate__fadeInRight animate__fast animate__delay-1s" style="visibility: visible; animation-name: fadeInRight;">
-                  <img src="assests/sociallinkdxs.png" alt="">
-                  <h5>LinkedIn</h5>
-                  <small>Lorem ipsum dolor sit amet consectetur adipisicing elit.</small>
-                </div>
-                  
-              </div>
+    <!-- Social MEdia Services -->
+    <div class="container-fluid  py-5" style="background: #fff">
+        <div class="container seoservices">
+            <div class=" text-center my-3 wow animate__ animate__fadeInDown animated"
+                style="visibility: visible; animation-name: fadeInDown;">
+                <h1 class="font-weight-bold my-sm-4 ">What services are covered in <span> Enterprise Social Media
+                    </span></h1>
 
-              <div class="row justify-content-around wow animate__ animate__fadeInDown animate__slow animated" style="visibility: visible; animation-name: fadeInDown;">
-                <div class="col-md-3 text-center seoservice socialmediaservice shadow-lg wow animate__ animate__fadeInLeft animate__fast animate__delay-1s" style="visibility: visible; animation-name: fadeInLeft;">
-                  <img src="assests/socialpinxs.png" alt="">
-                  <h5>Pinterest</h5>
-                  <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta?</small>
-                </div>
-      
-                <div class="col-md-3 text-center seoservice socialmediaservice shadow-lg wow animate__ animate__fadeInDown animate__fast animate__delay-1s" style="visibility: visible; animation-name: fadeInDown;">
-                  <img src="assests/socialtweetxs.png" alt="">
-                  <h5>Twitter</h5>
-                  <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut asperiores earum magni dolores?</small>
-                </div>
-      
-                <div class="col-md-3 text-center seoservice socialmediaservice shadow-lg wow animate__ animate__fadeInRight animate__fast animate__delay-1s" style="visibility: visible; animation-name: fadeInRight;">
-                  <img src="assests/socialytxs.png" alt="">
-                  <h5>Youtube</h5>
-                  <small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, corporis dolore quae tenetur minima rem.</small>
-                </div>
-                  
-              </div>
-      
             </div>
-            
-          </div>
 
-
-          <!-- Call To Action Banner -->
-        <div class="container-fluid mt-5 b"  style="background:  #EFF4FB;">
-            <div class="row justify-content-center py-5">
-                <div class="col-12 text-center wow animate__animated animate__fadeInDown">
-                    <h2 class="text-dark">We'd Love To Be Your Partner</h2>
+            <div class="row justify-content-around align-items-centerwow animate__ animate__fadeInDown animate__slow animated"
+                style="visibility: visible; animation-name: fadeInDown;">
+                <div class="col-md-3 text-center seoservice socialmediaservice shadow-lg wow animate__ animate__fadeInLeft animate__fast animate__delay-1s"
+                    style="visibility: visible; animation-name: fadeInLeft;">
+                    <img src="assests/socialfbxs.png" alt="">
+                    <h5>Facebook</h5>
+                    <small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, quibusdam?</small>
                 </div>
-                <div class="d-sm-flex flex-sm-row flex-column  text-center my-3 row justify-content-sm-start justify-content-center">
 
-                    <a href="quest.html" class="getstartbtn fontpop wow animate__animated animate__delay-1s animate__slow animate__bounceIn mx-2 my-2">Send Me A Proposal</a>
-                    <a class="ctabtn viewjectbtn fontpop wow animate__animated animate__delay-1s animate__slow animate__bounceIn mx-2 my-2 " href="tel:+496170961709">Get In Touch</a>
-                </div>  
+                <div class="col-md-3 text-center seoservice socialmediaservice shadow-lg wow animate__ animate__fadeInDown animate__fast animate__delay-1s"
+                    style="visibility: visible; animation-name: fadeInDown;">
+                    <img src="assests/socialinstaxs.png" alt="">
+                    <h5>Instagram</h5>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem itaque maiores
+                        delectus.</small>
+                </div>
+
+                <div class="col-md-3 text-center seoservice socialmediaservice shadow-lg wow animate__ animate__fadeInRight animate__fast animate__delay-1s"
+                    style="visibility: visible; animation-name: fadeInRight;">
+                    <img src="assests/sociallinkdxs.png" alt="">
+                    <h5>LinkedIn</h5>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit.</small>
+                </div>
+
             </div>
+
+            <div class="row justify-content-around wow animate__ animate__fadeInDown animate__slow animated"
+                style="visibility: visible; animation-name: fadeInDown;">
+                <div class="col-md-3 text-center seoservice socialmediaservice shadow-lg wow animate__ animate__fadeInLeft animate__fast animate__delay-1s"
+                    style="visibility: visible; animation-name: fadeInLeft;">
+                    <img src="assests/socialpinxs.png" alt="">
+                    <h5>Pinterest</h5>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta?</small>
+                </div>
+
+                <div class="col-md-3 text-center seoservice socialmediaservice shadow-lg wow animate__ animate__fadeInDown animate__fast animate__delay-1s"
+                    style="visibility: visible; animation-name: fadeInDown;">
+                    <img src="assests/socialtweetxs.png" alt="">
+                    <h5>Twitter</h5>
+                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut asperiores earum magni
+                        dolores?</small>
+                </div>
+
+                <div class="col-md-3 text-center seoservice socialmediaservice shadow-lg wow animate__ animate__fadeInRight animate__fast animate__delay-1s"
+                    style="visibility: visible; animation-name: fadeInRight;">
+                    <img src="assests/socialytxs.png" alt="">
+                    <h5>Youtube</h5>
+                    <small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, corporis dolore quae
+                        tenetur minima rem.</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Call To Action Banner -->
+    <div class="container-fluid mt-5 b" style="background:  #EFF4FB;">
+        <div class="row justify-content-center py-5">
+            <div class="col-12 text-center wow animate__animated animate__fadeInDown">
+                <h2 class="text-dark">We'd Love To Be Your Partner</h2>
+            </div>
+            <div
+                class="d-sm-flex flex-sm-row flex-column  text-center my-3 row justify-content-sm-start justify-content-center">
+
+                <a href="quest.html"
+                    class="getstartbtn fontpop wow animate__animated animate__delay-1s animate__slow animate__bounceIn mx-2 my-2">Send
+                    Me A Proposal</a>
+                <a class="ctabtn viewjectbtn fontpop wow animate__animated animate__delay-1s animate__slow animate__bounceIn mx-2 my-2 "
+                    href="tel:+496170961709">Get In Touch</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Infosection -->
+
+    <div class="container my-5">
+        <div class="gadsservicehead py-3 text-center wow animate__animated animate__fadeInDown ">
+            <h1><b>What <span> different</span> we do for <span>Enterprise Social Media</span></b> </h1>
+        </div>
+        <div class="row my-3 justify-content-around">
+            <div class="col-sm-5 m-3">
+                <div class="h4"><span><b>Remarketing</b></span></div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque blanditiis porro saepe, officia
+                        natus cumque commodi. Officia illum maxime aut!</p>
+                </div>
+            </div>
+            <div class="col-sm-5 m-3">
+                <div class="h4"><span><b>Specialized media buys on website</b></span></div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque blanditiis porro saepe, officia
+                        natus cumque commodi. Officia illum maxime aut!</p>
+                </div>
+            </div>
+            <div class="col-sm-5 m-3">
+                <div class="h4"><span><b>Development of ad creatives and landing pages</b></span></div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque blanditiis porro saepe, officia
+                        natus cumque commodi. Officia illum maxime aut!</p>
+                </div>
+            </div>
+            <div class="col-sm-5 m-3">
+                <div class="h4"><span><b>Geofencing</b></span></div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque blanditiis porro saepe, officia
+                        natus cumque commodi. Officia illum maxime aut!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Campaign Work -->
+
+
+    <div class="container my-sm-4 py-sm-3 py-3 my-3 ">
+
+        <div class="campworkhead py-3 my-3 text-center">
+            <h2>Why Our Campaigns Work</h2>
+            <p>We use the best tools</p>
         </div>
 
 
-        <!-- Infosection -->
+        <div class="row justify-content-around">
 
-        <div class="container my-5">
-          <div class="gadsservicehead py-3 text-center wow animate__animated animate__fadeInDown ">
-              <h1><b>What <span> different</span> we do for <span>Enterprise Social Media</span></b> </h1>
-          </div>
-          <div class="row my-3 justify-content-around">
-              <div class="col-sm-5 m-3">
-                  <div class="h4"><span><b>Remarketing</b></span></div>
-                  <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque blanditiis porro saepe, officia natus cumque commodi. Officia illum maxime aut!</p></div>
-              </div>
-              <div class="col-sm-5 m-3">
-               <div class="h4"><span><b>Specialized media buys on website</b></span></div>
-               <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque blanditiis porro saepe, officia natus cumque commodi. Officia illum maxime aut!</p></div>
-              </div>
-              <div class="col-sm-5 m-3">
-                  <div class="h4"><span><b>Development of ad creatives and landing pages</b></span></div>
-                  <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque blanditiis porro saepe, officia natus cumque commodi. Officia illum maxime aut!</p></div>
-              </div>
-              <div class="col-sm-5 m-3">
-                  <div class="h4"><span><b>Geofencing</b></span></div>
-                  <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque blanditiis porro saepe, officia natus cumque commodi. Officia illum maxime aut!</p></div>
-              </div>
-          </div>
-        </div>
-      
-        <!-- Campaign Work -->
-
-
-        <div class="container my-sm-4 py-sm-3 py-3 my-3 ">
-    
-            <div class="campworkhead py-3 my-3 text-center">
-                <h2>Why Our Campaigns Work</h2>
-                <p>We use the best tools</p>
+            <div
+                class="col-sm-3 m-3 my-sm-3 p-sm-0  text-center campaignwork wow animate__animated animate__fadeInUp animate__delay-1s">
+                <div class="videocamptoolicon campworkicon">
+                    <img src="assests/videocamptool1.png" alt="">
+                </div>
+                <div class="videocamptooltitle campworktitle my-3">
+                    <h6><b>Seo</b></h6>
+                </div>
+                <div class="videocamptooltext campworktext ">
+                    <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti expedita dolor quam
+                        laborum nostrum placeat!.</small>
+                </div>
             </div>
-    
-    
-            <div class="row justify-content-around">
-    
-                <div class="col-sm-3 m-3 my-sm-3 p-sm-0  text-center campaignwork wow animate__animated animate__fadeInUp animate__delay-1s">
-                    <div class="videocamptoolicon campworkicon">
-                        <img src="assests/videocamptool1.png" alt="">
-                    </div>
-                    <div class="videocamptooltitle campworktitle my-3">
-                        <h6><b>Seo</b></h6>
-                    </div>
-                    <div class="videocamptooltext campworktext ">
-                        <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti expedita dolor quam laborum nostrum placeat!.</small>
-                    </div>
+
+            <div
+                class="col-sm-3 m-3 my-sm-3 p-sm-0  text-center campaignwork wow animate__animated animate__fadeInUp animate__delay-1s">
+                <div class="videocamptoolicon campworkicon">
+                    <img src="assests/videocamptool2.png" alt="">
                 </div>
-    
-                <div class="col-sm-3 m-3 my-sm-3 p-sm-0  text-center campaignwork wow animate__animated animate__fadeInUp animate__delay-1s">
-                    <div class="videocamptoolicon campworkicon">
-                        <img src="assests/videocamptool2.png" alt="">
-                    </div>
-                    <div class="videocamptooltitle campworktitle my-3">
-                        <h6><b>Competitive Research</b></h6>
-                    </div>
-                    <div class="videocamptooltext campworktext ">
-                        <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti expedita dolor quam laborum nostrum placeat!.</small>
-                    </div>
+                <div class="videocamptooltitle campworktitle my-3">
+                    <h6><b>Competitive Research</b></h6>
                 </div>
-    
-                <div class="col-sm-3 m-3 my-sm-3 p-sm-0  text-center campaignwork wow animate__animated animate__fadeInUp animate__delay-1s">
-                    <div class="videocamptoolicon campworkicon">
-                        <img src="assests/videocamptool3.png" alt="">
-                    </div>
-                    <div class="videocamptooltitle campworktitle my-3">
-                        <h6><b>Site Audit</b></h6>
-                    </div>
-                    <div class="videocamptooltext campworktext ">
-                        <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti expedita dolor quam laborum nostrum placeat!.</small>
-                    </div>
+                <div class="videocamptooltext campworktext ">
+                    <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti expedita dolor quam
+                        laborum nostrum placeat!.</small>
                 </div>
-    
-                
-                <div class="col-sm-3 m-3 my-sm-3 p-sm-0  text-center campaignwork wow animate__animated animate__fadeInUp animate__delay-1s">
-                    <div class="videocamptoolicon campworkicon">
-                        <img src="assests/videocamptool4.png" alt="">
-                    </div>
-                    <div class="videocamptooltitle campworktitle my-3">
-                        <h6><b>Keywords</b></h6>
-                    </div>
-                    <div class="videocamptooltext campworktext ">
-                        <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti expedita dolor quam laborum nostrum placeat!.</small>
-                    </div>
-                </div>
-    
-                
-                <div class="col-sm-3 m-3 my-sm-3 p-sm-0  text-center campaignwork wow animate__animated animate__fadeInUp animate__delay-1s">
-                    <div class="videocamptoolicon campworkicon">
-                        <img src="assests/videocamptool5.png" alt="">
-                    </div>
-                    <div class="videocamptooltitle campworktitle my-3">
-                        <h6><b>Ads</b></h6>
-                    </div>
-                    <div class="videocamptooltext campworktext ">
-                        <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti expedita dolor quam laborum nostrum placeat!.</small>
-                    </div>
-                </div>
-    
-                
-                <div class="col-sm-3 m-3 my-sm-3 p-sm-0  text-center campaignwork wow animate__animated animate__fadeInUp animate__delay-1s">
-                    <div class="videocamptoolicon campworkicon">
-                        <img src="assests/videocamptool6.png" alt="">
-                    </div>
-                    <div class="videocamptooltitle campworktitle my-3">
-                        <h6><b>Analysis</b></h6>
-                    </div>
-                    <div class="videocamptooltext campworktext ">
-                        <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti expedita dolor quam laborum nostrum placeat!.</small>
-                    </div>
-                </div>
-    
             </div>
+
+            <div
+                class="col-sm-3 m-3 my-sm-3 p-sm-0  text-center campaignwork wow animate__animated animate__fadeInUp animate__delay-1s">
+                <div class="videocamptoolicon campworkicon">
+                    <img src="assests/videocamptool3.png" alt="">
+                </div>
+                <div class="videocamptooltitle campworktitle my-3">
+                    <h6><b>Site Audit</b></h6>
+                </div>
+                <div class="videocamptooltext campworktext ">
+                    <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti expedita dolor quam
+                        laborum nostrum placeat!.</small>
+                </div>
+            </div>
+
+
+            <div
+                class="col-sm-3 m-3 my-sm-3 p-sm-0  text-center campaignwork wow animate__animated animate__fadeInUp animate__delay-1s">
+                <div class="videocamptoolicon campworkicon">
+                    <img src="assests/videocamptool4.png" alt="">
+                </div>
+                <div class="videocamptooltitle campworktitle my-3">
+                    <h6><b>Keywords</b></h6>
+                </div>
+                <div class="videocamptooltext campworktext ">
+                    <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti expedita dolor quam
+                        laborum nostrum placeat!.</small>
+                </div>
+            </div>
+
+
+            <div
+                class="col-sm-3 m-3 my-sm-3 p-sm-0  text-center campaignwork wow animate__animated animate__fadeInUp animate__delay-1s">
+                <div class="videocamptoolicon campworkicon">
+                    <img src="assests/videocamptool5.png" alt="">
+                </div>
+                <div class="videocamptooltitle campworktitle my-3">
+                    <h6><b>Ads</b></h6>
+                </div>
+                <div class="videocamptooltext campworktext ">
+                    <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti expedita dolor quam
+                        laborum nostrum placeat!.</small>
+                </div>
+            </div>
+
+
+            <div
+                class="col-sm-3 m-3 my-sm-3 p-sm-0  text-center campaignwork wow animate__animated animate__fadeInUp animate__delay-1s">
+                <div class="videocamptoolicon campworkicon">
+                    <img src="assests/videocamptool6.png" alt="">
+                </div>
+                <div class="videocamptooltitle campworktitle my-3">
+                    <h6><b>Analysis</b></h6>
+                </div>
+                <div class="videocamptooltext campworktext ">
+                    <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti expedita dolor quam
+                        laborum nostrum placeat!.</small>
+                </div>
+            </div>
+
         </div>
+    </div>
 
 
     <!-----Plans Price Table-->
 
- <div class="container d-sm-block d-none table-responsive my-2 py-2">
-    <div class="my-5 py-2 text-center ">
-        <h2><span>Social Media Enterprise</span> Services </h2>
-    </div>
-    <style>
-        .table-responsive {
-display: block;
-width: 100%;
-overflow-x: auto;
--webkit-overflow-scrolling: touch;
-}
-    </style>
+    <div class="container d-sm-block d-none table-responsive my-2 py-2">
+        <div class="my-5 py-2 text-center ">
+            <h2><span>Social Media Enterprise</span> Services </h2>
+        </div>
+        <style>
+            .table-responsive {
+                display: block;
+                width: 100%;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+        </style>
 
-  <table class="table  table-bordered planpricetable   table-striped">
-    <thead>
-      <tr>
-        <th class="base" colspan="15"><h3>Features</h3></th>
-        <th class=" text-center base" colspan="2"><h3>Enterprise</h3></th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr class="smediarow">
-            <td colspan="15">Facebook Ads</td>
-            <td class=" text-center "><b>Yes</b></td>
-        </tr>
-        <tr class="smediarow">
-            <td colspan="15">Facebook cataloge for ecommerce</td>
-            <td class=" text-center "><b>Yes</b></td>
-        </tr>
-        <tr class="smediarow">
-            <td colspan="15">Facebook shop</td>
-            <td class=" text-center "><b>Yes</b></td>
-        </tr>
-        <tr class="smediarow">
-            <td colspan="15">Instagram shop</td>
-            <td class=" text-center "><b>Yes</b></td>
-        </tr>
-        <tr class="smediarow">
-            <td colspan="15">Facebook conversion API</td>
-            <td class=" text-center "><b>Yes</b></td>
-        </tr>
-        <tr class="smediarow">
-            <td colspan="15">Increasing ROI through bid optimization</td>
-            <td class=" text-center "><b>Yes</b></td>
-        </tr>
-        <tr class="smediarow">
-            <td colspan="15">Instagram reel ads</td>
-            <td class=" text-center "><b>Yes</b></td>
-        </tr>
-        <tr class="smediarow">
-            <td colspan="15">Remarketing</td>
-            <td class=" text-center "><b>Yes</b></td>
-        </tr>
-        <tr class="smediarow">
-            <td colspan="15"> Retargeting  & targeting different types of audiences (Hot & Cold Audience)</td>
-            <td class=" text-center "><b>Yes</b></td>
-        </tr>
-        <tr class="smediarow">
-            <td colspan="15">Linkedin ads</td>
-            <td class=" text-center "><b>Yes</b></td>
-        </tr>
-        <tr class="smediarow">
-            <td colspan="15">Linkedin sales navigator for lead generation</td>
-            <td class=" text-center "><b>Yes</b></td>
-        </tr>
-        <tr class="smediarow">
-            <td colspan="15"></td>
-            <td class=" text-center "><b><a href="quest.html" class="getstartbtn fontpop wow animate__animated animate__delay-1s animate__slow animate__bounceIn my-2">Get Started</a></b></td>
-        </tr>
-     
-      <!-- <tr>
+        <table class="table  table-bordered planpricetable   table-striped">
+            <thead>
+                <tr>
+                    <th class="base" colspan="15">
+                        <h3>Features</h3>
+                    </th>
+                    <th class=" text-center base" colspan="2">
+                        <h3>Enterprise</h3>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="smediarow">
+                    <td colspan="15">Facebook Ads</td>
+                    <td class=" text-center "><b>Yes</b></td>
+                </tr>
+                <tr class="smediarow">
+                    <td colspan="15">Facebook cataloge for ecommerce</td>
+                    <td class=" text-center "><b>Yes</b></td>
+                </tr>
+                <tr class="smediarow">
+                    <td colspan="15">Facebook shop</td>
+                    <td class=" text-center "><b>Yes</b></td>
+                </tr>
+                <tr class="smediarow">
+                    <td colspan="15">Instagram shop</td>
+                    <td class=" text-center "><b>Yes</b></td>
+                </tr>
+                <tr class="smediarow">
+                    <td colspan="15">Facebook conversion API</td>
+                    <td class=" text-center "><b>Yes</b></td>
+                </tr>
+                <tr class="smediarow">
+                    <td colspan="15">Increasing ROI through bid optimization</td>
+                    <td class=" text-center "><b>Yes</b></td>
+                </tr>
+                <tr class="smediarow">
+                    <td colspan="15">Instagram reel ads</td>
+                    <td class=" text-center "><b>Yes</b></td>
+                </tr>
+                <tr class="smediarow">
+                    <td colspan="15">Remarketing</td>
+                    <td class=" text-center "><b>Yes</b></td>
+                </tr>
+                <tr class="smediarow">
+                    <td colspan="15"> Retargeting & targeting different types of audiences (Hot & Cold Audience)</td>
+                    <td class=" text-center "><b>Yes</b></td>
+                </tr>
+                <tr class="smediarow">
+                    <td colspan="15">Linkedin ads</td>
+                    <td class=" text-center "><b>Yes</b></td>
+                </tr>
+                <tr class="smediarow">
+                    <td colspan="15">Linkedin sales navigator for lead generation</td>
+                    <td class=" text-center "><b>Yes</b></td>
+                </tr>
+                <tr class="smediarow">
+                    <td colspan="15"></td>
+                    <td class=" text-center "><b><a href="quest.html"
+                                class="getstartbtn fontpop wow animate__animated animate__delay-1s animate__slow animate__bounceIn my-2">Get
+                                Started</a></b></td>
+                </tr>
+
+                <!-- <tr>
         <th scope="row"></th>
         <td class=" text-center" colspan="2"><b><a href="quest.html" class="getstartbtn fontpop wow animate__animated animate__delay-1s animate__slow animate__bounceIn mx-2 my-2">Get Started</a></td>
         <td class=" text-center" colspan="2"><b><a href="quest.html" class="getstartbtn fontpop wow animate__animated animate__delay-1s animate__slow animate__bounceIn mx-2 my-2">Get Started</a></b></td>
         <td class=" text-center" colspan="2"><b><a href="quest.html" class="getstartbtn fontpop wow animate__animated animate__delay-1s animate__slow animate__bounceIn mx-2 my-2">Get Started</a></b></td>
       </tr> -->
 
-    </tbody>
-  </table>
-</div>
-    
+            </tbody>
+        </table>
+    </div>
 
 
-<div class="container-fluid  py-3 " style="background-color: #EEF6FF">
-    <div class="container my-sm-4 py-0 my-0">
-        <div class="gadsoptimisehead text-center py-3">
-            <h1 class="font-weight-bold my-sm-4 ">Optimize your <span> Google Ads </span> account for <span>ROAS </span></h1>
-        </div>
-        <div class="row my-4 justify-content-center align-items-center text-sm-left text-center">
-            <div class="col-sm-7 col-12 my-3  wow animate__animated animate__fadeInUp">
-                <h2 class="font-weight-bold my-sm-4 ">What is <span> ROAS </span></h2>
-                    <p class="">ROAS stands for return on ad spend—a marketing metric that measures the amount of revenue your business earns for each dollar it spends on advertising. For all intents and purposes, ROAS is practically the same as another metric you’re probably familiar with: return on investment, or ROI. In this case, the money you’re spending on digital advertising is the investment on which you’re tracking returns.
-                        <br><br> At the most basic level, ROAS measures the effectiveness of your advertising efforts; the more effectively your advertising messages connect with your prospects, the more revenue you’ll earn from each dollar of ad spend. The higher your ROAS, the better.
-                        <br><br> If you’re so inclined, you can measure ROAS at a variety of levels within your Google Ads account: the account level, the campaign level, the ad group level, and so on. As long as you know how much you’re spending and earning at that particular level, you can calculate ROAS.
-                    </p>
 
-                <div>
-                    <img class="w-100" src="assests/roasformula.png" alt="">
-                </div>
-                
+    <div class="container-fluid  py-3 " style="background-color: #EEF6FF">
+        <div class="container my-sm-4 py-0 my-0">
+            <div class="gadsoptimisehead text-center py-3">
+                <h1 class="font-weight-bold my-sm-4 ">Optimize your <span> Google Ads </span> account for <span>ROAS
+                    </span></h1>
             </div>
-            <div class="col-sm-5 wow animate__animated animate__fadeInUp">
-                <img class="w-100" src="assests/gadsoptimise.png" alt="">
-            </div>
-
             <div class="row my-4 justify-content-center align-items-center text-sm-left text-center">
                 <div class="col-sm-7 col-12 my-3  wow animate__animated animate__fadeInUp">
-                    <h2 class="font-weight-bold text-center my-sm-4 "><b>Maximize <span>ROAS</span></b></h2>
-                        <p class=""> 
+                    <h2 class="font-weight-bold my-sm-4 ">What is <span> ROAS </span></h2>
+                    <p class="">ROAS stands for return on ad spend—a marketing metric that measures the amount of
+                        revenue your business earns for each dollar it spends on advertising. For all intents and
+                        purposes, ROAS is practically the same as another metric you’re probably familiar with: return
+                        on investment, or ROI. In this case, the money you’re spending on digital advertising is the
+                        investment on which you’re tracking returns.
+                        <br><br> At the most basic level, ROAS measures the effectiveness of your advertising efforts;
+                        the more effectively your advertising messages connect with your prospects, the more revenue
+                        you’ll earn from each dollar of ad spend. The higher your ROAS, the better.
+                        <br><br> If you’re so inclined, you can measure ROAS at a variety of levels within your Google
+                        Ads account: the account level, the campaign level, the ad group level, and so on. As long as
+                        you know how much you’re spending and earning at that particular level, you can calculate ROAS.
+                    </p>
 
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident facere repellat blanditiis magnam accusantium perspiciatis, repudiandae ullam tempora delectus vitae.</></p> <br>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident facere repellat blanditiis magnam accusantium perspiciatis, repudiandae ullam tempora delectus vitae.</b></p> <br>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident facere repellat blanditiis magnam accusantium perspiciatis, repudiandae ullam tempora delectus vitae.</b></p> <br>
-                        </p>
-                    
+                    <div>
+                        <img class="w-100" src="assests/roasformula.png" alt="">
+                    </div>
+
                 </div>
-            </div>
+                <div class="col-sm-5 wow animate__animated animate__fadeInUp">
+                    <img class="w-100" src="assests/gadsoptimise.png" alt="">
+                </div>
 
+                <div class="row my-4 justify-content-center align-items-center text-sm-left text-center">
+                    <div class="col-sm-7 col-12 my-3  wow animate__animated animate__fadeInUp">
+                        <h2 class="font-weight-bold text-center my-sm-4 "><b>Maximize <span>ROAS</span></b></h2>
+                        <p class="">
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident facere repellat blanditiis
+                            magnam accusantium perspiciatis, repudiandae ullam tempora delectus vitae.</>
+                        </p> <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident facere repellat blanditiis
+                            magnam accusantium perspiciatis, repudiandae ullam tempora delectus vitae.</b></p> <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident facere repellat blanditiis
+                            magnam accusantium perspiciatis, repudiandae ullam tempora delectus vitae.</b></p> <br>
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
-</div> 
 
-<div class="container-fluid gadsvideo px-0">
-    <img class="w-100" src="assests/gadsvideo.jpg" alt="">
-</div>
+    <div class="container-fluid gadsvideo px-0">
+        <img class="w-100" src="assests/gadsvideo.jpg" alt="">
+    </div>
 
 
-   
-     <!-- FAQs -->
-     <div class="container py-3 my-3">
-  
+
+    <!-- FAQs -->
+    <div class="container py-3 my-3">
+
         <div class="">
 
             <div class="d-flex align-items-center wow animate__animated animate__fadeInUp">
@@ -605,85 +692,99 @@ overflow-x: auto;
                     <h2>FAQ</h2>
                 </div>
                 <div class="input-group justify-content-around align-items-center">
-                    <input type="search" placeholder="Search Here" aria-describedby="button-addon1" class="form-control px-3 rounded-pill  fontrale border-0 bg-light m-3"><br>
+                    <input type="search" placeholder="Search Here" aria-describedby="button-addon1"
+                        class="form-control px-3 rounded-pill  fontrale border-0 bg-light m-3"><br>
                     <div class="input-form-append">
                         <button type="submit" class="ctasearchbtn fontpop">Search</button>
                     </div>
                 </div>
             </div>
 
-            
-          <div class="faqquestion wow animate__animated animate__fadeInDown animate__delay-1s">
-            Lorem ipsum dolor sit amet ?
-          </div>
-          <div class="answercont">
-            <div class="answer">
-              <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quaerat velit temporibus exercitationem architecto magnam laudantium amet nisi officiis. Delectus, labore cumque non id, quia architecto blanditiis incidunt temporibus quae, amet itaque iusto mollitia nulla.</small>
+
+            <div class="faqquestion wow animate__animated animate__fadeInDown animate__delay-1s">
+                Lorem ipsum dolor sit amet ?
             </div>
-          </div>
-        
-
-          <div class="faqquestion wow animate__animated animate__fadeInDown animate__delay-1s">
-            Lorem ipsum dolor sit amet consectetur adipisicing ?
-          </div>
-          <div class="answercont">
-            <div class="answer">
-                <small> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere velit consequuntur facilis aspernatur sequi hic at optio, maiores veritatis, obcaecati modi dicta aliquam dolor ducimus pariatur assumenda cum mollitia? Deserunt delectus excepturi ea velit sunt iste ipsum sequi, distinctio aut dicta tempora voluptatibus ipsa iusto, explicabo rerum ullam labore .</small>
+            <div class="answercont">
+                <div class="answer">
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quaerat velit temporibus
+                        exercitationem architecto magnam laudantium amet nisi officiis. Delectus, labore cumque non id,
+                        quia architecto blanditiis incidunt temporibus quae, amet itaque iusto mollitia nulla.</small>
+                </div>
             </div>
-          </div>
 
-        
 
-          <div class="faqquestion wow animate__animated animate__fadeInDown animate__delay-1s">
-            Lorem ipsum dolor sit amet consectetur ?
-          </div>
-          <div class="answercont">
-            <div class="answer">
-                <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident nobis sunt delectus quasi sapiente id quod temporibus, voluptatum praesentium animi incidunt esse eveniet eum aliquid, dolor dignissimos aliquam culpa iste. Aliquid voluptatibus minus recusandae nobis placeat, accusamus assumenda fugit ullam.</small>
+            <div class="faqquestion wow animate__animated animate__fadeInDown animate__delay-1s">
+                Lorem ipsum dolor sit amet consectetur adipisicing ?
             </div>
-          </div>
-
-       
-
-          <div class="faqquestion wow animate__animated animate__fadeInDown animate__delay-1s">
-            Lorem ipsum dolor sit amet ?
-          </div>
-          <div class="answercont">
-            <div class="answer">
-              <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident nobis sunt delectus quasi sapiente id quod temporibus, voluptatum praesentium animi incidunt esse eveniet eum aliquid, dolor dignissimos aliquam culpa iste. Aliquid voluptatibus minus recusandae nobis placeat, accusamus assumenda fugit ullam.</small>
-         
+            <div class="answercont">
+                <div class="answer">
+                    <small> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere velit consequuntur facilis
+                        aspernatur sequi hic at optio, maiores veritatis, obcaecati modi dicta aliquam dolor ducimus
+                        pariatur assumenda cum mollitia? Deserunt delectus excepturi ea velit sunt iste ipsum sequi,
+                        distinctio aut dicta tempora voluptatibus ipsa iusto, explicabo rerum ullam labore .</small>
+                </div>
             </div>
-          </div>
 
-        
 
-          <div class="faqquestion wow animate__animated animate__fadeInDown animate__delay-1s">
-           Lorem ipsum dolor, sit amet consectetur adipisicing elit ?
-          </div>
-          <div class="answercont">
-            <div class="answer">
-              <small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore officiis et laborum facere voluptatum atque, nobis dignissimos fuga corrupti similique, ut repellendus autem commodi earum pariatur tenetur sint quibusdam esse! Fugit ab voluptas ratione consequuntur.</small>
+
+            <div class="faqquestion wow animate__animated animate__fadeInDown animate__delay-1s">
+                Lorem ipsum dolor sit amet consectetur ?
             </div>
-          </div>
+            <div class="answercont">
+                <div class="answer">
+                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident nobis sunt delectus quasi
+                        sapiente id quod temporibus, voluptatum praesentium animi incidunt esse eveniet eum aliquid,
+                        dolor dignissimos aliquam culpa iste. Aliquid voluptatibus minus recusandae nobis placeat,
+                        accusamus assumenda fugit ullam.</small>
+                </div>
+            </div>
+
+
+
+            <div class="faqquestion wow animate__animated animate__fadeInDown animate__delay-1s">
+                Lorem ipsum dolor sit amet ?
+            </div>
+            <div class="answercont">
+                <div class="answer">
+                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident nobis sunt delectus quasi
+                        sapiente id quod temporibus, voluptatum praesentium animi incidunt esse eveniet eum aliquid,
+                        dolor dignissimos aliquam culpa iste. Aliquid voluptatibus minus recusandae nobis placeat,
+                        accusamus assumenda fugit ullam.</small>
+
+                </div>
+            </div>
+
+
+
+            <div class="faqquestion wow animate__animated animate__fadeInDown animate__delay-1s">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit ?
+            </div>
+            <div class="answercont">
+                <div class="answer">
+                    <small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore officiis et laborum facere
+                        voluptatum atque, nobis dignissimos fuga corrupti similique, ut repellendus autem commodi earum
+                        pariatur tenetur sint quibusdam esse! Fugit ab voluptas ratione consequuntur.</small>
+                </div>
+            </div>
         </div>
-        
+
     </div>
 
 
 
 
 
-                   <!--Footer Section-->
+    <!--Footer Section-->
 
-        <div id="footer">
-            
-        </div>
-        
-        <script>
-        $(function(){
-          $("#footer").load("footer.html");
+    <div id="footer">
+
+    </div>
+
+    <script>
+        $(function () {
+            $("#footer").load("footer.html");
         });
-        </script>
+    </script>
 
     <!--Footer Section-->
 
@@ -694,12 +795,14 @@ overflow-x: auto;
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
 
 
-    </body>
+</body>
 
 
 </html>
