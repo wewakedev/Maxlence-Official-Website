@@ -2042,3 +2042,12 @@ ul.ab-form-list {
 .brochuredownload img {
   width: 3rem;
 }
+.job-details p {
+  color: #000;
+}
+.job-details span {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  color: rgba(33, 37, 41, 0.7);
+}

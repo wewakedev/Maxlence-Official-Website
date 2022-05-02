@@ -40,81 +40,14 @@
         });
     </script>
     <!--end of Navigation bar-->
-    <div class="container-fluid p-2" style="background-color: #E2F0FF;">
-        <div class="container">
-            <div class="row justify-content-around align-items-center">
-                <div class="breadcrumbs text-center col-5 d-sm-flex d-none">
-                    <small class="breadcrumbroot"><a href="index.html">Home</a> </small>
-                    <small class="breadcrumbsec breadactive"><a href="resrscasestudy.html">Case Study</a></small>
 
-
-                    <!-- <small class="breadcrumbsec "><a href="">Growth</a> </small>
-                        <small class="breadcrumbsec "><a href="">Creation</a> </small> -->
-                </div>
-                <div
-                    class="icons col-sm-5 col-12 d-flex justify-content-sm-end justify-content-center align-items-center">
-                    <div class="">
-                        <div class="input-group justify-content-around align-items-center">
-                            <input type="search" placeholder="Search Here" aria-describedby="button-addon1"
-                                class="form-control navsearch rounded-pill  fontrale border-0 bg-light "><br>
-                            <div class="input-form-append">
-                                <button type="submit" style="border: none; background: transparent !important;"><img
-                                        class="searchnavicon" src="assests/searchmag.png" alt=""></button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="bellicon mx-2">
-                            <a href=""><img src="assests/bellnav.png" alt=""></a>
-                        </div> -->
-                    <div class="carticon mx-2">
-                        <a href=""><img src="assests/carticon.png" alt=""></a>
-                    </div>
-
-                    <!-- <div class="messageicon mx-2">
-                            <a href=""><img src="assests/messgnav.png" alt=""></a>
-                        </div>
-                     -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <style>
-        .searchnavicon,
-        .bellicon a img,
-        .messageicon a img {
-            width: 1rem;
-            height: auto;
-        }
-
-        .carticon a img {
-            width: 1.25rem;
-        }
-
-        .breadcrumbsec a,
-        .breadcrumbroot a {
-            color: rgba(33, 37, 41, 0.8) !important;
-        }
-
-        .breadcrumbsec::before {
-            content: ">";
-            margin: .4rem;
-        }
-
-        .breadactive a {
-            color: rgba(33, 37, 41, 0.5) !important;
-        }
-
-        .featcamp a {
-            color: #212529 !important;
-        }
-    </style>
 
 
     <div class=" container-fluid shop  filter__wrap  py-0 my-3">
         <div class="container">
-            <div class="row mt-5 mb-2 justify-content-between align-items-center">
+            <div class="row mt-4 mt-md-5 mb-2 justify-content-between align-items-center">
                 <div
-                    class="col-sm-6 homeshophead py-sm-0 pt-5 pb-3 wow animate__animated animate__fadeIn animate__slow">
+                    class="col-sm-6 homeshophead text-center text-md-left py-sm-0  pb-3 wow animate__animated animate__fadeIn animate__slow">
                     <h2><span>Redefining</span> Industries</h2>
                 </div>
 
@@ -161,121 +94,134 @@
                         </div>
                     </div>
 
-                    <div>
-                        <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span
-                                class="dropdown-text"><img src="assests/dsgfiltericon.png" alt=""><small class="mx-3"
-                                    style="color: black;">Search</small></span>
-                        </a>
+                    <div class="dropdown">
+                        <div class="">
+                            <div class="input-group justify-content-around align-items-center">
+
+                                <input type="search" placeholder="Search" aria-describedby="button-addon1"
+                                    class="form-control navsearch border-0 ml-3 bg-light "
+                                    style="    padding: 1.29rem 1.6rem;"><br>
+                                <div class="input-form-append">
+                                    <button type="submit" style="border: none; background: transparent !important;"><img
+                                            class="searchnavicon" src="assests/searchgray.png" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
 
-            <!-- <ul class="row  justify-content-around text-center align-items-center wow animate__animated animate__fadeIn nav nav-tabs filter__head my-sm-5 my-0"
-                role="tablist">
-                <li class="active  filter__headitem col-sm-1 col-6 my-2" role="presentation"><a href="#tab1"
-                        class="active" role="tab" data-toggle="tab">SEO</a></li>
-                <li class="filter__headitem col-sm-2 col-6 my-2" role="presentation"><a href="#tab2" role="tab"
-                        data-toggle="tab">GOOGLE ADS</a></li>
-                <li class="filter__headitem col-sm-3 col-6 my-2" role="presentation"><a href="#tab3" role="tab"
-                        data-toggle="tab">SOCIAL MEDIA MARKETING</a></li>
-                <li class="filter__headitem col-sm-2 col-6 my-2" role="presentation"><a href="#tab4" role="tab"
-                        data-toggle="tab">EMAIL MARKETING</a></li>
-                <li class="filter__headitem col-sm-2 col-6 my-2" role="presentation"><a href="#tab5" role="tab"
-                        data-toggle="tab">VALUE PACKS</a></li>
-                <li class="filter__headitem col-sm-2 col-6 my-2"><a href="shop.html" style="color: #0A76E5;"><u><b>VIEW
-                                MORE</b></u> </a></li>
-            </ul> -->
+            <div class="container">
+                <ul class="row  justify-content-around  text-center align-items-center wow animate__animated animate__fadeIn nav nav-tabs filter__head my-sm-5 my-0"
+                    role="tablist">
+                    <li class="active  filter__headitem col-sm-1 col-6 my-2" role="presentation"><a href="#allcase"
+                            class="active" role="tab" data-toggle="tab">ALL</a></li>
+                    <li class="filter__headitem col-sm-2 col-6 my-2" role="presentation"><a href="#seocase" role="tab"
+                            data-toggle="tab">SEO</a></li>
+                    <li class="filter__headitem col-sm-2 col-6 my-2" role="presentation"><a href="#gadscase" role="tab"
+                            data-toggle="tab">GOOGLE ADS</a></li>
+                    <li class="filter__headitem col-sm-3 col-6 my-2" role="presentation"><a href="#socialcase"
+                            role="tab" data-toggle="tab">SOCIAL MEDIA MARKETING</a></li>
+                    <li class="filter__headitem col-sm-2 col-6 my-2" role="presentation"><a href="#emailcase" role="tab"
+                            data-toggle="tab">EMAIL MARKETING</a></li>
+                    <li class="filter__headitem col-sm-2 col-6 my-2" role="presentation"><a href="#designcase"
+                            role="tab" data-toggle="tab">Design</a></li>
+                </ul>
 
-            <!-- Tab panes-->
-            <!-- <div class="tab-content homeshops my-3">
-                <div class="tab-pane active fade show seofeats" id="tab1" role="tabpanel">
-                    <div class="container">
-                        <div class="row">
-                            <div class="div featcamp col-sm-3 col-6">
-                                <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
-                                    <img class="w-100" src="assests/pageseo.jpg" alt="">
+                <!-- Tab panes-->
+                <div class="tab-content homeshops my-5">
+                    <div class="tab-pane active fade show seofeats" id="allcase" role="tabpanel">
+                        <div class="container">
+                            <div class="row">
+                                <div class="div featcamp col-sm-3 col-6">
+                                    <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
+                                        <img class="w-100" src="assests/pageseo.jpg" alt="">
+                                    </div>
+                                    <p class="mt-2 mt-sm-3 mb-1"><b>Search Campaign</b> </p>
+                                    <p><span><b>$123</b></span></p>
                                 </div>
-                                <p class="mt-2 mt-sm-3 mb-1"><b>Search Campaign</b> </p>
-                                <p><span><b>$123</b></span></p>
-                            </div>
 
 
-                            <div class="div featcamp col-sm-3 col-6">
-                                <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
-                                    <img class="w-100" src="assests/youtubecamp.jpg" alt="">
+                                <div class="div featcamp col-sm-3 col-6">
+                                    <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
+                                        <img class="w-100" src="assests/youtubecamp.jpg" alt="">
+                                    </div>
+                                    <p class="mt-2 mt-sm-3 mb-1"><b>Search Campaign</b> </p>
+                                    <p><span><b>$123</b></span></p>
                                 </div>
-                                <p class="mt-2 mt-sm-3 mb-1"><b>Search Campaign</b> </p>
-                                <p><span><b>$123</b></span></p>
-                            </div>
 
 
-                            <div class="div featcamp col-sm-3 col-6">
-                                <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
-                                    <img class="w-100" src="assests/socialmediamarketing.jpg" alt="">
+                                <div class="div featcamp col-sm-3 col-6">
+                                    <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
+                                        <img class="w-100" src="assests/socialmediamarketing.jpg" alt="">
+                                    </div>
+                                    <p class="mt-2 mt-sm-3 mb-1"><b>Search Campaign</b> </p>
+                                    <p><span><b>$123</b></span></p>
                                 </div>
-                                <p class="mt-2 mt-sm-3 mb-1"><b>Search Campaign</b> </p>
-                                <p><span><b>$123</b></span></p>
-                            </div>
 
 
-                            <div class="div featcamp col-sm-3 col-6">
-                                <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
-                                    <img class="w-100" src="assests/emailmarketing.jpg" alt="">
+                                <div class="div featcamp col-sm-3 col-6">
+                                    <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
+                                        <img class="w-100" src="assests/emailmarketing.jpg" alt="">
+                                    </div>
+                                    <p class="mt-2 mt-sm-3 mb-1"><b>Search Campaign</b> </p>
+                                    <p><span><b>$123</b></span></p>
                                 </div>
-                                <p class="mt-2 mt-sm-3 mb-1"><b>Search Campaign</b> </p>
-                                <p><span><b>$123</b></span></p>
-                            </div>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="tab-pane fade in" id="tab2" role="tabpanel">
-                    <div class="container">
-                        <div class="row">
-                            <div class="div featcamp col-sm-3 col-6">
-                                <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
-                                    <img class="w-100" src="assests/youtubecamp.jpg" alt="">
+                    <div class="tab-pane fade in" id="seocase" role="tabpanel">
+                        <div class="container">
+                            <div class="row">
+                                <div class="div featcamp col-sm-3 col-6">
+                                    <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
+                                        <img class="w-100" src="assests/youtubecamp.jpg" alt="">
+                                    </div>
+                                    <p class="mt-2 mt-sm-3 mb-1"><b>Search Campaign</b> </p>
+                                    <p><span><b>$123</b></span></p>
                                 </div>
-                                <p class="mt-2 mt-sm-3 mb-1"><b>Search Campaign</b> </p>
-                                <p><span><b>$123</b></span></p>
+
+
                             </div>
-
-
                         </div>
                     </div>
-                </div>
-                <div class="tab-pane fade in" id="tab3" role="tabpanel">
-                    <div class="container">
-                        <div class="row">
-                            <div class="div featcamp col-sm-3 col-6">
-                                <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
-                                    <img class="w-100" src="assests/socialmediamarketing.jpg" alt="">
+                    <div class="tab-pane fade in" id="gadscase" role="tabpanel">
+                        <div class="container">
+                            <div class="row">
+                                <div class="div featcamp col-sm-3 col-6">
+                                    <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
+                                        <img class="w-100" src="assests/socialmediamarketing.jpg" alt="">
+                                    </div>
+                                    <p class="mt-2 mt-sm-3 mb-1"><b>Search Campaign</b> </p>
+                                    <p><span><b>$123</b></span></p>
                                 </div>
-                                <p class="mt-2 mt-sm-3 mb-1"><b>Search Campaign</b> </p>
-                                <p><span><b>$123</b></span></p>
+
+
                             </div>
-
-
                         </div>
                     </div>
-                </div>
-                <div class="tab-pane fade in" id="tab4" role="tabpanel">
-                    <div class="container">
-                        <div class="row">
-                            <div class="div featcamp col-sm-3 col-6">
-                                <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
-                                    <img class="w-100" src="assests/emailmarketing.jpg" alt="">
+                    <div class="tab-pane fade in" id="socialcase" role="tabpanel">
+                        <div class="container">
+                            <div class="row">
+                                <div class="div featcamp col-sm-3 col-6">
+                                    <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
+                                        <img class="w-100" src="assests/emailmarketing.jpg" alt="">
+                                    </div>
+                                    <p class="mt-2 mt-sm-3 mb-1"><b>Search Campaign</b> </p>
+                                    <p><span><b>$123</b></span></p>
                                 </div>
-                                <p class="mt-2 mt-sm-3 mb-1"><b>Search Campaign</b> </p>
-                                <p><span><b>$123</b></span></p>
+
+
                             </div>
-
-
                         </div>
                     </div>
+                    <div class="tab-pane fade " id="emailcase" role="tabpanel">Email Case Studies </div>
+                    <div class="tab-pane fade " id="designcase" role="tabpanel">Design Case Studies</div>
                 </div>
-                <div class="tab-pane fade " id="tab5" role="tabpanel">Value Packs here </div>
-            </div> -->
+            </div>
+
 
 
         </div>
