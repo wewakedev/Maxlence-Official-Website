@@ -1474,6 +1474,15 @@ ul.ab-form-list {
   background: url("../assests/shopherobg.jpg");
   background-size: cover;
 }
+.brochurehero {
+  background: url("../assests/brochurehero.jpg");
+  background-position: center;
+  /* background: linear-gradient(
+    251.26deg,
+    rgba(0, 0, 0, 0.075) 0%,
+    rgba(0, 0, 0, 0) 100%
+  ); */
+}
 .bgproperty {
   background-position: center;
   background-repeat: no-repeat;
@@ -2050,4 +2059,8 @@ ul.ab-form-list {
   font-style: normal;
   font-weight: 600;
   color: rgba(33, 37, 41, 0.7);
+}
+
+.support_feats .card {
+  background-color: #eaeaea;
 }
