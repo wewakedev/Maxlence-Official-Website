@@ -79,7 +79,7 @@ $(document).ready(function () {
 
 //  Testimonial Slider
 
-$(".carousel").slick({
+$(".carouselthreeway").slick({
   dots: true,
   arrows: true,
   infinite: true,
