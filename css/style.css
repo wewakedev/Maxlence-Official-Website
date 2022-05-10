@@ -500,6 +500,15 @@ ul.shortlink li a {
 .homehero {
   position: relative;
 }
+.homeherofades,
+.homelogofades {
+  display: none;
+  padding: 3rem 0rem;
+}
+
+.homeherofades img {
+  height: 25rem;
+}
 /* .sideactions{
 	position: absolute;
 	right:0%;
@@ -2135,7 +2144,7 @@ ul.ab-form-list {
 }
 
 .blogmincontent p {
-  min-height: 15rem;
+  min-height: 14rem;
 }
 
 .cta {
