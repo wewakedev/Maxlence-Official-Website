@@ -259,37 +259,33 @@ function myFunction(id) {
 
 // Homesection Fade In Content
 
-(function () {
-  var homeherofades = $(".homeherofades");
-  var homeherofadesIndex = -1;
+var homeherofades = $(".homeherofades");
+var homeherofadesIndex = -1;
 
-  function showNextQuote() {
-    ++homeherofadesIndex;
-    homeherofades
-      .eq(homeherofadesIndex % homeherofades.length)
-      .fadeIn(2000)
-      .delay(2000)
-      .fadeOut(2000, showNextQuote);
-  }
+function showNexthomefade() {
+  ++homeherofadesIndex;
+  homeherofades
+    .eq(homeherofadesIndex % homeherofades.length)
+    .fadeIn(2000)
+    .delay(2000)
+    .fadeOut(2000, showNexthomefade);
+}
 
-  showNextQuote();
-})();
+showNexthomefade();
 
-(function () {
-  var homelogofades = $(".homelogofades");
-  var homelogofadesIndex = -1;
+var homelogofades = $(".homelogofades");
+var homelogofadesIndex = -1;
 
-  function showNextQuote() {
-    ++homeherofadesIndex;
-    homelogofades
-      .eq(homelogofadesIndex % homelogofades.length)
-      .fadeIn(2000)
-      .delay(2000)
-      .fadeOut(2000, showNextQuote);
-  }
+function showNextlogofades() {
+  ++homelogofadesIndex;
+  homelogofades
+    .eq(homelogofadesIndex % homelogofades.length)
+    .fadeIn(2000)
+    .delay(2000)
+    .fadeOut(2000, showNextlogofades);
+}
 
-  showNextQuote();
-})();
+showNextlogofades();
 
 //FAQ
 

@@ -503,12 +503,11 @@ ul.shortlink li a {
 .homeherofades,
 .homelogofades {
   display: none;
-  padding: 3rem 0rem;
 }
 
-.homeherofades img {
+/* .homeherofades img {
   height: 25rem;
-}
+} */
 /* .sideactions{
 	position: absolute;
 	right:0%;
@@ -2198,4 +2197,13 @@ ul.ab-form-list {
 .blogcard {
   background: #eaf4ff;
   border-radius: 0px 30px;
+}
+.logotablink,
+.enttablink {
+  background: #b7daff;
+  border-radius: 4px;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  text-align: center;
+  color: #000;
 }
