@@ -2078,6 +2078,9 @@ ul.ab-form-list {
 .support_feats .card {
   background-color: #eaeaea;
 }
+.usermng_feats .card {
+  background-color: #f5f5f5;
+}
 
 .slideonecontent {
   position: absolute;
@@ -2201,7 +2204,7 @@ ul.ab-form-list {
   background: #b7daff;
   border-radius: 4px;
   font-weight: 600;
-  padding: 1rem 2rem;
+  padding: 1rem 1.2rem;
   text-align: center;
   color: #000;
 }
