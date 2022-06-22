@@ -2208,3 +2208,7 @@ ul.ab-form-list {
   text-align: center;
   color: #000;
 }
+.reviewbox {
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+}
