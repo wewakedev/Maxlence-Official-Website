@@ -86,15 +86,15 @@ a {
   cursor: pointer;
 }
 
-/* .fontpop{
-	font-family: 'Poppins', sans-serif;
+.fontpop {
+  font-family: "Poppins", sans-serif;
 }
-.fontrale{
-	font-family: 'Raleway', sans-serif;
+.fontrale {
+  font-family: "Raleway", sans-serif;
 }
-.fontrobo{
-	font-family: 'Roboto', sans-serif;
-} */
+.fontrobo {
+  font-family: "Roboto", sans-serif;
+}
 
 span {
   color: #0a76e5;
@@ -124,7 +124,7 @@ span {
 .homenav ul li a {
   color: #3f3f3f !important;
   font-weight: 600;
-  margin: 0.35rem;
+  margin: 0.15rem;
 }
 .navbar-toggler-icon {
   color: #3f3f3f;
@@ -498,7 +498,12 @@ ul.shortlink li a {
   font-size: 0.9rem;
 }
 .homehero {
+  /* position: relative; */
+  min-height: 600px;
+}
+.homefades2 {
   position: relative;
+  min-height: 400px;
 }
 .homeherofades,
 .homelogofades {
@@ -508,11 +513,13 @@ ul.shortlink li a {
 /* .homeherofades img {
   height: 25rem;
 } */
-/* .sideactions{
-	position: absolute;
-	right:0%;
-	top: 7%;
-} */
+.sideactions {
+  position: absolute;
+  right: 7%;
+  top: 20%;
+  z-index: 100;
+  color: #000000;
+}
 .langcurr {
   position: absolute;
   right: -2%;
@@ -1850,7 +1857,7 @@ ul.ab-form-list {
 	} */
   .sideactions {
     right: 7%;
-    top: 0%;
+    top: 35%;
   }
   h1 {
     font-size: 1.7rem !important;

@@ -42,7 +42,7 @@
 
 
     <!-- Hero Section -->
-    <div class="container my-4 my-sm-4 py-sm-5 py-0 my-0 homehero">
+    <!-- <div class="container my-4 my-sm-4 py-sm-5 py-0 my-0 homehero">
         <div class="row justify-content-around align-items-center">
 
             <div
@@ -61,9 +61,91 @@
 
         </div>
 
+    </div> -->
+
+    <div class="container-fluid d-flex align-items-center homehero py-sm-4 py-2"
+        style="background: #F5F5F5; position: relative;">
+
+        <div class=" homeherofades container">
+            <div class="row  justify-content-between align-items-center">
+                <div class="col-sm-5 my-3 text-center text-sm-left ">
+                    <h1 class="my-4">We pour our <img class="mt-n5" src="assests/heart.png" alt=""> into every design,
+                        <span>Mobile Apps</span>
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic iusto veniam maiores numquam, iste
+                        dolorum nisi atque incidunt at, dolores reiciendis dolorem molestias sunt similique. Nihil
+                        libero culpa voluptas quae.
+                    </p>
+                    <a href="quest.html" class="getstartbtn  fontrale my-2 ">Get
+                        Started</a>
+                </div>
+                <div class="col-sm-6 my-2 my-sm-0 my-3 rounded text-center">
+                    <img class="w-100" src="assests/homehero1.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class=" homeherofades container">
+            <div class="row  justify-content-around align-items-center">
+                <div class="col-sm-5 my-3 text-center text-sm-left ">
+                    <h1 class="my-4">We pour our <img class="mt-n5" src="assests/heart.png" alt=""> into every design,
+                        <span>Websites</span>
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic iusto veniam maiores numquam, iste
+                        dolorum nisi atque incidunt at, dolores reiciendis dolorem molestias sunt similique. Nihil
+                        libero culpa voluptas quae.
+                    </p>
+
+                    <a href="quest.html" class="getstartbtn fontrale my-2 ">Get
+                        Started</a>
+                </div>
+                <div class="col-sm-6 my-2 my-sm-0 my-3 rounded text-center ">
+                    <img class="w-100" src="assests/homehero2.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class=" homeherofades container">
+            <div class="row  justify-content-around align-items-center">
+                <div class="col-sm-6 my-3 text-center text-sm-left ">
+                    <h1 class="my-4">We pour our <img class="mt-n5" src="assests/heart.png" alt=""> into every design,
+                        <span>SaaS Apps</span>
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic iusto veniam maiores numquam, iste
+                        dolorum nisi atque incidunt at, dolores reiciendis dolorem molestias sunt similique. Nihil
+                        libero culpa voluptas quae.
+                    </p>
+                    <a href="quest.html" class="getstartbtn  fontrale my-2 ">Get
+                        Started</a>
+                </div>
+                <div class="col-sm-5 my-2 my-sm-0 my-3 rounded text-center ">
+                    <img class="w-100" src="assests/homehero3.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="row sideactions ">
+
+            <div class="socialicons d-block d-sm-block mt-sm-3 ">
+                <div class="fb my-5 text-center">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </div>
+                <div class="curr my-5 text-center">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </div>
+                <div class="curr my-5 text-center">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+
     </div>
 
-    <div class="container-fluid py-3 mt-4 latestprojects " style="background-color: #FFD429F2;">
+    <div class="container-fluid py-3 latestprojects " style="background-color: #FFD429F2;">
         <div class="latestprojecttitle text-center wow animate__animated animate__fadeInDown">
             <h1 class="font-weight-bold my-sm-5 my-2">Our <span style="color: #FF4365;"><b>Latest Projects</b> </span>
             </h1>
@@ -210,15 +292,17 @@
 
             <div class="col-sm-4 my-3 text-sm-left text-center wow animate__animated animate__fadeInUp animate__slow ">
                 <h1 class="font-weight-bold my-4 "><b>World Class <span><b>Free Hosting</b> </span></b> </h1>
-                <p>The best web hosting company for somebody else may not be the best for you, and vice versa. We
-                    consider all these essential factors for web hosting and connect you to the digital world:</p>
-                <p><b>Bandwidth</b> </p>
-                <p><b>Storage</b> </p>
-                <p><b>Functions</b></p>
-                <p><b>Functions</b></p>
-                <p><b>Uptime</b></p>
-                <p><b>Dedicated or Shared IP</b></p>
+                <p class="bullets d-flex align-items-center mb-1"><b>Lorem ipsum dolor sit amet.</b> </p>
+                <p class="bullets d-flex align-items-center mb-1"><b>Lorem ipsum dolor sit.</b> </p>
+                <p class="bullets d-flex align-items-center mb-1"><b>Lorem, ipsum.</b></p>
             </div>
+            <style>
+                .bullets::before {
+                    content: "\2022";
+                    font-size: 2rem;
+                    margin-right: .5rem;
+                }
+            </style>
 
         </div>
 
@@ -501,7 +585,7 @@
             <div class="getstarted my-3 wow animate__animated animate__fadeInUp">
                 <a class="whitebgbtn fontrale wow animate__animated animate__delay-1s animate__slow animate__bounceIn "
                     href="#">
-                    Get In Touch
+                    Get In Touch &nbsp; <img src="assests/rightarrow.png" alt="">
                 </a>
             </div>
         </div>
