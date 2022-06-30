@@ -31,7 +31,7 @@ p {
   font-family: Raleway;
   font-style: normal;
   font-weight: 500;
-  color: rgba(33, 37, 41, 0.7);
+  color: #383838;
 }
 h1 span,
 h2 span {
@@ -738,7 +738,7 @@ i.fa.fa-quote-right {
 }
 .testi .slick-prev,
 .testi .slick-next {
-  top: -35%;
+  top: -25%;
 }
 .slick-next,
 .slick-prev {
