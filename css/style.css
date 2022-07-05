@@ -1865,20 +1865,27 @@ ul.ab-form-list {
     top: 35%;
   }
   h1 {
-    font-size: 1.7rem !important;
+    font-size: 2rem !important;
   }
   h2 {
-    font-size: 1.4rem !important;
+    font-size: 1.8rem !important;
   }
   h3 {
-    font-size: 1.2rem !important;
+    font-size: 1.6rem !important;
   }
   h4 {
+    font-size: 1.4rem;
+  }
+  h5{
+    font-size: 1.2rem;
+  }
+  h6{
     font-size: 1rem;
   }
   p {
-    font-size: 80%;
+    font-size: .8rem;
   }
+
   @media (max-width: 575.98px) {
     .border-xs-left-none {
       border-left: none !important;
