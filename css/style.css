@@ -86,9 +86,9 @@ a {
   cursor: pointer;
 }
 
-.fontpop {
+/* .fontpop {
   font-family: "Poppins", sans-serif;
-}
+} */
 .fontrale {
   font-family: "Raleway", sans-serif;
 }
@@ -302,7 +302,7 @@ ul.shortlink li a {
 .whitebgbtn {
   border: 1px solid #0a76e5;
   border-radius: 4rem;
-  padding: 0.5rem 1.5rem !important;
+  padding: 0.7rem 2rem !important;
   background-image: linear-gradient(45deg, #0a76e5 50%, transparent 50%);
   background-position: 100%;
   background-size: 400%;
@@ -314,13 +314,16 @@ ul.shortlink li a {
   text-transform: capitalize;
   cursor: pointer;
   color: #0a76e5;
-  /* letter-spacing: 0.12rem; */
+  letter-spacing: 0.12rem;
 }
 .signupbtn:hover {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .whitebgbtn {
-  padding: 0.6rem 2rem !important;
+  padding: 0.7rem 2rem !important;
+}
+.signupbtn {
+  padding: 0.5rem 2rem !important;
 }
 .ctabtn {
   background-color: #fff;
@@ -351,13 +354,13 @@ ul.shortlink li a {
   color: #fff;
   border: 1px solid #0a76e5;
   border-radius: 4rem;
-  padding: 0.6rem 2rem;
+  padding: 0.8rem 2rem;
   background-image: linear-gradient(45deg, #fff 50%, transparent 50%);
   background-position: 90%;
   background-size: 400%;
   transition: background 300ms ease-in-out;
   font-size: 14px !important;
-  /* letter-spacing: 0.12rem; */
+  letter-spacing: 0.12rem;
   font-weight: 600;
 }
 .getstartbtn:hover {
@@ -1865,25 +1868,28 @@ ul.ab-form-list {
     top: 35%;
   }
   h1 {
-    font-size: 2rem !important;
+    font-size: 2.2rem !important;
   }
   h2 {
-    font-size: 1.8rem !important;
+    font-size: 2rem !important;
   }
   h3 {
-    font-size: 1.6rem !important;
+    font-size: 1.8rem !important;
   }
   h4 {
+    font-size: 1.6rem;
+  }
+  h5 {
     font-size: 1.4rem;
   }
-  h5{
+  h6 {
     font-size: 1.2rem;
   }
-  h6{
+  p {
     font-size: 1rem;
   }
-  p {
-    font-size: .8rem;
+  small {
+    font-size: 0.8rem;
   }
 
   @media (max-width: 575.98px) {
