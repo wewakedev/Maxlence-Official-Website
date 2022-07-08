@@ -111,7 +111,76 @@
   </div>
 
   <div class="container">
-    <ul class="nav  nav-tabs responsive-tabs py-sm-3  wow animate__animated animate__fadeIn my-sm-5 my-0" id="myTab"
+    <div class="d-flex px-2 justify-content-between align-items-center">
+      <div>
+        <h3>Product Overview</h3>
+      </div>
+      <div>
+        <div class="dropdown my-sm-3 pr-0 col-2">
+          <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><span
+              class="dropdown-text"><img src="assests/dsgfiltericon.png" alt=""></span>
+          </a>
+          <style>
+            .dropdown-toggle::after {
+              display: none;
+
+            }
+
+            .filterdropdown {
+              right: 0% !important;
+              position: absolute !important;
+            }
+
+            .filterdropdown.dropdown-menu {
+              width: 100%;
+              margin-left: -260%;
+            }
+          </style>
+          <div class="dropdown-menu my-2 filterdropdown container">
+            <div class="row my-4 text-center">
+              <!-- <div class="col-4"><small class="text-white">Industry</small></div> -->
+              <div class="col-12 d-flex border-left justify-content-start">
+                <ul class="flex-column">
+                  <!-- <li><a href="#"><label><input type="checkbox" class="selectall" /><span class="select-text"> Select</span> All</label></a></li> -->
+                  <li><a class="option-link" href="#"><label><input name="options[]" type="checkbox"
+                          class="option justone" value="Option 1 "> Option
+                        1</label></a></li>
+                  <li><a href="#"><label><input name="options[]" type="checkbox" class="option justone"
+                          value="Option 2 ">
+                        Option 2</label></a>
+                  </li>
+                  <li><a href="#"><label><input name="options[]" type="checkbox" class="option justone"
+                          value="Option 3 ">
+                        Option 3</label></a>
+                  </li>
+                  <li><a href="#"><label><input name="options[]" type="checkbox" class="option justone"
+                          value="Option 4 ">
+                        Option 4</label></a>
+                  </li>
+                  <li><a href="#"><label><input name="options[]" type="checkbox" class="option justone"
+                          value="Option 5 ">
+                        Option 5</label></a>
+                  </li>
+                  <li><a href="#"><label><input name="options[]" type="checkbox" class="option justone"
+                          value="Option 6 ">
+                        Option 6</label></a>
+                  </li>
+                  <li><a href="#"><label><input name="options[]" type="checkbox" class="option justone"
+                          value="Option 7 ">
+                        Option 3</label></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <ul class="nav  nav-tabs responsive-tabs py-sm-3  wow animate__animated animate__fadeIn my-3" id="myTab"
       role="tablist">
       <li class="nav-item filter__headitem active">
         <a class="nav-link active" id="allpacks" data-toggle="tab" href="#allpackages" role="tab"
@@ -134,14 +203,14 @@
         <a class="nav-link" id="emailmarketpacks" data-toggle="tab" href="#emailmarketpackages" role="tab"
           aria-controls="emailmarketpackages" aria-selected="false">EMAIL MARKETING</a>
       </li>
-      <li class="nav-item filter__headitem">
+      <!-- <li class="nav-item filter__headitem">
         <a class="nav-link" id="googlebuspacks" data-toggle="tab" href="#googlebuspackages" role="tab"
           aria-controls="googlebuspackages" aria-selected="false">GOOGLE MY BUSINESS (GMB)</a>
       </li>
       <li class="nav-item filter__headitem">
         <a class="nav-link" id="wenmainpacks" data-toggle="tab" href="#webmainpackages" role="tab"
           aria-controls="webmainpackages" aria-selected="false">WEB MAINTENANCE </a>
-      </li>
+      </li> -->
       <li class="nav-item filter__headitem">
         <a class="nav-link" id="valuepacks" data-toggle="tab" href="#valuepackages" role="tab"
           aria-controls="valuepackages" aria-selected="false">VALUE PACKS</a>
@@ -151,6 +220,7 @@
       <i class="fa fa-caret-up"></i>
       <i class="fa fa-caret-down"></i>
     </ul>
+
   </div>
 
   <div class="tab-content container my-5" id="myTabContent">
@@ -236,6 +306,8 @@
 
 
         </div>
+
+
         <div class="text-center mt-5 mb-2">
           <a id="next"
             class="getstartbtn wow animate__ animate__delay-1s animate__fadeInUp animate__slow  fontrale my-2  animated"
@@ -266,13 +338,13 @@
     </div>
 
 
-    <div class="tab-pane fade" id="googlebuspackages" role="tabpanel" aria-labelledby="googlebuspacks">
+    <!-- <div class="tab-pane fade" id="googlebuspackages" role="tabpanel" aria-labelledby="googlebuspacks">
       Google Business Packs
     </div>
 
     <div class="tab-pane fade" id="webmainpackages" role="tabpanel" aria-labelledby="wenmainpacks">
       Web Maintenance
-    </div>
+    </div> -->
 
     <div class="tab-pane fade" id="valuepackages" role="tabpanel" aria-labelledby="valuepacks">
       Value Packs
@@ -333,6 +405,7 @@
       margin-right: 0;
       background: #fff;
       /* border: 1px solid #DDDDDD; */
+      border: none;
     }
 
     @media (min-width: 768px) {
@@ -348,7 +421,8 @@
     .responsive-tabs.nav-tabs>li.active a {
       /* border: 1px solid #DDDDDD; */
       border-radius: 2px;
-      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+      border: none;
+      /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
     }
 
     /* @media (min-width: 768px) {
@@ -407,7 +481,7 @@
   </script>
 
   <div class="container">
-    <div class="row mt-5 mb-2 justify-content-around align-items-center  ">
+    <div class="row mt-5 mb-2 justify-content-center align-items-center  ">
       <div class="col-sm-5 my-3 wow animate__animated animate__fadeInLeft animate__slow">
         <img class="w-100" src="assests/seoshopbanner.png" alt="">
       </div>
@@ -421,22 +495,22 @@
 
   <div class="container py-4 my-5"
     style="border-top: 1px solid rgba(33, 37, 41, 0.5);border-bottom: 1px solid rgba(33, 37, 41, 0.5);">
-    <div class="row justify-content-center py-3">
+    <div class="row justify-content-around py-3">
       <div
-        class="col-md-3 text-center border-right border-xs-right-none my-2 vendorbenifits wow animate__animated animate__fadeInLeft animate__slow">
+        class="col-md-4 text-center border-right border-xs-right-none my-2 vendorbenifits wow animate__animated animate__fadeInLeft animate__slow">
         <img class="my-2" src="assests/freetrial.png" alt="">
         <h6>Free Trial</h6>
         <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, voluptatum.</small>
       </div>
 
       <div
-        class="col-md-3 text-center my-2 vendorbenifits border-right border-xs-right-none  wow animate__animated animate__fadeInLeft animate__slow">
+        class="col-md-4 text-center my-2 vendorbenifits border-right border-xs-right-none  wow animate__animated animate__fadeInLeft animate__slow">
         <img class="my-2" src="assests/secureshopicon.png" alt="">
         <h6>Secure Payment</h6>
         <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, voluptatum.</small>
       </div>
 
-      <div class="col-md-3 text-center my-2 vendorbenifits   wow animate__animated animate__fadeInLeft animate__slow">
+      <div class="col-md-4 text-center my-2 vendorbenifits   wow animate__animated animate__fadeInLeft animate__slow">
         <img class="my-2" src="assests/shop24icon.png" alt="">
         <h6>24/7 Service</h6>
         <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, voluptatum.</small>

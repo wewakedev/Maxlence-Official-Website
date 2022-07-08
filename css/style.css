@@ -367,6 +367,11 @@ ul.shortlink li a {
   background-position: 0;
   transition: 1s ease-out;
 }
+.slick-next,
+.slick-prev {
+  width: 35px;
+  height: 35px;
+}
 
 /*******************************HOME PAGE ***********************/
 
@@ -718,14 +723,15 @@ i.fa.fa-quote-right {
 .designcommonslider .slick-prev {
   left: -14px;
 }
-.packslider .slick-prev {
-  left: -0.5%;
-  top: 40%;
-}
 .packslider .slick-next {
   right: 0.5%;
-  top: 40%;
+  top: 35%;
 }
+.packslider .slick-prev {
+  left: 0.5%;
+  top: 35%;
+}
+
 .testi .slick-prev,
 .clientvid .slick-prev {
   left: 0%;
@@ -1930,7 +1936,9 @@ ul.ab-form-list {
   text-align: center;
   background: rgba(10, 118, 229, 0.3);
   color: #fff !important;
-  padding: 0.8rem 1rem;
+  padding: 1rem 1.3rem;
+  font-size: 16px;
+  border-radius: 100%;
 }
 /* Design */
 
@@ -1978,6 +1986,8 @@ ul.ab-form-list {
   border: 0.5px solid #fff;
   box-sizing: border-box;
   border-radius: 3px;
+  font-size: 16px;
+  text-align: center;
 }
 
 .t-dropdown-block {
@@ -2060,7 +2070,7 @@ ul.ab-form-list {
 
 .shoptoptitle {
   position: absolute;
-  top: 50%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
