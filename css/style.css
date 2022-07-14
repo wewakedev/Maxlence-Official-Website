@@ -86,9 +86,9 @@ a {
   cursor: pointer;
 }
 
-/* .fontpop {
+.fontpoppins {
   font-family: "Poppins", sans-serif;
-} */
+}
 .fontrale {
   font-family: "Raleway", sans-serif;
 }
@@ -2340,6 +2340,8 @@ ul.ab-form-list {
   overflow: hidden;
   /*CSS counters to number the steps*/
   counter-reset: step;
+  display: flex;
+  justify-content: center;
 }
 
 #progressbar li {
@@ -2347,7 +2349,7 @@ ul.ab-form-list {
   color: white;
   text-transform: uppercase;
   font-size: 9px;
-  width: 10%;
+  width: 5%;
   float: left;
   position: relative;
   border-radius: 100%;
@@ -2424,6 +2426,5 @@ ul.ab-form-list {
   justify-content: start;
 }
 .defultbox h6 {
-  margin-bottom: 0px;
-  margin-left: 0.8rem;
+  margin: 0.3rem 0rem 0rem 0.8rem;
 }

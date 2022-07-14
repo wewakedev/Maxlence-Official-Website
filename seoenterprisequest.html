@@ -87,6 +87,11 @@
 
     <div class="container">
 
+        <div class="row my-5 justify-content-center ">
+            <div class="">
+                <h6 class="text-secondary">Great! You are almost there</h6>
+            </div>
+        </div>
         <!-- multistep form -->
         <form id="msform">
             <!-- progressbar -->
@@ -95,12 +100,13 @@
                 <li></li>
                 <li></li>
                 <li></li>
-                <!-- <li></li>
                 <li></li>
                 <li></li>
                 <li></li>
                 <li></li>
-                <li></li> -->
+                <li></li>
+                <li></li>
+                <li></li>
             </ul>
 
 
@@ -129,7 +135,7 @@
                         </div>
                     </div>
 
-                    <input type="button" name="next" class="next mt-4 action-button" value="Submit" />
+                    <input type="button" name="next" class="next mt-5 action-button" value="Submit ➙" />
 
                 </fieldset>
 
@@ -147,15 +153,15 @@
                         </div>
                     </div>
 
-                    <input type="button" name="previous" class="previous mt-4 action-button" value="Previous" />
-                    <input type="button" name="next" class="next mt-4 action-button" value="Submit" />
+                    <input type="button" name="previous" class="previous mt-5 action-button" value="Previous" />
+                    <input type="button" name="next" class="next mt-5 action-button" value="Submit ➙" />
 
                 </fieldset>
 
 
                 <fieldset>
                     <h2 class="fs-title">What type of marketing services are you using?</h2>
-                    <h3 class="fs-subtitle text-secondary">( Select more than one if applicable )</h3>
+                    <h6 class="fs-subtitle text-secondary">( Select more than one if applicable )</h6>
 
                     <div class="row mt-5 justify-content-center">
                         <div class="col-md-3 col-6 my-2">
@@ -233,8 +239,8 @@
                     </div>
 
 
-                    <input type="button" name="previous" class="previous mt-4 action-button" value="Previous" />
-                    <input type="button" name="next" class="next mt-4 action-button" value="Submit" />
+                    <input type="button" name="previous" class="previous mt-5 action-button" value="Previous" />
+                    <input type="button" name="next" class="next mt-5 action-button" value="Submit ➙" />
                 </fieldset>
 
                 <fieldset>
@@ -252,7 +258,7 @@
                             <div class="defultbox">
                                 <input type="radio" name="longbox" id="">
                                 <label class="radiobox_title" for="longbox">
-                                    <h6>Less than 3 months</h6>
+                                    <h6>6 - 9 months</h6>
                                 </label>
                             </div>
                         </div>
@@ -260,7 +266,7 @@
                             <div class="defultbox">
                                 <input type="radio" name="longbox" id="">
                                 <label class="radiobox_title" for="longbox">
-                                    <h6>Less than 3 months</h6>
+                                    <h6>3 - 6 months</h6>
                                 </label>
                             </div>
                         </div>
@@ -268,7 +274,7 @@
                             <div class="defultbox">
                                 <input type="radio" name="longbox" id="">
                                 <label class="radiobox_title" for="longbox">
-                                    <h6>Less than 3 months</h6>
+                                    <h6>9 - 12 months</h6>
                                 </label>
                             </div>
                         </div>
@@ -276,67 +282,297 @@
                             <div class="defultbox">
                                 <input type="radio" name="longbox" id="">
                                 <label class="radiobox_title" for="longbox">
-                                    <h6>Less than 3 months</h6>
+                                    <h6>More than 1 year</h6>
                                 </label>
                             </div>
                         </div>
                     </div>
 
-                    <input type="button" name="previous" class="previous mt-4 action-button" value="Previous" />
-                    <input type="button" name="next" class="next mt-4 action-button" value="Submit" />
+                    <input type="button" name="previous" class="previous mt-5 action-button" value="Previous" />
+                    <input type="button" name="next" class="next mt-5 action-button" value="Submit ➙" />
 
                 </fieldset>
-                <!-- 
+
                 <fieldset>
-                    <h2 class="fs-title">Question 5</h2>
-                    <h3 class="fs-subtitle">What do your colleagues consider your main weaknesses to be?</h3>
-                    <textarea class="form-control" name="CAT_Custom_5" id="CAT_Custom_5" rows="4"
-                        onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
-                    <input type="button" name="previous" class="previous action-button" value="Previous" />
-                    <input type="button" name="next" class="next action-button" value="Next" />
+                    <h2 class="fs-title">How long you have been using marketing services?</h2>
+                    <h6 class="fs-subtitle text-secondary">( Select more than one if applicable )</h6>
+                    <div class="row mt-5 justify-content-center flex-column justify-content-center">
+                        <div class=" col-md-4 mx-auto my-2">
+                            <div class="defultbox">
+                                <input type="radio" name="longbox" id="">
+                                <label class="radiobox_title" for="longbox">
+                                    <h6>Website Traffic</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" col-md-4 mx-auto my-2">
+                            <div class="defultbox">
+                                <input type="radio" name="longbox" id="">
+                                <label class="radiobox_title" for="longbox">
+                                    <h6>Lead Generation</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" col-md-4 mx-auto my-2">
+                            <div class="defultbox">
+                                <input type="radio" name="longbox" id="">
+                                <label class="radiobox_title" for="longbox">
+                                    <h6>Branding</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" col-md-4 mx-auto my-2">
+                            <div class="defultbox">
+                                <input type="radio" name="longbox" id="">
+                                <label class="radiobox_title" for="longbox">
+                                    <h6>Promotion</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" col-md-4 mx-auto my-2">
+                            <div class="defultbox">
+                                <input type="radio" name="longbox" id="">
+                                <label class="radiobox_title" for="longbox">
+                                    <h6>Re-Marketing</h6>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <input type="button" name="previous" class="previous mt-5 action-button" value="Previous" />
+                    <input type="button" name="next" class="next mt-5 action-button" value="Submit ➙" />
                 </fieldset>
+
                 <fieldset>
-                    <h2 class="fs-title">Question 6</h2>
-                    <h3 class="fs-subtitle">In what areas would you like to improve your clinical skills?</h3>
-                    <textarea class="form-control" name="CAT_Custom_6" id="CAT_Custom_6" rows="4"
+                    <h2 class="fs-title">Please enter your website URL</h2>
+                    <h6 class="fs-subtitle text-secondary">( Enter NA if you don’t have one )</h6>
+                    <textarea style=" height: 80px;
+                    width: 50%;
+                    margin: 0 auto;" placeholder="Website URL " class="form-control mt-5 text-left py-3"
+                        name=" CAT_Custom_6" id="CAT_Custom_6" rows="1"
                         onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
-                    <input type="button" name="previous" class="previous action-button" value="Previous" />
-                    <input type="button" name="next" class="next action-button" value="Next" />
+                    <input type="button" name="previous" class="previous mt-5 action-button" value="Previous" />
+                    <input type="button" name="next" class="next mt-5 action-button" value="Submit ➙" />
                 </fieldset>
+
                 <fieldset>
-                    <h2 class="fs-title">Question 7</h2>
-                    <h3 class="fs-subtitle">In what areas would you like to improve your non-clinical skills?</h3>
-                    <textarea class="form-control" name="CAT_Custom_7" id="CAT_Custom_7" rows="4"
+                    <h2 class="fs-title col-8 m-auto">Briefly describe about your business, what do you sell, who is
+                        your
+                        target
+                        audience & what is your pricing?</h2>
+                    <textarea style=" height: 150px;
+                    width: 50%;
+                    margin: 0 auto;" placeholder="Website URL " class="form-control mt-5 text-left py-3"
+                        name=" CAT_Custom_7" id="CAT_Custom_7" rows="1"
                         onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
-                    <input type="button" name="previous" class="previous action-button" value="Previous" />
-                    <input type="button" name="next" class="next action-button" value="Next" />
+                    <input type="button" name="previous" class="previous mt-5 action-button" value="Previous" />
+                    <input type="button" name="next" class="next mt-5 action-button" value="Submit ➙" />
                 </fieldset>
+
                 <fieldset>
-                    <h2 class="fs-title">Question 8</h2>
-                    <h3 class="fs-subtitle">Are there any specific areas of compliance training that you need to
-                        complete?
-                    </h3>
-                    <textarea class="form-control" name="CAT_Custom_8" id="CAT_Custom_8" rows="4"
-                        onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
-                    <input type="button" name="previous" class="previous action-button" value="Previous" />
-                    <input type="button" name="next" class="next action-button" value="Next" />
+                    <h2 class="fs-title">Your business is based out of?</h2>
+                    <div class="row mt-5 justify-content-center">
+                        <div id="selector" class="col-md-4 text-center">
+                            <select class="form-control input-lg">
+                                <option selected>Country</option>
+                                <option>India</option>
+                                <option>United Kingdom</option>
+                            </select>
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+                    <input type="button" name="previous" class="previous mt-5 action-button" value="Previous" />
+                    <input type="button" name="next" class="next mt-5 action-button" value="Submit ➙" />
                 </fieldset>
+
                 <fieldset>
-                    <h2 class="fs-title">Question 9</h2>
-                    <h3 class="fs-subtitle">What postgraduate qualifications do you hold?</h3>
-                    <textarea class="form-control" name="CAT_Custom_9" id="CAT_Custom_9" rows="4"
-                        onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
-                    <input type="button" name="previous" class="previous action-button" value="Previous" />
-                    <input type="button" name="next" class="next action-button" value="Next" />
+                    <h2 class="fs-title">What is your monthly budget?</h2>
+                    <div class="row mt-5 justify-content-center">
+                        <div class=" col-md-4 m-2">
+                            <div class="defultbox">
+                                <input type="radio" name="longbox" id="">
+                                <label class="radiobox_title" for="longbox">
+                                    <h6>Below $3k</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" col-md-4 m-2">
+                            <div class="defultbox">
+                                <input type="radio" name="longbox" id="">
+                                <label class="radiobox_title" for="longbox">
+                                    <h6>$10k - $20k</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" col-md-4 m-2">
+                            <div class="defultbox">
+                                <input type="radio" name="longbox" id="">
+                                <label class="radiobox_title" for="longbox">
+                                    <h6>$3k - $5k</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" col-md-4 m-2">
+                            <div class="defultbox">
+                                <input type="radio" name="longbox" id="">
+                                <label class="radiobox_title" for="longbox">
+                                    <h6>$20k - $35k</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" col-md-4 m-2">
+                            <div class="defultbox">
+                                <input type="radio" name="longbox" id="">
+                                <label class="radiobox_title" for="longbox">
+                                    <h6>$5k - $10k</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" col-md-4 m-2">
+                            <div class="defultbox">
+                                <input type="radio" name="longbox" id="">
+                                <label class="radiobox_title" for="longbox">
+                                    <h6>$35 - $50k</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" col-md-4 m-2">
+                            <div class="defultbox">
+                                <input type="radio" name="longbox" id="">
+                                <label class="radiobox_title" for="longbox">
+                                    <h6>Above $50k</h6>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <input type="button" name="previous" class="previous mt-5 action-button" value="Previous" />
+                    <input type="button" name="next" class="next mt-5 action-button" value="Submit ➙" />
+
                 </fieldset>
+
                 <fieldset>
-                    <h2 class="fs-title">Question 10</h2>
-                    <h3 class="fs-subtitle">What postgraduate qualifications or training do you wish to obtain?</h3>
-                    <textarea class="form-control" name="CAT_Custom_10" id="CAT_Custom_10" rows="4"
-                        onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
-                    <input type="button" name="previous" class="previous action-button" value="Previous" />
-                    <input type="submit" name="submit" class="submit action-button" value="Submit" />
-                </fieldset> -->
+                    <h2 class="fs-title">Who do you consider your biggest competitors?</h2>
+                    <h6 class="fs-subtitle text-secondary">( Enter website URL )</h6>
+                    <div class="col-12 d-flex justify-content-center align-items-center">
+                        <div class="col-1 pr-0"><span><b>1.</b></span></div>
+                        <div class="col-lg-5 pl-0">
+                            <textarea style=" height: 80px;
+                    width: 100%;
+                    margin: 0 auto;" placeholder="Website URL " class="form-control mt-5 text-left py-3"
+                                name=" CAT_Custom_6" id="CAT_Custom_6" rows="1"
+                                onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center align-items-center">
+                        <div class="col-1 pr-0"><span><b>2.</b></span></div>
+                        <div class="col-lg-5 pl-0">
+                            <textarea style=" height: 80px;
+                    width: 100%;
+                    margin: 0 auto;" placeholder="Website URL " class="form-control mt-5 text-left py-3"
+                                name=" CAT_Custom_6" id="CAT_Custom_6" rows="1"
+                                onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center align-items-center">
+                        <div class="col-1 pr-0"><span><b>3.</b></span></div>
+                        <div class="col-lg-5 pl-0">
+                            <textarea style=" height: 80px;
+                    width: 100%;
+                    margin: 0 auto;" placeholder="Website URL " class="form-control mt-5 text-left py-3"
+                                name=" CAT_Custom_6" id="CAT_Custom_6" rows="1"
+                                onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
+                        </div>
+                    </div>
+
+
+
+
+                    <input type="button" name="previous" class="previous mt-5 action-button" value="Previous" />
+                    <input type="button" name="next" class="next mt-5 action-button" value="Submit ➙" />
+                </fieldset>
+
+                <fieldset>
+                    <h2 class="fs-title">When are you looking to get started?</h2>
+                    <div class="row mt-5 justify-content-center">
+                        <div class=" col-md-4 m-2">
+                            <div class="defultbox">
+                                <input type="radio" name="longbox" id="">
+                                <label class="radiobox_title" for="longbox">
+                                    <h6>Immediately</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" col-md-4 m-2">
+                            <div class="defultbox">
+                                <input type="radio" name="longbox" id="">
+                                <label class="radiobox_title" for="longbox">
+                                    <h6>In the next 2 weeks</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" col-md-4 m-2">
+                            <div class="defultbox">
+                                <input type="radio" name="longbox" id="">
+                                <label class="radiobox_title" for="longbox">
+                                    <h6>2 - 4 weeks</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" col-md-4 m-2">
+                            <div class="defultbox">
+                                <input type="radio" name="longbox" id="">
+                                <label class="radiobox_title" for="longbox">
+                                    <h6>4 - 6 weeks</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" col-md-4 m-2">
+                            <div class="defultbox">
+                                <input type="radio" name="longbox" id="">
+                                <label class="radiobox_title" for="longbox">
+                                    <h6>After 6 weeks</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" col-md-4 m-2">
+                            <div class="defultbox">
+                                <input type="radio" name="longbox" id="">
+                                <label class="radiobox_title" for="longbox">
+                                    <h6>Never</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" col-md-4 m-2">
+                            <div class="defultbox">
+                                <input type="radio" name="longbox" id="">
+                                <label class="radiobox_title" for="longbox">
+                                    <h6>Not Sure</h6>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <input type="button" name="previous" class="previous mt-5 action-button" value="Previous" />
+                    <input type="button" name="next" class="next mt-5 action-button" value="Submit ➙" />
+
+                </fieldset>
+
+
+                <fieldset>
+                    <div class="text-center my-5"><img src="assests/maxlogodark.png" alt=""></div>
+                    <h2 class="fs-title my-3">Perfect marketing with perfect Partner</h2>
+                    <div class="row mt-5 justify-content-center">
+                        <h3 class="font-italic" style="color:
+                        rgba(133, 159, 149, 1) ;">on the way to your <span> solution</span></h2>
+                            <small><a href="buyplans.html">Buy Plans</a></small>
+                    </div>
+                </fieldset>
+
+
             </div>
         </form>
     </div>
