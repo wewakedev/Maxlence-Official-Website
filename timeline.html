@@ -21,229 +21,97 @@
 
 <body>
 
-    <div class="row">
-        <div class="small-12 column">
-            <div class="loading-bar__wrapper">
-
-                <div class="loading-bar">
-                    <div class="loading-bar-bullet"></div>
-                    <div class="loading-bar-bullet"></div>
-                    <div class="loading-bar-bullet"></div>
-                    <div class="loading-bar-bullet"></div>
-                    <div class="loading-bar-bullet"></div>
-                    <div class="loading-bar-bullet"></div>
-                    <div class="loading-bar-bullet"></div>
-                    <div class="loading-bar-bullet"></div>
-                </div>
-
-                <div class="labels">
-                    <div>
-                        <p>Apresentação do produto e construtora | Campeche</p>
-                        <a href="#" class="qb-button">Veja o conteúdo</a>
-                    </div>
-                    <div>
-                        <p>Conheça o bairro | Campeche</p>
-                        <a href="#" class="qb-button">Veja o conteúdo</a>
-                    </div>
-                    <div>
-                        <p>Arquitetura e Design | Campeche</p>
-                        <a href="#" class="qb-button">Veja o conteúdo</a>
-                    </div>
-                    <div>
-                        <p>Estudo de mercado e imóveis | Campeche</p>
-                        <a href="#" class="qb-button">Veja o conteúdo</a>
-                    </div>
-                    <div>
-                        <p>O que os clientes da construtora tem a dizer | Campeche</p>
-                        <a href="#" class="qb-button">Veja o conteúdo</a>
-                    </div>
-                    <div>
-                        <p>Documentação Imobiliária, comprando com segurança | Campeche</p>
-                        <a href="#" class="qb-button">Veja o conteúdo</a>
-                    </div>
-                    <div>
-                        <p>Saiba tudo sobre Financiamentos | Campeche</p>
-                        <a href="#" class="qb-button">Veja o conteúdo</a>
-                    </div>
-                    <div>
-                        <p>Pré-reserva | Campeche</p>
-                        <a href="#" class="qb-button">Veja o conteúdo</a>
-                    </div>
-                    <div>
-                        <p>Evento e desconto final | Campeche</p>
-                        <a href="#" class="qb-button">Veja o conteúdo</a>
-                    </div>
-                </div>
-
-            </div>
+    <div class="wrapper">
+        <div class="center-slider">
+            <div>2015</div>
+            <div>2016</div>
+            <div>2017</div>
+            <div>2018</div>
+            <div>2019</div>
+            <div>2020</div>
         </div>
     </div>
 
     <style>
-        .loading-bar__wrapper {
-            background: #fff;
-            border-radius: 5px;
-            padding: 60px 60px 30px;
-            box-shadow: 0 8px 10px rgba(223, 230, 241, 0.5);
-            z-index: 99;
+        body {
+            background-color: #F5F5FF;
         }
 
-        .loading-bar__wrapper label {
-            display: block;
-            font-size: 0.9rem;
-            margin-bottom: 12px;
-            font-style: italic;
-            font-weight: bold;
-            color: #00ffa4;
+        .wrapper {
+            padding: 70px 0;
+            background: linear-gradient(180deg, #00C99C 0%, #035946 100%);
         }
 
-        .loading-bar {
-            background: #00ffa4;
-            height: 8px;
-            border-radius: 100px;
-            justify-content: space-around;
+        /* Default slide */
+        .center-slider .slick-slide {
+            /* background-color: tra; */
+            color: #FFF;
+            /* height: 200px; */
+            margin: 0 15px 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: scale(0.8);
+            transition: all 0.4s ease-in-out;
         }
 
-        .loading-bar-bullet::before {
-            content: "";
-            display: block;
-            background: #445058;
-            height: 16px;
-            width: 16px;
-            border-radius: 100px;
-            z-index: 999;
-            margin-top: -4px;
-            border: 5px solid white;
-            cursor: pointer;
+        .center-slider .slick-slide,
+        .center-slider .slick-slide[aria-hidden="true"]:not(.slick-cloned)~.slick-cloned[aria-hidden="true"] {
+            transform: scale(0.8, 0.8);
+            transition: all 0.4s ease-in-out;
+
         }
 
-        .slick-current.loading-bar-bullet::before {
-            height: 18px;
-            width: 18px;
-            margin-top: -5px;
-            margin-left: -9px;
-            /* Center bullet - Half .slick-current width*/
-            border: 3px solid white;
+        /* Active center slide (You can change anything here for cenetr slide)*/
+        .center-slider .slick-center,
+        .center-slider .slick-slide[aria-hidden="true"]:not([tabindex="-1"])+.slick-cloned[aria-hidden="true"] {
+            transform: scale(1.1);
+            background-color: #000000;
+            font-size: 30px;
+            margin: -0.6rem 1rem;
         }
 
-        .labels {
-            margin-top: 50px;
-            text-align: center;
+        .center-slider .slick-current.slick-active {
+            transform: scale(1.1);
+            background-color: #000000;
         }
 
-        /* Arrows */
-        .slick-prev,
+        .slick-next,
+        .slick-prev {
+            z-index: 5;
+        }
+
         .slick-next {
-            font-size: 0;
-            line-height: 0;
-            position: absolute;
-            top: 50%;
-            display: block;
-            width: 20px;
-            height: 32px;
-            padding: 0;
-            -webkit-transform: translate(0, -50%);
-            -ms-transform: translate(0, -50%);
-            transform: translate(0, -50%);
-            cursor: pointer;
-            color: transparent;
-            border: none;
-            outline: none;
-            background: transparent;
-        }
-
-        .slick-prev:hover,
-        .slick-prev:focus,
-        .slick-next:hover,
-        .slick-next:focus {
-            color: transparent;
-            outline: none;
-            background: transparent;
-        }
-
-        .slick-prev:hover:before,
-        .slick-prev:focus:before,
-        .slick-next:hover:before,
-        .slick-next:focus:before {
-            opacity: 1;
-        }
-
-        .slick-prev.slick-disabled:before,
-        .slick-next.slick-disabled:before {
-            opacity: 0.25;
-        }
-
-        .slick-prev:before,
-        .slick-next:before {
-            font-size: 32px;
-            line-height: 1;
-            opacity: 0.75;
-            color: #000000;
-            font-family: FontAwesome;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
+            right: 15px;
         }
 
         .slick-prev {
-            left: -40px;
+            left: 15px;
         }
 
+        .slick-next:before,
         .slick-prev:before {
-            content: "\f104";
-        }
-
-        .slick-next {
-            right: -40px;
-        }
-
-        .slick-next:before {
-            content: "\f105";
-        }
-
-        .qb-button {
-            display: inline-block;
-            background: #00ffa4;
-            border-radius: 100px;
-            padding: 5px 15px;
-            margin-bottom: 15px;
-            color: #445058;
-            font-size: 0.9rem;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        .qb-button:hover {
             color: #000;
+            font-size: 26px;
         }
     </style>
 
-
-
     <script>
-        $(".loading-bar").slick({
-            centerMode: true,
-            // centerPadding: "80px",
-            dots: false,
-            infinite: false,
-            speed: 300,
-            slidesToShow: 6,
-            slidesToScroll: 3,
-            focusOnSelect: true,
-            asNavFor: ".labels"
+        $(document).ready(function () {
+            $('.center-slider').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                centerMode: true,
+                arrows: true,
+                dots: false,
+                speed: 300,
+                centerPadding: '20px',
+                infinite: true,
+                // autoplaySpeed: 5000,
+                // autoplay: true
+            });
         });
-
-        $(".labels").slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            fade: true,
-            draggable: false,
-            asNavFor: ".loading-bar"
-        });
-
     </script>
-
-
 </body>
 
 

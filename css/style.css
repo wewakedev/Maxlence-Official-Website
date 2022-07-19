@@ -2273,7 +2273,7 @@ ul.ab-form-list {
   background: white;
   border: 0 none;
   border-radius: 3px;
-  padding: 20px 30px;
+  padding: 20px 16px;
   box-sizing: border-box;
   width: 100%;
   /*stacking fieldsets above each other*/
@@ -2349,10 +2349,11 @@ ul.ab-form-list {
   color: white;
   text-transform: uppercase;
   font-size: 9px;
-  width: 5%;
+  width: 8%;
   float: left;
   position: relative;
   border-radius: 100%;
+  margin: 0.4rem 0rem;
 }
 
 #progressbar li:before {
