@@ -11,10 +11,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
-        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -44,7 +40,7 @@
     <!-- Hero Section -->
     <!-- Hero Section -->
 
-    <div class="container-fluid d-flex align-items-center homehero py-sm-4 py-2"
+    <!-- <div class="container-fluid d-flex align-items-center homehero py-sm-4 py-2"
         style="background: #F5F5F5; position: relative;">
 
         <div class=" homeherofades container">
@@ -492,15 +488,64 @@
             </div>
         </div>
 
-    </div>
+    </div> -->
 
-    <div class="container discover">
-        <div class="row">
-            <div class="col-md-5 mb-4 wow animate__animated animate__fadeIn">
+
+    
+    <!-- left modal -->
+    <div class="modal modal_outer left_modal fade" id="get_quote_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" >
+            <div class="modal-dialog" role="document">
+              <form method="post"  id="get_quote_frm">
+                <div class="modal-content ">
+                    <button type="button" class="close text-right" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    <div class="modal-body get_quote_view_modal_body">
+                        <div class="row flex-column creationsublinks">
+                            <div class="my-3"><a class="creationsublink" href="creation_website.html">Website</a></div>
+                            <div class="my-3"><a class="creationsublink" href="creation_mobileapp.html">Mobile App</a></div>
+                            <div class="my-3"><a class="creationsublink" href="creation_saas.html">SaaS</a></div>
+                            <div class="my-3"><a class="creationsublink" href="creation_webhost.html">Hosting, Maintenance & Support</a></div>
+                        </div>
+    
+                    </div>
+    
+                </div><!-- //modal-content -->
+              </form>
+            </div><!-- modal-dialog -->
+    </div><!-- modal -->
+    <!-- //left modal -->
+    
+  
+
+    <div class="container discover position-relative">
+        <div class="row justify-content-center">
+            <div class="col-md-5 my-5 wow animate__animated animate__fadeIn">
                 <img class="w-100" src="assests/discover.png" alt="">
+            </div>
+            <div style="position:absolute;top:0%;left:-1%">
+                <span><img class="arrowanimate" src="assests/right-arrow-sm.png" alt=""></span>&nbsp; &nbsp; <a href="" id="modal_view_left" data-toggle="modal"  data-target="#get_quote_modal"><b>Services</b></a>
             </div>
         </div>
     </div>
+    <style>
+        .arrowanimate{
+  animation: slide1 1s ease-in-out infinite;
+  margin-left: 9px;
+
+        }
+        @keyframes slide1 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(10px, 0);
+  }
+}
+
+    </style>
 
     <div class="container d4s mt-5 text-center text-sm-left">
         <div class="row justify-content-between">
@@ -614,9 +659,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </body>
 

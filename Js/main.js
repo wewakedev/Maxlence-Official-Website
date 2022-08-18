@@ -79,6 +79,38 @@ $(document).ready(function () {
 
 //  Testimonial Slider
 
+$(".threewaysteps").slick({
+  dots: false,
+  arrows: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 3000,
+
+  responsive: [
+    {
+      breakpoint: 1000,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: "20px",
+        slidesToShow: 1,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: true,
+        // centerMode: true,
+        // centerPadding: '40px',
+        slidesToShow: 1,
+      },
+    },
+  ],
+});
+
 $(".carouselthreeway").slick({
   dots: true,
   arrows: true,
