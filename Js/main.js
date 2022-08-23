@@ -81,7 +81,7 @@ $(document).ready(function () {
 
 $(".threewaysteps").slick({
   dots: false,
-  arrows: false,
+  arrows: true,
   infinite: true,
   speed: 300,
   slidesToShow: 3,
@@ -102,7 +102,8 @@ $(".threewaysteps").slick({
     {
       breakpoint: 480,
       settings: {
-        arrows: true,
+        arrows: false,
+        dots: true,
         // centerMode: true,
         // centerPadding: '40px',
         slidesToShow: 1,

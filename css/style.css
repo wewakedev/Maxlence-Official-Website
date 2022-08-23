@@ -742,6 +742,15 @@ button#modal_view_right {
   background: #e7f3ff;
   position: relative;
 }
+.left_modal span{
+color: #fff !important;
+font-size: 6rem !important;
+
+}
+.left_modal .close{
+  opacity: 1 !important;
+  margin:1rem ;
+}
 .blockquote-custom-icon {
   /* width: 50px;
 	height: 50px;
@@ -785,7 +794,20 @@ i.fa.fa-quote-right {
 /* .slick-prev:before, .slick-next:before {
     font-family: 'slick';
     font-size: 35px;} */
-
+.threewaysteps .slick-next::before,.threewaysteps .slick-prev::before{
+  color: #fff !important;
+}
+.threewaysteps .slick-next {
+  top: 105% !important;
+  right: 40%;
+}
+.threewaysteps .slick-prev {
+  top: 105% !important;
+  left: 40%;
+}
+.threewaysteps .slick-dots li button:before{
+  color: #fafafa;
+}
 .designcommonslider .slick-next {
   right: 2px;
 }
