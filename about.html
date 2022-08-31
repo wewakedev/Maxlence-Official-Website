@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
         integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
@@ -59,6 +59,98 @@
 
     <!-- Timeline for Maxlence -->
 
+    <div class="container py-0 my-0">
+        <div class="row my-4 justify-content-center align-items-end">
+            <div class="col-12 text-center">
+                <h2 class="font-weight-bold text-dark my-4">Discover Our <span>History</span></h2>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper position-relative container-fluid" style="z-index: 0; background: linear-gradient(180deg, #00C99C 0%, #035946 100%);">
+        <div class="center-slider">
+            <div>2012</div>
+            <div>2013</div>
+            <div>2014</div>
+            <div>2015</div>
+            <div>2016</div>
+            <div>2017</div>
+        </div>
+        <div class="timetri position-absolute"  style="left: 50%;
+        top: 5%;
+        transform: translate(-50%, -50%); z-index: -1 !important;">
+            <img src="assests/whitetriangle.png" alt="">
+        </div>
+        <div class="timetri position-absolute" style="left: 50%;
+        bottom:-13%;
+        transform: translate(-50%, -50%); z-index: -1 !important;">
+            <img src="assests/greentriangle.png" alt="">
+        </div>
+        <div class="position-absolute" style="left: 50%;
+        top: 54%;
+        transform: translate(-50%, -50%); z-index: -1 !important;"><img src="assests/timelinefadeline.png" alt=""></div>
+    </div>
+    <div class="container-fluid d-flex align-items-center" style=" background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.9) -9.72%, rgba(0, 0, 0, 0) 109.86%), url(assests/aboutslidecontent.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        min-height: 300px;">
+           <div class="container py-5">
+            <div class="row justify-content-center align-items-center">
+                <div>
+                    <p class="text-white text-center">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam vero cum iusto aliquid odit praesentium minus expedita, et nam reiciendis explicabo ea esse dignissimos, corporis blanditiis illo? Ullam iusto asperiores iste veniam velit accusantium quo perferendis mollitia quos. Atque, iusto recusandae repudiandae necessitatibus at asperiores.
+                    </p>
+                </div>
+            </div>
+           </div>
+        </div>
+
+    <style>
+        .wrapper{
+            padding: 1px 0;
+            /* margin: 50px 0;; */
+}
+/* Default slide */
+
+    </style>
+
+    <script>
+        $(document).ready(function(){
+      $('.center-slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        centerMode: true,
+        arrows: true,
+        dots: false,
+        speed: 300,
+        centerPadding: '20px',
+        infinite: true,
+        // autoplaySpeed: 5000,
+        // autoplay: true
+        responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]s
+      });
+    });
+    </script>
     <!-- <div class="container maxtimeline">
         <div class="timeline">
             <div class="swiper-container">
@@ -125,7 +217,7 @@
         </div>
     </div> -->
 
-    <style>
+    <!-- <style>
         .maxtimeline {
             display: flex;
             justify-content: center;
@@ -397,10 +489,10 @@
                 right: 25%;
             }
         }
-    </style>
+    </style> -->
 
 
-    <script>
+    <!-- <script>
         var timelineSwiper = new Swiper('.timeline .swiper-container', {
             direction: 'vertical',
             loop: false,
@@ -419,7 +511,7 @@
                 }
             }
         });
-    </script>
+    </script> -->
     <!-- CEO Section -->
 
     <div class="ceosection container-fluid bg-light  ">
@@ -609,21 +701,21 @@
                     <div class="blockquote-custom-icon bg-info shadow-1-strong">
                         <i class="fa fa-quote-right"></i>
                     </div>
-                    <div class="row py-5 d-flex align-items-start">
+                    <div class="row py-3 d-flex align-items-start">
                         <img src="assests/navicons/testiprofile.jpg" alt="">
                         <p class="testiname m-3"><b>Viivek Rawat</b></p>
 
-                        <div class="testimonialcontent mt-4">
+                        <div class="testimonialcontent mt-4" style="height:100px ;">
                             <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, cum
                                 itaque
                                 ipsa magni dolor vero.</small>
                         </div>
                         <div class="ratings text-center col-12">
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg checked " aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg checked" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg checked" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg checked" aria-hidden="true"></i>
+                            <i class="fa fa-star-half fa-lg checked" aria-hidden="true"></i>
                         </div>
                     </div>
                 </div>
@@ -631,21 +723,21 @@
                     <div class="blockquote-custom-icon bg-info shadow-1-strong">
                         <i class="fa fa-quote-right"></i>
                     </div>
-                    <div class="row py-5  d-flex align-items-center">
+                    <div class="row py-3  d-flex align-items-center">
                         <img src="assests/navicons/testiprofile.jpg" alt="">
                         <p class="testiname m-3"><b>Viivek Rawat</b></p>
 
-                        <div class="testimonialcontent mt-4">
+                        <div class="testimonialcontent mt-4" style="height:100px ;">
                             <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, cum
                                 itaque
                                 ipsa magni dolor vero.</small>
                         </div>
                         <div class="ratings text-center col-12">
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg checked " aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg checked" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg checked" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg checked" aria-hidden="true"></i>
+                            <i class="fa fa-star-half fa-lg checked" aria-hidden="true"></i>
                         </div>
                     </div>
                 </div>
@@ -653,21 +745,21 @@
                     <div class="blockquote-custom-icon bg-info shadow-1-strong">
                         <i class="fa fa-quote-right"></i>
                     </div>
-                    <div class="row py-5  d-flex align-items-center">
+                    <div class="row py-3  d-flex align-items-center">
                         <img src="assests/navicons/testiprofile.jpg" alt="">
                         <p class="testiname m-3"><b>Viivek Rawat</b></p>
 
-                        <div class="testimonialcontent mt-4">
+                        <div class="testimonialcontent mt-4" style="height:100px ;">
                             <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, cum
                                 itaque
                                 ipsa magni dolor vero.</small>
                         </div>
                         <div class="ratings text-center col-12">
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg checked " aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg checked" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg checked" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg checked" aria-hidden="true"></i>
+                            <i class="fa fa-star-half fa-lg checked" aria-hidden="true"></i>
                         </div>
                     </div>
                 </div>
@@ -675,21 +767,21 @@
                     <div class="blockquote-custom-icon bg-info shadow-1-strong">
                         <i class="fa fa-quote-right"></i>
                     </div>
-                    <div class="row py-5 d-flex align-items-center">
+                    <div class="row py-3 d-flex align-items-center">
                         <img src="assests/navicons/testiprofile.jpg" alt="">
                         <p class="testiname m-3"><b>Viivek Rawat</b></p>
 
-                        <div class="testimonialcontent mt-4">
+                        <div class="testimonialcontent mt-4" style="height:100px ;">
                             <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, cum
                                 itaque
                                 ipsa magni dolor vero.</small>
                         </div>
-                        <div class="ratings text-center col-12 ">
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                        <div class="ratings text-center col-12">
+                            <i class="fa fa-star fa-lg checked " aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg checked" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg checked" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg checked" aria-hidden="true"></i>
+                            <i class="fa fa-star-half fa-lg checked" aria-hidden="true"></i>
                         </div>
                     </div>
                 </div>
@@ -697,21 +789,21 @@
                     <div class="blockquote-custom-icon bg-info shadow-1-strong">
                         <i class="fa fa-quote-right"></i>
                     </div>
-                    <div class="row py-5 d-flex align-items-center">
+                    <div class="row py-3 d-flex align-items-center">
                         <img src="assests/navicons/testiprofile.jpg" alt="">
-                        <p class="testiname m-3">Viivek Rawat</p>
+                        <p class="testiname m-3"><b>Viivek Rawat</b></p>
 
-                        <div class="testimonialcontent mt-4">
+                        <div class="testimonialcontent mt-4" style="height:100px ;">
                             <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, cum
                                 itaque
                                 ipsa magni dolor vero.</small>
                         </div>
                         <div class="ratings text-center col-12">
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg checked " aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg checked" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg checked" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg checked" aria-hidden="true"></i>
+                            <i class="fa fa-star-half fa-lg checked" aria-hidden="true"></i>
                         </div>
                     </div>
                 </div>
@@ -745,18 +837,45 @@
 
 
 
+<script>
+    $('.center').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+</script>
 
 
 
 
-
-    <script src="Js/main.js" async defer></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="Js/main.js" async defer></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
 
 </body>
 
