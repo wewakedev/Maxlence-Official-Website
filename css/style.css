@@ -1103,6 +1103,14 @@ nav.navbar.navbar-expand-lg.navbar-light.homenav.d-flex.fontrale.fixed-top {
   }
 }
 
+.team_mem_testi::before{
+content: "";
+width: .2rem;
+height: 4rem;
+background: #0a76e5;
+position: absolute;
+left: 0;
+}
 /* QUESTIONS PAGE */
 
 .card {
