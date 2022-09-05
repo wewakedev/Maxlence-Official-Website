@@ -1,3 +1,8 @@
+
+
+
+
+
 <!DOCTYPE html>
 
 <html>
@@ -5,438 +10,694 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>What You Looking For ? | Maxlence Consulting </title>
+    <title>Seo Service - Enterprice | Maxlence</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
-        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 
+<body>
+
+    <!-- <style>
+        #naventerprise,
+        #enterpriseseo {
+            color: #00C99C !important;
+        }
+    </style> -->
+    <style>
+        input[type="checkbox"] {
+            -webkit-appearance: radio;
+            /* Chrome, Safari, Opera */
+            -moz-appearance: radio;
+            /* Firefox */
+            -ms-appearance: radio;
+            /* not currently supported */
+        }
+
+        input[type=radio]:checked+.radiobox {
+            background-color: #B52421;
+            color: #fff;
+        }
+
+        #selector select option {
+            color: #333;
+            position: relative;
+            top: 5px;
+        }
 
 
-<!--Navigation bar-->
-<div id="nav-placeholder">
+        select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -o-appearance: none;
+            appearance: none;
+        }
 
-</div>
+        select.input-lg {
+            height: 50px !important;
+            line-height: 25px !important;
+        }
 
-<script>
-    $(function () {
-        $("#nav-placeholder").load("nav1.html");
-    });
-</script>
-<!--end of Navigation bar-->
+        select+i.fa {
+            float: right;
+            margin-top: -32px;
+            margin-right: 9px;
 
+            pointer-events: none;
 
-<div class="paginationaction bg-gradient container-fluid">
-    <div class=" step-content">
-        <div class="row p-2 step-content-foot justify-content-between">
-            <button type="button" class="questback active" name="prev">Back</button>
-            <button type="button" class="questnext active" name="next">Next</button>
-            <button type="button" class="active questfinal out" name="finish">Finish</button>
-        </div>
+            background-color: #FFF;
+            padding-right: 5px;
+        }
 
+        select {
+            color: #7A7A7A;
+        }
+    </style>
+
+    <!--Navigation bar-->
+    <div id="nav-placeholder">
 
     </div>
 
-    <div class="card step-progress">
-        <div class="step-slider">
-            <div data-id="step1" class="step-slider-item"></div>
-            <div data-id="step2" class="step-slider-item"></div>
-            <div data-id="step3" class="step-slider-item"></div>
-            <div data-id="step4" class="step-slider-item"></div>
-            <div data-id="step5" class="step-slider-item"></div>
-            <div data-id="step6" class="step-slider-item"></div>
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("header.html");
+        });
+    </script>
+    <!--end of Navigation bar-->
+
+    <div class="container">
+
+        <div class="row my-5 justify-content-center ">
+            <div class="">
+                <h6 class="text-secondary">Great! You are almost there</h6>
+            </div>
         </div>
+        <!-- multistep form -->
+        <form id="msform">
+            <!-- progressbar -->
+            <ul id="progressbar" class="pl-0">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+
+            <!-- fieldsets -->
+            <div class="row">
+
+                <fieldset>
+                    <h2 class="fs-title">What do you sell?</h2>
+
+                    <div class="row mt-5 justify-content-center">
+                        <div class="col-md-3 my-2">
+                            <div class="radiobox">
+                                <input type="radio" name="radiobased" id="servicebased">
+                                <label class="radiobox_title" for="servicebased">
+                                    <h6>Service</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" col-md-3  my-2">
+                            <div class="radiobox">
+                                <input type="radio" name="radiobased" id="productbased">
+                                <label class="radiobox_title" for="productbased">
+                                    <h6>Product</h6>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <input type="button" name="next" class="next mt-5 action-button" value="Submit ➙" />
+
+                </fieldset>
+
+
+                <fieldset>
+                    <h2 class="fs-title">Select Your Industry</h2>
+                    <div class="row mt-5 justify-content-center">
+                        <div id="selector" class="col-md-4 text-center">
+                            <select class="form-control input-lg">
+                                <option>Industry Type </option>
+                                <option>Industry Type1</option>
+                                <option>Industry Type2</option>
+                            </select>
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+                    <input type="button" name="previous" class="previous mt-5 action-button" value="Previous" />
+                    <input type="button" name="next" class="next mt-5 action-button" value="Submit ➙" />
+
+                </fieldset>
+
+
+                <fieldset>
+                    <h2 class="fs-title">What type of marketing services are you using?</h2>
+                    <h6 class="fs-subtitle text-secondary">( Select more than one if applicable )</h6>
+
+                    <div class="row mt-5 justify-content-center">
+                        <div class="col-md-3 col-6 my-2">
+                            <div class="checkboxbox">
+                                <input type="checkbox" name="checkbased" id="fb_box">
+                                <label class="checkbox_title text-center" for="fbbox">
+                                    <img src="assests/fbbox.png" alt=""><br><br>
+                                    <h6>Facebook</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" col-md-3 col-6  my-2">
+                            <div class="checkboxbox">
+                                <input type="checkbox" name="checkbased" id="insta_box">
+                                <label class="checkbox_title" for="instabox">
+                                    <img src="assests/instabox.png" alt=""><br><br>
+                                    <h6>Instagram</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 my-2">
+                            <div class="checkboxbox">
+                                <input type="checkbox" name="checkbased" id="gads_box">
+                                <label class="checkbox_title" for="gads">
+                                    <img src="assests/googleadwordbox.png" alt=""><br><br>
+                                    <h6>Google Adwords</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-3  col-6 my-2">
+                            <div class="checkboxbox">
+                                <input type="checkbox" name="checkbased" id="gseo_box">
+                                <label class="checkbox_title" for="gseo">
+                                    <img src="assests/googleseobox.png" alt=""><br><br>
+                                    <h6>SEO</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 my-2">
+                            <div class="checkboxbox">
+                                <input type="checkbox" name="checkbased" id="gads_box">
+                                <label class="checkbox_title" for="gads">
+                                    <img src="assests/twitterbox.png" alt=""><br><br>
+                                    <h6>Twitter</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 my-2">
+                            <div class="checkboxbox">
+                                <input type="checkbox" name="checkbased" id="gads_box">
+                                <label class="checkbox_title" for="gads">
+                                    <img src="assests/linkbox.png" alt=""><br><br>
+                                    <h6>LinkedIn</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-3  col-6 my-2">
+                            <div class="checkboxbox">
+                                <input type="checkbox" name="checkbased" id="gads_box">
+                                <label class="checkbox_title" for="gads">
+                                    <img src="assests/ytbox.png" alt=""><br><br>
+                                    <h6>Youtube</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 my-2">
+                            <div class="checkboxbox">
+                                <input type="checkbox" name="checkbased" id="gads_box">
+                                <label class="checkbox_title" for="gads">
+                                    <img src="assests/nonebox.png" alt=""><br><br>
+                                    <h6>None</h6>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <input type="button" name="previous" class="previous mt-5 action-button" value="Previous" />
+                    <input type="button" name="next" class="next mt-5 action-button" value="Submit ➙" />
+                </fieldset>
+
+                <fieldset>
+                    <h2 class="fs-title">How long you have been using marketing services?</h2>
+                    <div class="row mt-5 justify-content-center">
+                        <div class=" col-md-4 m-2">
+                            <div class="defultbox">
+                                <input type="radio" name="longbox" id="">
+                                <label class="radiobox_title" for="longbox">
+                                    <h6>Less than 3 months</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" col-md-4 m-2">
+                            <div class="defultbox">
+                                <input type="radio" name="longbox" id="">
+                                <label class="radiobox_title" for="longbox">
+                                    <h6>6 - 9 months</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" col-md-4 m-2">
+                            <div class="defultbox">
+                                <input type="radio" name="longbox" id="">
+                                <label class="radiobox_title" for="longbox">
+                                    <h6>3 - 6 months</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" col-md-4 m-2">
+                            <div class="defultbox">
+                                <input type="radio" name="longbox" id="">
+                                <label class="radiobox_title" for="longbox">
+                                    <h6>9 - 12 months</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" col-md-4 m-2">
+                            <div class="defultbox">
+                                <input type="radio" name="longbox" id="">
+                                <label class="radiobox_title" for="longbox">
+                                    <h6>More than 1 year</h6>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <input type="button" name="previous" class="previous mt-5 action-button" value="Previous" />
+                    <input type="button" name="next" class="next mt-5 action-button" value="Submit ➙" />
+
+                </fieldset>
+
+                <fieldset>
+                    <h2 class="fs-title">How long you have been using marketing services?</h2>
+                    <h6 class="fs-subtitle text-secondary">( Select more than one if applicable )</h6>
+                    <div class="row mt-5 justify-content-center flex-column justify-content-center">
+                        <div class=" col-md-4 mx-auto my-2">
+                            <div class="defultbox">
+                                <input type="checkbox" name="longbox" id="">
+                                <label class="checkbox_title" for="longbox">
+                                    <h6>Website Traffic</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" col-md-4 mx-auto my-2">
+                            <div class="defultbox">
+                                <input type="checkbox" name="longbox" id="">
+                                <label class="checkbox_title" for="longbox">
+                                    <h6>Lead Generation</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" col-md-4 mx-auto my-2">
+                            <div class="defultbox">
+                                <input type="checkbox" name="longbox" id="">
+                                <label class="checkbox_title" for="longbox">
+                                    <h6>Branding</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" col-md-4 mx-auto my-2">
+                            <div class="defultbox">
+                                <input type="checkbox" name="longbox" id="">
+                                <label class="checkbox_title" for="longbox">
+                                    <h6>Promotion</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" col-md-4 mx-auto my-2">
+                            <div class="defultbox">
+                                <input type="checkbox" name="longbox" id="">
+                                <label class="checkbox_title" for="longbox">
+                                    <h6>Re-Marketing</h6>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <input type="button" name="previous" class="previous mt-5 action-button" value="Previous" />
+                    <input type="button" name="next" class="next mt-5 action-button" value="Submit ➙" />
+                </fieldset>
+
+                <fieldset>
+                    <h2 class="fs-title">Please enter your website URL</h2>
+                    <h6 class="fs-subtitle text-secondary">( Enter NA if you don’t have one )</h6>
+                    <textarea style=" height: 80px;
+                    margin: 0 auto;" placeholder="Website URL "
+                        class="form-control col-md-6 col-12 mt-5 text-left py-3" name=" CAT_Custom_6" id="CAT_Custom_6"
+                        rows="1"
+                        onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
+                    <input type="button" name="previous" class="previous mt-5 action-button" value="Previous" />
+                    <input type="button" name="next" class="next mt-5 action-button" value="Submit ➙" />
+                </fieldset>
+
+                <fieldset>
+                    <h2 class="fs-title col-md-8 m-auto">Briefly describe about your business, what do you sell, who is
+                        your
+                        target
+                        audience & what is your pricing?</h2>
+                    <textarea style=" height: 150px;
+                    margin: 0 auto;" placeholder="Website URL "
+                        class="form-control col-md-6 col-12 mt-5 text-left py-3" name=" CAT_Custom_7" id="CAT_Custom_7"
+                        rows="1"
+                        onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
+                    <input type="button" name="previous" class="previous mt-5 action-button" value="Previous" />
+                    <input type="button" name="next" class="next mt-5 action-button" value="Submit ➙" />
+                </fieldset>
+
+                <fieldset>
+                    <h2 class="fs-title">Your business is based out of?</h2>
+                    <div class="row mt-5 justify-content-center">
+                        <div id="selector" class="col-md-4 text-center">
+                            <select class="form-control input-lg">
+                                <option selected>Country</option>
+                                <option>India</option>
+                                <option>United Kingdom</option>
+                            </select>
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+                    <input type="button" name="previous" class="previous mt-5 action-button" value="Previous" />
+                    <input type="button" name="next" class="next mt-5 action-button" value="Submit ➙" />
+                </fieldset>
+
+                <fieldset>
+                    <h2 class="fs-title">What is your monthly budget?</h2>
+                    <div class="row mt-5 justify-content-center">
+                        <div class=" col-md-4 m-2">
+                            <div class="defultbox">
+                                <input type="radio" name="longbox" id="">
+                                <label class="radiobox_title" for="longbox">
+                                    <h6>Below $3k</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" col-md-4 m-2">
+                            <div class="defultbox">
+                                <input type="radio" name="longbox" id="">
+                                <label class="radiobox_title" for="longbox">
+                                    <h6>$10k - $20k</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" col-md-4 m-2">
+                            <div class="defultbox">
+                                <input type="radio" name="longbox" id="">
+                                <label class="radiobox_title" for="longbox">
+                                    <h6>$3k - $5k</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" col-md-4 m-2">
+                            <div class="defultbox">
+                                <input type="radio" name="longbox" id="">
+                                <label class="radiobox_title" for="longbox">
+                                    <h6>$20k - $35k</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" col-md-4 m-2">
+                            <div class="defultbox">
+                                <input type="radio" name="longbox" id="">
+                                <label class="radiobox_title" for="longbox">
+                                    <h6>$5k - $10k</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" col-md-4 m-2">
+                            <div class="defultbox">
+                                <input type="radio" name="longbox" id="">
+                                <label class="radiobox_title" for="longbox">
+                                    <h6>$35 - $50k</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" col-md-4 m-2">
+                            <div class="defultbox">
+                                <input type="radio" name="longbox" id="">
+                                <label class="radiobox_title" for="longbox">
+                                    <h6>Above $50k</h6>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <input type="button" name="previous" class="previous mt-5 action-button" value="Previous" />
+                    <input type="button" name="next" class="next mt-5 action-button" value="Submit ➙" />
+
+                </fieldset>
+
+                <fieldset>
+                    <h2 class="fs-title">Who do you consider your biggest competitors?</h2>
+                    <h6 class="fs-subtitle text-secondary">( Enter website URL )</h6>
+                    <div class="col-12 d-flex justify-content-center align-items-center">
+                        <div class="col-1 pr-0"><span><b>1.</b></span></div>
+                        <div class="col-lg-5 pl-0">
+                            <textarea style=" height: 80px;
+                    width: 100%;
+                    margin: 0 auto;" placeholder="Website URL " class="form-control mt-5 text-left py-3"
+                                name=" CAT_Custom_6" id="CAT_Custom_6" rows="1"
+                                onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center align-items-center">
+                        <div class="col-1 pr-0"><span><b>2.</b></span></div>
+                        <div class="col-lg-5 pl-0">
+                            <textarea style=" height: 80px;
+                    width: 100%;
+                    margin: 0 auto;" placeholder="Website URL " class="form-control mt-5 text-left py-3"
+                                name=" CAT_Custom_6" id="CAT_Custom_6" rows="1"
+                                onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center align-items-center">
+                        <div class="col-1 pr-0"><span><b>3.</b></span></div>
+                        <div class="col-lg-5 pl-0">
+                            <textarea style=" height: 80px;
+                    width: 100%;
+                    margin: 0 auto;" placeholder="Website URL " class="form-control mt-5 text-left py-3"
+                                name=" CAT_Custom_6" id="CAT_Custom_6" rows="1"
+                                onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
+                        </div>
+                    </div>
+
+
+
+
+                    <input type="button" name="previous" class="previous mt-5 action-button" value="Previous" />
+                    <input type="button" name="next" class="next mt-5 action-button" value="Submit ➙" />
+                </fieldset>
+
+                <fieldset>
+                    <h2 class="fs-title">When are you looking to get started?</h2>
+                    <div class="row mt-5 justify-content-center">
+                        <div class=" col-md-4 m-2">
+                            <div class="defultbox">
+                                <input type="radio" name="longbox" id="">
+                                <label class="radiobox_title" for="longbox">
+                                    <h6>Immediately</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" col-md-4 m-2">
+                            <div class="defultbox">
+                                <input type="radio" name="longbox" id="">
+                                <label class="radiobox_title" for="longbox">
+                                    <h6>In the next 2 weeks</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" col-md-4 m-2">
+                            <div class="defultbox">
+                                <input type="radio" name="longbox" id="">
+                                <label class="radiobox_title" for="longbox">
+                                    <h6>2 - 4 weeks</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" col-md-4 m-2">
+                            <div class="defultbox">
+                                <input type="radio" name="longbox" id="">
+                                <label class="radiobox_title" for="longbox">
+                                    <h6>4 - 6 weeks</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" col-md-4 m-2">
+                            <div class="defultbox">
+                                <input type="radio" name="longbox" id="">
+                                <label class="radiobox_title" for="longbox">
+                                    <h6>After 6 weeks</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" col-md-4 m-2">
+                            <div class="defultbox">
+                                <input type="radio" name="longbox" id="">
+                                <label class="radiobox_title" for="longbox">
+                                    <h6>Never</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" col-md-4 m-2">
+                            <div class="defultbox">
+                                <input type="radio" name="longbox" id="">
+                                <label class="radiobox_title" for="longbox">
+                                    <h6>Not Sure</h6>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <input type="button" name="previous" class="previous mt-5 action-button" value="Previous" />
+                    <input type="button" name="next" class="next mt-5 action-button" value="Submit ➙" />
+
+                </fieldset>
+
+
+                <fieldset>
+                    <div class="text-center my-5"><img src="assests/maxlogodark.png" alt=""></div>
+                    <h2 class="fs-title my-3">Perfect marketing with perfect Partner</h2>
+                    <div class="row mt-5 justify-content-center">
+                        <h3 class="font-italic" style="color:
+                        rgba(133, 159, 149, 1) ;">on the way to your <span> solution</span></h2>
+                            <small><a href="buyplans.html">Buy Plans</a></small>
+                    </div>
+                </fieldset>
+
+
+            </div>
+        </form>
     </div>
 
-</div>
 
 
 
-<div class="card">
-    <div class="step-content">
-        <div id="step1" class="step-content-body">
 
-            <div class="question text-center text-white py-3 container-fluid">
-                <div class="question1 container">
-                    <div class="col-6 my-3 ml-0 pl-0 text-center">
-                        <small>01/10</small>
-                    </div>
-                    <h1>What kind of website should this be ?</h1>
-                </div>
-            </div>
+    <script>
+        //jQuery time
+        var current_fs, next_fs, previous_fs; //fieldsets
+        var left, opacity, scale; //fieldset properties which we will animate
+        var animating; //flag to prevent quick multi-click glitches
 
-            <div class="container py-2 my-3">
-                <div class="row justify-content-center">
-                    <form class="">
+        $(".next").click(function () {
+            if (animating) return false;
+            animating = true;
 
-                        <div class="input-form-append">
+            current_fs = $(this).parent();
+            next_fs = $(this).parent().next();
 
-                            <ul class="ab-form-list">
+            //activate next step on progressbar using the index of next_fs
+            $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
 
-                                <li class="ab-form-list__item">
-                                    <input type="radio" name="age" class="ab-radio" id="children">
-                                    <label for="children">New</label>
-                                </li>
+            //show the next fieldset
+            next_fs.show();
+            //hide the current fieldset with style
+            current_fs.animate({ opacity: 0 }, {
+                step: function (now, mx) {
+                    //as the opacity of current_fs reduces to 0 - stored in "now"
+                    //1. scale current_fs down to 80%
+                    scale = 1 - (1 - now) * 0.2;
+                    //2. bring next_fs from the right(50%)
+                    left = (now * 50) + "%";
+                    //3. increase opacity of next_fs to 1 as it moves in
+                    opacity = 1 - now;
+                    current_fs.css({ 'transform': 'scale(' + scale + ')' });
+                    next_fs.css({ 'left': left, 'opacity': opacity });
+                },
+                duration: 0,
+                complete: function () {
+                    current_fs.hide();
+                    animating = false;
+                },
+                //this comes from the custom easing plugin
+                easing: 'easeOutQuint'
+            });
+        });
 
-                                <li class="ab-form-list__item">
-                                    <input type="radio" name="age" class="ab-radio" id="teen">
-                                    <label for="teen">Redesign</label>
-                                </li>
+        $(".previous").click(function () {
+            if (animating) return false;
+            animating = true;
 
-                                <li class="ab-form-list__item">
-                                    <input type="radio" name="age" class="ab-radio" id="adult">
-                                    <label for="adult">Updates in existing website</label>
-                                </li>
+            current_fs = $(this).parent();
+            previous_fs = $(this).parent().prev();
 
-                            </ul>
-                        </div>
-                        <div class="input-form-append">
-                            <button type="submit" class="ctasearchbtn fontpop">Submit</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
+            //de-activate current step on progressbar
+            $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
 
-        </div>
-        <div id="step2" class="step-content-body out">
-            <div class="question text-center text-white bg-position-top py-3 container-fluid">
-                <div class="question1 container">
-                    <div class="col-6 my-3 ml-0 pl-0 text-center">
-                        <small>02/10</small>
-                    </div>
-                    <h1>What Kind of Marketing you looking for ?</h1>
-                </div>
-            </div>
+            //show the previous fieldset
+            previous_fs.show();
+            //hide the current fieldset with style
+            current_fs.animate({ opacity: 0 }, {
+                step: function (now, mx) {
+                    //as the opacity of current_fs reduces to 0 - stored in "now"
+                    //1. scale previous_fs from 80% to 100%
+                    scale = 0.8 + (1 - now) * 0.2;
+                    //2. take current_fs to the right(50%) - from 0%
+                    left = ((1 - now) * 50) + "%";
+                    //3. increase opacity of previous_fs to 1 as it moves in
+                    opacity = 1 - now;
+                    current_fs.css({ 'left': left });
+                    previous_fs.css({ 'transform': 'scale(' + scale + ')', 'opacity': opacity });
+                },
+                duration: 0,
+                complete: function () {
+                    current_fs.hide();
+                    animating = false;
+                },
+                //this comes from the custom easing plugin
+                easing: 'easeOutQuint'
+            });
+        });
 
-            <div class="container py-2 my-3">
-                <div class="row justify-content-center">
-                    <form class="input-form-append">
-
-                        <div class="">
-
-                            <ul class="ab-form-list">
-
-                                <li class="ab-form-list__item">
-                                    <input type="radio" name="age" class="ab-radio" id="children">
-                                    <label for="children">Social Media Marketing</label>
-                                </li>
-
-                                <li class="ab-form-list__item">
-                                    <input type="radio" name="age" class="ab-radio" id="teen">
-                                    <label for="teen">Google Analytics & SEO</label>
-                                </li>
-
-                                <li class="ab-form-list__item">
-                                    <input type="radio" name="age" class="ab-radio" id="adult">
-                                    <label for="adult">Email Marketing</label>
-                                </li>
-
-                            </ul>
-                        </div>
-                        <div class="input-form-append">
-                            <button type="submit" class="ctasearchbtn fontpop">Submit</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-        </div>
-        <div id="step3" class="step-content-body out">
-            <div class="question text-center text-white bg-position-top py-3 container-fluid">
-                <div class="question1 container">
-                    <div class="col-6 my-3 ml-0 pl-0 text-center">
-                        <small>03/10</small>
-                    </div>
-                    <h1>What kind of Marketing You Want ?</h1>
-                </div>
-            </div>
-
-            <div class="container py-2 my-3">
-                <div class="row justify-content-center">
-                    <form class="">
-
-                        <div class="input-form-append">
-
-                            <ul class="ab-form-list">
-
-                                <li class="ab-form-list__item">
-                                    <input type="radio" name="age" class="ab-radio" id="children">
-                                    <label for="children">Social Media Marketing</label>
-                                </li>
-
-                                <li class="ab-form-list__item">
-                                    <input type="radio" name="age" class="ab-radio" id="teen">
-                                    <label for="teen">Google Analytics & SEO</label>
-                                </li>
-
-                                <li class="ab-form-list__item">
-                                    <input type="radio" name="age" class="ab-radio" id="adult">
-                                    <label for="adult">Email Marketing</label>
-                                </li>
-
-                            </ul>
-                        </div>
-                        <div class="input-form-append">
-                            <button type="submit" class="ctasearchbtn fontpop">Submit</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-        </div>
-
-        <div id="step4" class="step-content-body out">
-            <div class="question text-center text-white bg-position-top py-3 container-fluid">
-                <div class="question1 container">
-                    <div class="col-6 my-3 ml-0 pl-0 text-center">
-                        <small>04/10</small>
-                    </div>
-                    <h1>What Technology Would You Like To Use ?</h1>
-                </div>
-            </div>
-
-            <div class="container py-2 my-3">
-                <div class="row justify-content-center">
-                    <form class="input-form-append">
-
-                        <div class="">
-
-                            <ul class="ab-form-list">
-
-                                <li class="ab-form-list__item">
-                                    <input type="radio" name="age" class="ab-radio" id="children">
-                                    <label for="children">Wordpress</label>
-                                </li>
-
-                                <li class="ab-form-list__item">
-                                    <input type="radio" name="age" class="ab-radio" id="teen">
-                                    <label for="teen">Wix</label>
-                                </li>
-
-                                <li class="ab-form-list__item">
-                                    <input type="radio" name="age" class="ab-radio" id="adult">
-                                    <label for="adult">Html/Css/Js</label>
-                                </li>
-
-                                <li class="ab-form-list__item">
-                                    <input type="radio" name="age" class="ab-radio" id="adult">
-                                    <label for="adult">Php</label>
-                                </li>
-
-                            </ul>
-                        </div>
-                        <div class="input-form-append">
-                            <button type="submit" class="ctasearchbtn fontpop">Submit</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-        </div>
-
-        <div id="step5" class="step-content-body out">
-            <div class="question text-center text-white bg-position-top py-3 container-fluid">
-                <div class="question1 container">
-                    <div class="col-6 my-3 ml-0 pl-0 text-center">
-                        <small>05/10</small>
-                    </div>
-                    <h1>How Early You Want ?</h1>
-                </div>
-            </div>
-
-            <div class="container py-2 my-3">
-                <div class="row justify-content-center">
-                    <form class="">
-
-                        <div class="">
-
-                            <ul class="ab-form-list">
-
-                                <li class="ab-form-list__item">
-                                    <input type="radio" name="age" class="ab-radio" id="children">
-                                    <label for="children">Within 1-3 Weeks</label>
-                                </li>
-
-                                <li class="ab-form-list__item">
-                                    <input type="radio" name="age" class="ab-radio" id="teen">
-                                    <label for="teen">Within 1-2 Months</label>
-                                </li>
-
-                                <li class="ab-form-list__item">
-                                    <input type="radio" name="age" class="ab-radio" id="adult">
-                                    <label for="adult">More than 6 Months</label>
-                                </li>
-
-                            </ul>
-                        </div>
-                        <div class="input-form-append">
-                            <button type="submit" class="ctasearchbtn fontpop">Submit</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-        </div>
+        $(".submit").click(function () {
+            return false;
+        })
+    </script>
 
 
-        <div id="step6" class="step-content-body out">
-            <div class="question text-center text-white bg-position-top py-3 container-fluid">
-                <div class="question1 container">
-                    <div class="col-6 my-3 ml-0 pl-0 text-center">
-                        <small>06/10</small>
-                    </div>
-                    <h1>Let Us Know</h1>
-                </div>
-            </div>
 
-            <div class="container py-2 my-3">
-                <div class="row justify-content-center">
-                    <form class="">
+    <!--Footer Section-->
 
-                        <div class="">
+    <div id="footer">
 
-                            <ul class="ab-form-list">
-
-                                <li class="ab-form-list__item">
-                                    <label for="children"><small>Explain Your Needs</small></label>
-                                    <input type="mesage" name="message" class="" id="message"
-                                        style="height: 10vh; width: 100%;">
-
-                                </li>
-
-
-                            </ul>
-                        </div>
-                        <div class="input-form-append">
-                            <button type="submit" class="ctasearchbtn fontpop">Submit</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-        </div>
-
-
-        <div id="stepLast" class="step-content-body out">
-            <div class="pricecardtitle text-left text-light bg-position-top py-3 container-fluid">
-                <div class=" row d-flex justify-content-center align-items-center text-center">
-                    <div class="d-sm-block d-none">
-                        <i class="fa fa-check-circle-o m-3" aria-hidden="true"
-                            style="font-size: 10rem; font-weight: 200;"></i>
-                    </div>
-                    <div>
-                        <h6>Creations</h6>
-                        <h5>
-                            Select your package
-                        </h5>
-                        <small>Based on your answers, we
-                            suggest you to take Silver Package</small>
-                    </div>
-
-                </div>
-            </div>
-            <div class="container">
-                <div class="cards-container">
-                    <div class="pricecard">
-                        <div class="card-top">
-                            <h1 class="card-title">Silver</h1>
-                            <!-- <p class="price"><span class="currency">$</span>29</p> -->
-                            <img src="assests/silver.png" alt="">
-                        </div>
-                        <div class="card-bottom">
-                            <p>
-                                10 GB of Storage<br>
-                                Up to 5 Pages<br>
-                                Standard Support<br>
-                            </p>
-                            <div class="buybtn">
-                                <button class="ctasearchbtn fontpop">Buy Now</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pricecard">
-                        <div class="card-top">
-                            <h1 class="card-title">Gold</h1>
-                            <!-- <p class="price"><span class="currency">$</span>59</p> -->
-                            <img src="assests/gold.png" alt="">
-                        </div>
-                        <div class="card-bottom">
-                            <p>
-                                20 GB of Storage<br>
-                                Up to 10 pages<br>
-                                Standard Support<br>
-                            </p>
-                            <div class="buybtn">
-                                <button class="ctasearchbtn fontpop">Buy Now</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pricecard">
-                        <div class="card-top">
-                            <!-- <p class="hot">HOT</p> -->
-                            <h1 class="card-title">Platinum</h1>
-                            <!-- <p class="price"><span class="currency">$</span>99</p> -->
-                            <img src="assests/platinum.png" alt="">
-                        </div>
-                        <div class="card-bottom">
-                            <p>
-                                50 GB of Storage<br>
-                                More than 10 pages<br>
-                                High level Support<br>
-                            </p>
-                            <div class="buybtn">
-                                <button class="ctasearchbtn fontpop">Buy Now</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
     </div>
-</div>
+
+    <script>
+        $(function () {
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+    <!--Footer Section-->
 
 
 
-
-<!--Footer Section-->
-
-<div id="footer">
-
-</div>
-
-<script>
-    $(function () {
-        $("#footer").load("footer.html");
-    });
-</script>
-
-<!--Footer Section-->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script> -->
+    <script src="Js/main.js" async defer></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+    <!-- jQuery easing plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"
+        type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
 
-
-
-
-
-
-<script src="/Js/main.js" async defer></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </body>
+
 
 </html>
