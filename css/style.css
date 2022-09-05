@@ -1102,7 +1102,12 @@ nav.navbar.navbar-expand-lg.navbar-light.homenav.d-flex.fontrale.fixed-top {
     min-height: auto;
   }
 }
-
+.team_designation{
+  position: absolute;
+  width: 100%;
+  background: rgba(57, 148, 242, 0.4);
+  bottom: 0%;
+}
 .team_mem_testi::before{
 content: "";
 width: .2rem;

@@ -1,307 +1,416 @@
 <!DOCTYPE html>
 
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Case Study - Resources | Maxlence</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <style>
-        #navresource,
-        #resrscasestudy,
-        .base {
-            color: #00C99C !important;
-        }
+      #navresource,
+      #resrscasestudy,
+      .base {
+        color: #00c99c !important;
+      }
     </style>
 
     <!--Navigation bar-->
-    <div id="nav-placeholder">
-
-    </div>
+    <div id="nav-placeholder"></div>
 
     <script>
-        $(function () {
-            $("#nav-placeholder").load("header.html");
-        });
+      $(function () {
+        $("#nav-placeholder").load("header.html");
+      });
     </script>
     <!--end of Navigation bar-->
 
+    <div class="container-fluid shop filter__wrap py-0 my-3">
+      <div class="container">
+        <div
+          class="row mt-4 mt-md-5 mb-2 justify-content-between align-items-center">
+          <div
+            class="col-sm-6 homeshophead text-center text-md-left py-sm-0 pb-3 wow animate__animated animate__fadeIn animate__slow">
+            <h1><span>Redefining</span> Industries</h1>
+          </div>
 
+          <div
+            class="col-sm-4 d-flex justify-content-sm-around justify-content-between align-items-center">
+            <div
+              class="dropdown"
+              style="
+                box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+                  rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+              ">
+              <a
+                class="btn btn-default dropdown-toggle"
+                data-toggle="dropdown"
+                aria-expanded="false"
+                ><span class="dropdown-text"
+                  ><img src="assests/dsgfiltericon.png" alt="" /><small
+                    class="mx-3"
+                    style="color: black"
+                    >Filter</small
+                  ></span
+                >
+              </a>
+              <div class="dropdown-menu filterdropdown container" style="">
+                <div class="row my-4 text-center">
+                  <div class="col-4">
+                    <small class="text-white">Industry</small>
+                  </div>
+                  <div class="col-8 d-flex border-left justify-content-around">
+                    <ul class="flex-column">
+                      <!-- <li><a href="#"><label><input type="checkbox" class="selectall" /><span class="select-text"> Select</span> All</label></a></li> -->
+                      <li>
+                        <a class="option-link" href="#"
+                          ><label
+                            ><input
+                              name="options[]"
+                              type="checkbox"
+                              class="option justone"
+                              value="Option 1 " />
+                            Option 1</label
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><label
+                            ><input
+                              name="options[]"
+                              type="checkbox"
+                              class="option justone"
+                              value="Option 2 " />
+                            Option 2</label
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><label
+                            ><input
+                              name="options[]"
+                              type="checkbox"
+                              class="option justone"
+                              value="Option 3 " />
+                            Option 3</label
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><label
+                            ><input
+                              name="options[]"
+                              type="checkbox"
+                              class="option justone"
+                              value="Option 4 " />
+                            Option 4</label
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><label
+                            ><input
+                              name="options[]"
+                              type="checkbox"
+                              class="option justone"
+                              value="Option 5 " />
+                            Option 5</label
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><label
+                            ><input
+                              name="options[]"
+                              type="checkbox"
+                              class="option justone"
+                              value="Option 6 " />
+                            Option 6</label
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><label
+                            ><input
+                              name="options[]"
+                              type="checkbox"
+                              class="option justone"
+                              value="Option 7 " />
+                            Option 3</label
+                          ></a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-    <div class=" container-fluid shop  filter__wrap  py-0 my-3">
-        <div class="container">
-            <div class="row mt-4 mt-md-5 mb-2 justify-content-between align-items-center">
+            <div class="dropdown">
+              <div class="">
                 <div
-                    class="col-sm-6 homeshophead text-center text-md-left py-sm-0  pb-3 wow animate__animated animate__fadeIn animate__slow">
-                    <h1><span>Redefining</span> Industries</h1>
+                  class="input-group justify-content-around align-items-center">
+                  <input
+                    type="search"
+                    placeholder="Search"
+                    aria-describedby="button-addon1"
+                    class="form-control navsearch border-0 ml-3 bg-light"
+                    style="padding: 1.29rem 1.6rem" /><br />
+                  <div class="input-form-append">
+                    <button
+                      type="submit"
+                      style="border: none; background: transparent !important">
+                      <img
+                        class="searchnavicon"
+                        src="assests/searchgray.png"
+                        alt="" />
+                    </button>
+                  </div>
                 </div>
-
-                <div class="col-sm-4 d-flex justify-content-sm-around justify-content-between align-items-center">
-                    <div class="dropdown"
-                        style="box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;">
-                        <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span
-                                class="dropdown-text"><img src="assests/dsgfiltericon.png" alt=""><small class="mx-3"
-                                    style="color: black;">Filter</small></span>
-                        </a>
-                        <div class="dropdown-menu filterdropdown container" style="">
-                            <div class="row my-4 text-center">
-                                <div class="col-4"><small class="text-white">Industry</small></div>
-                                <div class="col-8 d-flex border-left justify-content-around">
-                                    <ul class="flex-column">
-                                        <!-- <li><a href="#"><label><input type="checkbox" class="selectall" /><span class="select-text"> Select</span> All</label></a></li> -->
-                                        <li><a class="option-link" href="#"><label><input name="options[]"
-                                                        type="checkbox" class="option justone" value="Option 1 "> Option
-                                                    1</label></a></li>
-                                        <li><a href="#"><label><input name="options[]" type="checkbox"
-                                                        class="option justone" value="Option 2 "> Option 2</label></a>
-                                        </li>
-                                        <li><a href="#"><label><input name="options[]" type="checkbox"
-                                                        class="option justone" value="Option 3 "> Option 3</label></a>
-                                        </li>
-                                        <li><a href="#"><label><input name="options[]" type="checkbox"
-                                                        class="option justone" value="Option 4 "> Option 4</label></a>
-                                        </li>
-                                        <li><a href="#"><label><input name="options[]" type="checkbox"
-                                                        class="option justone" value="Option 5 "> Option 5</label></a>
-                                        </li>
-                                        <li><a href="#"><label><input name="options[]" type="checkbox"
-                                                        class="option justone" value="Option 6 "> Option 6</label></a>
-                                        </li>
-                                        <li><a href="#"><label><input name="options[]" type="checkbox"
-                                                        class="option justone" value="Option 7 "> Option 3</label></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-
-
-                        </div>
-                    </div>
-
-                    <div class="dropdown">
-                        <div class="">
-                            <div class="input-group justify-content-around align-items-center">
-
-                                <input type="search" placeholder="Search" aria-describedby="button-addon1"
-                                    class="form-control navsearch border-0 ml-3 bg-light "
-                                    style="    padding: 1.29rem 1.6rem;"><br>
-                                <div class="input-form-append">
-                                    <button type="submit" style="border: none; background: transparent !important;"><img
-                                            class="searchnavicon" src="assests/searchgray.png" alt=""></button>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
+              </div>
             </div>
-
-            <div class="casestudy_tabs">
-                <ul class="row  justify-content-around  text-center align-items-center wow animate__animated animate__fadeIn nav nav-tabs filter__head my-sm-5 my-0"
-                    role="tablist">
-                    <li class="active  filter__headitem col-sm-1 col-6 my-2" role="presentation"><a href="#allcase"
-                            class="active" role="tab" data-toggle="tab">ALL</a></li>
-                    <li class="filter__headitem col-sm-2 col-6 my-2" role="presentation"><a href="#seocase" role="tab"
-                            data-toggle="tab">SEO</a></li>
-                    <li class="filter__headitem col-sm-2 col-6 my-2" role="presentation"><a href="#gadscase" role="tab"
-                            data-toggle="tab">GOOGLE ADS</a></li>
-                    <li class="filter__headitem col-sm-3 col-6 my-2" role="presentation"><a href="#socialcase"
-                            role="tab" data-toggle="tab">SOCIAL MEDIA MARKETING</a></li>
-                    <li class="filter__headitem col-sm-2 col-6 my-2" role="presentation"><a href="#emailcase" role="tab"
-                            data-toggle="tab">EMAIL MARKETING</a></li>
-                    <li class="filter__headitem col-sm-2 col-6 my-2" role="presentation"><a href="#designcase"
-                            role="tab" data-toggle="tab">Design</a></li>
-                </ul>
-
-                <!-- Tab panes-->
-                <div class="tab-content case-study my-5">
-                    <div class="tab-pane active fade show seofeats" id="allcase" role="tabpanel">
-                        <div class="casestudies">
-                            <div class="row justify-content-between">
-                                <div class="div featcamp col-sm-5 my-3 col-6">
-                                    <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
-                                        <img class="w-100" src="assests/casestudy1.png" alt="">
-                                    </div>
-                                    <p class="mt-2 mt-sm-3 mb-1"><b>Leonie Dawkins</b> </p>
-                                    <p><span><b>UX/UI</b></span></p>
-                                </div>
-
-
-                                <div class="div featcamp col-sm-5 my-3 col-6">
-                                    <a href="bepeseo.html">
-                                        <div
-                                            class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
-                                            <img class="w-100" src="assests/bepecase.jpg" alt="">
-                                        </div>
-                                        <p class="mt-2 mt-sm-3 mb-1"><b>BEPE</b> </p>
-                                        <p><span><b>SEO</b></span></p>
-                                    </a>
-                                </div>
-
-
-                                <div class="div featcamp col-sm-5 my-3 col-6">
-                                    <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
-                                        <img class="w-100" src="assests/casestudy3.png" alt="">
-                                    </div>
-                                    <p class="mt-2 mt-sm-3 mb-1"><b>Concept Electrical</b> </p>
-                                    <p><span><b>Social Media Marketing</b></span></p>
-                                </div>
-
-
-                                <div class="div featcamp col-sm-5 my-3 col-6">
-                                    <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
-                                        <img class="w-100" src="assests/casestudy4.png" alt="">
-                                    </div>
-                                    <p class="mt-2 mt-sm-3 mb-1"><b>Level Headed Carpentry</b> </p>
-                                    <p><span><b>UI/UX</b></span></p>
-                                </div>
-
-                                <div class="div featcamp col-sm-5 my-3 col-6">
-                                    <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
-                                        <img class="w-100" src="assests/casestudy5.png" alt="">
-                                    </div>
-                                    <p class="mt-2 mt-sm-3 mb-1"><b>Kitchen Design Academy</b> </p>
-                                    <p><span><b>UI/UX</b></span></p>
-                                </div>
-
-                                <div class="div featcamp col-sm-5 my-3 col-6">
-                                    <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
-                                        <img class="w-100" src="assests/casestudy6.png" alt="">
-                                    </div>
-                                    <p class="mt-2 mt-sm-3 mb-1"><b>Casone Electrical</b> </p>
-                                    <p><span><b>UX/UI Social Media Marketing</b></span></p>
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade in" id="seocase" role="tabpanel">
-                        <div class="container">
-                            <div class="row">
-                                <div class="div featcamp col-sm-5 my-3 col-6">
-                                    <a href="bepeseo.html">
-                                        <div
-                                            class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
-                                            <img class="w-100" src="assests/bepecase.jpg" alt="">
-                                        </div>
-                                        <p class="mt-2 mt-sm-3 mb-1"><b>BEPE</b> </p>
-                                        <p><span><b>SEO</b></span></p>
-                                    </a>
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade in" id="gadscase" role="tabpanel">
-                        <div class="container">
-                            <div class="row">
-                                <div class="div featcamp col-sm-5 my-3 col-6">
-                                    <a href="bepegmb.html">
-                                        <div
-                                            class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
-                                            <img class="w-100" src="assests/bepecase.jpg" alt="">
-                                        </div>
-                                        <p class="mt-2 mt-sm-3 mb-1"><b>BEPE</b> </p>
-                                        <p><span><b>GMB</b></span></p>
-                                    </a>
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade in" id="socialcase" role="tabpanel">
-                        <div class="container">
-                            <div class="row">
-                                <div class="div featcamp col-sm-3 col-6">
-                                    <div class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
-                                        <img class="w-100" src="assests/casestudy2.png" alt="">
-                                    </div>
-                                    <p class="mt-2 mt-sm-3 mb-1"><b>Search Campaign</b> </p>
-                                    <p><span><b>$123</b></span></p>
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade " id="emailcase" role="tabpanel">Email Case Studies </div>
-                    <div class="tab-pane fade " id="designcase" role="tabpanel">
-                        <div class="container">
-                            <div class="row">
-                                <div class="div featcamp col-sm-5 my-3 col-6">
-                                    <a href="tpruiux.html">
-                                        <div
-                                            class="seoshop shopfeat  wow animate__animated animate__fadeIn animate__slow">
-                                            <img class="w-100" src="assests/tprcase.png" alt="">
-                                        </div>
-                                        <p class="mt-2 mt-sm-3 mb-1"><b>TPR</b> </p>
-                                        <p><span><b>UI UX</b></span></p>
-                                    </a>
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
+          </div>
         </div>
 
+        <div class="casestudy_tabs">
+          <ul
+            class="row justify-content-around text-center align-items-center wow animate__animated animate__fadeIn nav nav-tabs filter__head my-sm-5 my-0"
+            role="tablist">
+            <li
+              class="active filter__headitem col-sm-1 col-6 my-2"
+              role="presentation">
+              <a href="#allcase" class="active" role="tab" data-toggle="tab"
+                >ALL</a
+              >
+            </li>
+            <li
+              class="filter__headitem col-sm-2 col-6 my-2"
+              role="presentation">
+              <a href="#seocase" role="tab" data-toggle="tab">SEO</a>
+            </li>
+            <li
+              class="filter__headitem col-sm-2 col-6 my-2"
+              role="presentation">
+              <a href="#gadscase" role="tab" data-toggle="tab">GOOGLE ADS</a>
+            </li>
+            <li
+              class="filter__headitem col-sm-3 col-6 my-2"
+              role="presentation">
+              <a href="#socialcase" role="tab" data-toggle="tab"
+                >SOCIAL MEDIA MARKETING</a
+              >
+            </li>
+            <li
+              class="filter__headitem col-sm-2 col-6 my-2"
+              role="presentation">
+              <a href="#emailcase" role="tab" data-toggle="tab"
+                >EMAIL MARKETING</a
+              >
+            </li>
+            <li
+              class="filter__headitem col-sm-2 col-6 my-2"
+              role="presentation">
+              <a href="#designcase" role="tab" data-toggle="tab">Design</a>
+            </li>
+          </ul>
 
+          <!-- Tab panes-->
+          <div class="tab-content case-study my-5">
+            <div
+              class="tab-pane active fade show seofeats"
+              id="allcase"
+              role="tabpanel">
+              <div class="casestudies">
+                <div class="row justify-content-between">
+                  <div class="div featcamp col-sm-5 my-3 col-6">
+                    <div
+                      class="seoshop shopfeat wow animate__animated animate__fadeIn animate__slow">
+                      <img class="w-100" src="assests/casestudy1.png" alt="" />
+                    </div>
+                    <p class="mt-2 mt-sm-3 mb-1"><b>Leonie Dawkins</b></p>
+                    <p>
+                      <span><b>UX/UI</b></span>
+                    </p>
+                  </div>
+
+                  <div class="div featcamp col-sm-5 my-3 col-6">
+                    <a href="bepeseo.html">
+                      <div
+                        class="seoshop shopfeat wow animate__animated animate__fadeIn animate__slow">
+                        <img class="w-100" src="assests/bepecase.jpg" alt="" />
+                      </div>
+                      <p class="mt-2 mt-sm-3 mb-1"><b>BEPE</b></p>
+                      <p>
+                        <span><b>SEO</b></span>
+                      </p>
+                    </a>
+                  </div>
+
+                  <div class="div featcamp col-sm-5 my-3 col-6">
+                    <div
+                      class="seoshop shopfeat wow animate__animated animate__fadeIn animate__slow">
+                      <img class="w-100" src="assests/casestudy3.png" alt="" />
+                    </div>
+                    <p class="mt-2 mt-sm-3 mb-1"><b>Concept Electrical</b></p>
+                    <p>
+                      <span><b>Social Media Marketing</b></span>
+                    </p>
+                  </div>
+
+                  <div class="div featcamp col-sm-5 my-3 col-6">
+                    <div
+                      class="seoshop shopfeat wow animate__animated animate__fadeIn animate__slow">
+                      <img class="w-100" src="assests/casestudy4.png" alt="" />
+                    </div>
+                    <p class="mt-2 mt-sm-3 mb-1">
+                      <b>Level Headed Carpentry</b>
+                    </p>
+                    <p>
+                      <span><b>UI/UX</b></span>
+                    </p>
+                  </div>
+
+                  <div class="div featcamp col-sm-5 my-3 col-6">
+                    <div
+                      class="seoshop shopfeat wow animate__animated animate__fadeIn animate__slow">
+                      <img class="w-100" src="assests/casestudy5.png" alt="" />
+                    </div>
+                    <p class="mt-2 mt-sm-3 mb-1">
+                      <b>Kitchen Design Academy</b>
+                    </p>
+                    <p>
+                      <span><b>UI/UX</b></span>
+                    </p>
+                  </div>
+
+                  <div class="div featcamp col-sm-5 my-3 col-6">
+                    <div
+                      class="seoshop shopfeat wow animate__animated animate__fadeIn animate__slow">
+                      <img class="w-100" src="assests/casestudy6.png" alt="" />
+                    </div>
+                    <p class="mt-2 mt-sm-3 mb-1"><b>Casone Electrical</b></p>
+                    <p>
+                      <span><b>UX/UI Social Media Marketing</b></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade in" id="seocase" role="tabpanel">
+              <div class="container">
+                <div class="row">
+                  <div class="div featcamp col-sm-5 my-3 col-6">
+                    <a href="bepeseo.html">
+                      <div
+                        class="seoshop shopfeat wow animate__animated animate__fadeIn animate__slow">
+                        <img class="w-100" src="assests/bepecase.jpg" alt="" />
+                      </div>
+                      <p class="mt-2 mt-sm-3 mb-1"><b>BEPE</b></p>
+                      <p>
+                        <span><b>SEO</b></span>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade in" id="gadscase" role="tabpanel">
+              <div class="container">
+                <div class="row">
+                  <div class="div featcamp col-sm-5 my-3 col-6">
+                    <a href="bepegmb.html">
+                      <div
+                        class="seoshop shopfeat wow animate__animated animate__fadeIn animate__slow">
+                        <img class="w-100" src="assests/bepecase.jpg" alt="" />
+                      </div>
+                      <p class="mt-2 mt-sm-3 mb-1"><b>BEPE</b></p>
+                      <p>
+                        <span><b>GMB</b></span>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade in" id="socialcase" role="tabpanel">
+              <div class="container">
+                <div class="row">
+                  <div class="div featcamp col-sm-5 my-3 col-6">
+                    <div
+                      class="seoshop shopfeat wow animate__animated animate__fadeIn animate__slow">
+                      <img class="w-100" src="assests/casestudy2.png" alt="" />
+                    </div>
+                    <p class="mt-2 mt-sm-3 mb-1"><b>Search Campaign</b></p>
+                    <p>
+                      <span><b>Social Media Marketing</b></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="emailcase" role="tabpanel">
+              Email Case Studies
+            </div>
+            <div class="tab-pane fade" id="designcase" role="tabpanel">
+              <div class="container">
+                <div class="row">
+                  <div class="div featcamp col-sm-5 my-3 col-6">
+                    <a href="tpruiux.html">
+                      <div
+                        class="seoshop shopfeat wow animate__animated animate__fadeIn animate__slow">
+                        <img class="w-100" src="assests/tprcase.png" alt="" />
+                      </div>
+                      <p class="mt-2 mt-sm-3 mb-1"><b>TPR</b></p>
+                      <p>
+                        <span><b>UI UX</b></span>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-
-
-
-
-
 
     <!--Footer Section-->
 
-    <div id="footer">
-
-    </div>
+    <div id="footer"></div>
 
     <script>
-        $(function () {
-            $("#footer").load("footer.html");
-        });
+      $(function () {
+        $("#footer").load("footer.html");
+      });
     </script>
 
     <!--Footer Section-->
-
-
-
 
     <script src="Js/main.js" async defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-
-
-</body>
-
-
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+  </body>
 </html>
